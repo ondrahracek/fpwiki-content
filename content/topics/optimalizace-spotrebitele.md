@@ -5,7 +5,7 @@ type: topic
 tags: [imek, optimalizace-spotrebitele, lagrange, uzitecnost, poptavka-spotrebitele, minimalizace-vydaju, dualita]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_treti_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Optimalizace spotřebitele — Lagrange, poptávka, minimalizace výdajů
@@ -74,8 +74,6 @@ Lagrangeův multiplikátor $\lambda^*$ představuje **mezní užitečnost důcho
 
 ![[imek-uzitecnost-optimum.jpeg|Indiferenční křivky + rozpočtová přímka, optimum v bodě tečnosti MRCS = P_1/P_2]]
 
-*Obrázek 6.7 — Rozpočtová přímka $Y^* = P_1^* Q_1 + P_2^* Q_2$ protíná osy v $Y^*/P_1^*$ a $Y^*/P_2^*$. Tři indiferenční křivky $c_1 < c^* < c_2$. Optimum $Q^*[Q_1^*, Q_2^*]$ je bod dotyku rozpočtové přímky s křivkou $c^*$. Křivka $c_1$ je dosažitelná, ale nemaximalizuje užitečnost; křivka $c_2$ není při daném důchodu dosažitelná.*
-
 Geometrie je jádrem intuice: přímka (rozpočet) a křivka (užitečnost) se v optimu **dotýkají**, tj. mají v bodě $Q^*$ společnou tečnu. To přímo převádí podmínku $\text{MRCS} = P_1/P_2$ — poměr mezních užitečností (sklon IC) = poměr cen (sklon přímky).
 
 ## Příklad 6.5 — MRCS pro Cobb-Douglasovu užitečnost
@@ -105,8 +103,6 @@ Q_1 - 5 \lambda &= 0, \\
 $$
 
 Z prvních dvou rovnic $Q_2 = 2\lambda$, $Q_1 = 5\lambda$; dosazením do třetí $100 = 2 \cdot 5\lambda + 5 \cdot 2\lambda = 20\lambda$, tedy $\lambda = 5$. Odtud **$Q_1^* = 25$, $Q_2^* = 10$**, maximální užitečnost $U^* = 25 \cdot 10 = 250$.
-
-*Obrázek 6.8 — Rozpočtová přímka $100 - 2 Q_1 - 5 Q_2 = 0$ procházející body $A[0, 20]$ a $B[50, 0]$; hyperbolická indiferenční křivka $Q_2 = 250/Q_1$ se dotýká rozpočtové přímky v bodě $E[25, 10]$. Sklon přímky $-\tfrac{2}{5}$ odpovídá $-\text{MRCS}(25, 10) = -\tfrac{10}{25} = -\tfrac{2}{5}$.*
 
 ## Funkce poptávky spotřebitele (Marshallova)
 
@@ -186,7 +182,7 @@ $$
 D(Q_1, Q_2, \lambda) = -\lambda \left(U''_{11} + U''_{22} + 2 U''_{12}\right). \tag{6.26}
 $$
 
-**Geometrie (obrázek 6.9).** Řešením je bod $Q^*[Q_1^*, Q_2^*]$ dotyku křivky užitečnosti $U^* = U(Q_1, Q_2)$ s přímkou výdajů $E^* = P_1^* Q_1 + P_2^* Q_2$. Hladina $E_0 < E^*$ nestačí k dosažení $U^*$, hladina $E_1 > E^*$ je nadbytečná.
+**Geometrie.** Řešením je bod $Q^*[Q_1^*, Q_2^*]$ dotyku křivky užitečnosti $U^* = U(Q_1, Q_2)$ s přímkou výdajů $E^* = P_1^* Q_1 + P_2^* Q_2$. Hladina $E_0 < E^*$ nestačí k dosažení $U^*$, hladina $E_1 > E^*$ je nadbytečná.
 
 > [!tip] Postup — duální úloha (minimalizace výdajů)
 > 1. **Zapiš vazbu** $U^* - U(Q_1, Q_2) = 0$ (zadaná hladina užitečnosti).

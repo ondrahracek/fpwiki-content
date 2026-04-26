@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, geneticke-algoritmy, optimalizace, tsp, knapsack, klastrovani, predikce]
 sources: [raw/ipmrk/ga-vyuziti.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Genetické algoritmy — praktické aplikace
-
-Zdroj: `raw/ipmrk/ga-vyuziti.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 

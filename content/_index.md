@@ -1,7 +1,7 @@
 ---
 title: "Index"
 type: index
-updated: 2026-04-25
+updated: 2026-04-26
 ---
 
 # Index — FP VUT Wiki
@@ -129,5 +129,4 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 
 ## Výstupy
 
-- [[ipmrk-co-studovat|IpmrK — Co studovat ke zkoušce]] — 7 témat, 43 kontrolních otázek, 69 pojmů, mezery k doplnění
 - [[imek-vzorce-prehled|ImeK — Kompletní přehled vzorců]] — všechny klíčové vzorce kurzu v definičním tvaru, se zdrojem každého vzorce a intuicí; prokliky na primární topic stránky

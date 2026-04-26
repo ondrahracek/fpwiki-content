@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, optimalizace, matlab, fmincon, linprog, intlinprog, ga, ucelova-funkce]
 sources: [raw/ipmrk/optimalizace-online.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Optimalizace — MATLAB Optimization Toolbox
-
-Zdroj: `raw/ipmrk/optimalizace-online.md` (ověřeno z MathWorks docs, cs.wikipedia.org, VUT FEEC, APMonitor).
 
 ## Hlavní přínos zdroje
 

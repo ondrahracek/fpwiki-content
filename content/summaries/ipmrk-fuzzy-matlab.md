@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, fuzzy, matlab, fuzzy-system, inference]
 sources: [raw/ipmrk/fuzzy-matlab.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Fuzzy logika — architektura systému a MATLAB
-
-Zdroj: `raw/ipmrk/fuzzy-matlab.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 

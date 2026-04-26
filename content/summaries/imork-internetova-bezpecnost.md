@@ -5,12 +5,12 @@ type: summary
 tags: [imork, internet, bezpecnost, osint, apt, kyberprostor, cviceni]
 sources: [raw/imork/CV 01 VUT_Bezp_Internetová bezpečnost-2023.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Internetová bezpečnost — cvičení
 
-Cvičení (30 slidů, 1.8.2023) pokrývající základní koncepty bezpečnosti na internetu — od struktury kyberprostoru přes hrozby a APT skupiny až po OSINT a pravidla bezpečného chování. Součást kurzu [[imork|ImorK]].
+Základní koncepty bezpečnosti na internetu — od struktury kyberprostoru přes hrozby a APT skupiny až po OSINT a pravidla bezpečného chování.
 
 ## Kyberprostor
 

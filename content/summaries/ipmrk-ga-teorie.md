@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, geneticke-algoritmy, optimalizace, selekce, krizeni, mutace]
 sources: [raw/ipmrk/ga-teorie.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Genetické algoritmy — teorie
-
-Zdroj: `raw/ipmrk/ga-teorie.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 

@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, fuzzy, excel, funkce-clenstvi, pravidla]
 sources: [raw/ipmrk/fuzzy-excel.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Fuzzy logika — základní princip a implementace v Excelu
-
-Zdroj: `raw/ipmrk/fuzzy-excel.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 

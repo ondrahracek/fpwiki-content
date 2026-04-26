@@ -5,7 +5,7 @@ type: topic
 tags: [imek, produkce, produkcni-funkce, mpl-apl, cobb-douglas, izokvanty, mrts, euler]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_druhy_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Produkce — produkční funkce, Cobb-Douglas, MRTS
@@ -69,7 +69,7 @@ Skutečná změna je $\Delta Q = Q(L+dL) - Q(L)$.
 
 > Roste-li postupně některý ze vstupů (*ceteris paribus*), budou přírůstky výstupu od jistého bodu klesat.
 
-Typická křivka produkce (Obrázek 5.2) má dvě fáze:
+Typická křivka produkce má dvě fáze:
 
 1° **Do bodu $L_0$:** $MP_L$ roste, tj. $(MP_L)' = Q''(L) > 0$ — křivka produkce je **konvexní**.
 2° **Od bodu $L_0$:** $MP_L$ klesá, $Q''(L) < 0$ — křivka produkce je **konkávní**. $MP_L$ v kladných hodnotách klesá do bodu $L_1$, kde $MP_L(L_1) = 0$ (maximum produkce), a dále pokračuje v záporných hodnotách. Bod $L_0$ je **inflexním bodem** produkční funkce.
@@ -130,8 +130,6 @@ Podle (5.2): $MP_L = Q'(L) = 12L - 0{,}6L^2 = L(12 - 0{,}6L)$. Dosazením:
 
 $MP_L$ nabývá maxima pro $L = 10$ (60 jednotek/prac.). Od $L = 10$ přírůstky klesají, v $L = 20$ produkce přestává růst (maximum $Q(20) = 800$), od $L > 20$ produkce klesá (fyzické přeplnění pracoviště při neměnném kapitálu).
 
-*Obrázek 5.1 — graf produkce $Q(L) = 6L^2 - 0{,}2L^3$ s maximem $Q = 800$ v bodě $L = 20$.*
-
 **(b)** Přibližná změna produkce při růstu pracovníků z 6 na 9.
 
 Podle (5.3) s $L = 6$, $dL = 3$:
@@ -155,8 +153,6 @@ $AP_L'' = -0{,}4 < 0$, takže v $L = 15$ je maximum, $AP_L(15) = 6\cdot 15 - 0{,
 $MP_L(15) = 12\cdot 15 - 0{,}6\cdot 225 = 180 - 135 = 45$. Tedy $MP_L(15) = AP_L(15) = 45$, jak požaduje (5.5).
 
 **Zkratka bez hledání extrému:** stačí řešit $MP_L = AP_L$, tj. $12L - 0{,}6L^2 = 6L - 0{,}2L^2 \Rightarrow L = 15$.
-
-*Obrázek 5.3 — křivky $MP_L$ (max 60 při $L=10$) a $AP_L$ (max 45 při $L=15$), průsečík v $L = 15$. Nalevo od 15 leží $MP_L$ nad $AP_L$, napravo pod ní.*
 
 ## Dvoufaktorový model produkce
 
@@ -312,8 +308,6 @@ Jsou to **indiferenční křivky** produkční funkce (analogie s indiferenční
 - **neprotínají se**;
 - s rostoucím $q$ se **vzdalují od počátku**.
 
-*Obrázek 5.4 — izokvanty Cobb-Douglasovy funkce v rovině $(L, K)$: tři klesající konvexní křivky pro $q_1 < q_0 < q_2$.*
-
 ## Mezní míra technické substituce ($MRTS$)
 
 **Mezní míra technické substituce** (*marginal rate of technical substitution*) je podíl mezních produktů:
@@ -351,8 +345,6 @@ $$
 > 3. Případně dosaďte konkrétní $[L_0, K_0]$.
 > 4. Pro odhad substituce použijte $\Delta K \approx -MRTS \cdot \Delta L$ (znaménko **mínus** — substituce, ne doplnění).
 
-*Obrázek 5.7 — izokvanta $q_0 = Q(L,K)$ s tečnou $t$ v bodě $[L_0, K_0]$; $\Delta K$ odhadnut diferenciálem (záporně vzatý sklon tečny).*
-
 ## Příklady (dvoufaktorový model)
 
 ### Příklad 5.4
@@ -365,7 +357,7 @@ $$
 MP_L = Q'_L = \tfrac{15}{2} L^{-1/2} K^{1/3}, \quad MP_L(20, 100) = \tfrac{15}{2}\cdot \tfrac{1}{\sqrt{20}}\cdot \sqrt[3]{100} \approx 7{,}153.
 $$
 
-Přibližná změna při $L: 20 \to 21$ (při $K = 100$): $\Delta Q \approx 7{,}153$. Skutečně $\Delta Q \approx 26{,}888$ (dle knihy; zaokrouhlení v konkrétním výpočtu).
+Přibližná změna při $L: 20 \to 21$ (při $K = 100$): $\Delta Q \approx 7{,}153$. Skutečně $\Delta Q \approx 26{,}888$.
 
 **(b) Pokles kapitálu o 1** (z 100 na 99).
 
@@ -392,8 +384,6 @@ Umocněním na druhou: $K = q^2 / \sqrt[3]{L^2}$.
 - $q = 1 \Rightarrow K = 1/\sqrt[3]{L^2}$
 - $q = 2 \Rightarrow K = 4/\sqrt[3]{L^2}$
 - $q = 3 \Rightarrow K = 9/\sqrt[3]{L^2}$
-
-*Obrázek 5.5 — tři klesající konvexní izokvanty v rovině $(L, K)$ pro $q = 1, 2, 3$.*
 
 ### Příklad 5.6
 

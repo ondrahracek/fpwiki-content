@@ -5,12 +5,12 @@ type: summary
 tags: [imork, ehealth, zdravotnictvi, telemedicina, ehr, elektronicka-preskripce]
 sources: [raw/imork/2105 VUT_Bezp_Případovka eHealth_2021.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # eHealth v ČR
 
-Případová studie (22 slidů, 4.10.2021) zaměřená na elektronizaci zdravotnictví v České republice a v Evropě. Součást kurzu [[imork|ImorK]].
+Elektronizace zdravotnictví v České republice a v Evropě.
 
 ## Co je eHealth
 

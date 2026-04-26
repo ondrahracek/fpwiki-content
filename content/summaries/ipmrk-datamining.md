@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, datamining, crisp-dm, link-analyza, klastrovani, rozhodovaci-stromy, apriori, witness-miner]
 sources: [raw/ipmrk/datamining-online.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Datamining — techniky a nástroje
-
-Zdroj: `raw/ipmrk/datamining-online.md` (539 řádků, 14+ zdrojů: Wikipedia, GeeksforGeeks, IBM, MathWorks, Lanner, systemonline.cz).
 
 ## Hlavní přínos zdroje
 

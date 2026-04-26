@@ -5,7 +5,7 @@ type: topic
 tags: [imek, uzitecnost, mezni-uzitecnost, cobb-douglas, indiferencni-krivky, mrcs]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_treti_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Užitečnost, Cobb-Douglasova funkce užitečnosti a optimalizace spotřebitele
@@ -119,11 +119,7 @@ $$
 
 Podmínka (6.5) je známa jako **zákon klesající mezní užitečnosti (law of diminishing marginal utility)** — mezní užitečnost každého zboží klesá s růstem jeho množství. Jde o analogii zákona klesajících výnosů z [[produkce|produkční teorie]].
 
-Podmínky (6.4), (6.5) určují tvary křivek $U(Q_1, b_0)$ a $U(a_0, Q_2)$ v souřadnicových rovinách $(U, Q_1)$ a $(U, Q_2)$ (obrázek 6.1). Tyto křivky procházejí počátkem (neboť obvykle $U(0, 0) = 0$), jsou **rostoucí** a **konkávní**. Typický tvar grafu $U = U(Q_1, Q_2)$ — plocha v prostoru — je na obrázku 6.2.
-
-*Obrázek 6.1 — typické průběhy funkce užitečnosti $U(Q_1, b)$ při pevném $Q_2 = b$ (vlevo) a $U(a, Q_2)$ při pevném $Q_1 = a$ (vpravo) pro různé hladiny druhé proměnné.*
-
-*Obrázek 6.2 — plocha funkce užitečnosti $U = U(Q_1, Q_2)$ nad rovinou $(Q_1, Q_2)$ s řezy rovinami $Q_1 = \text{const}$ a $Q_2 = \text{const}$ a s křivkou $U(Q_1, Q_2) = c$.*
+Podmínky (6.4), (6.5) určují tvary křivek $U(Q_1, b_0)$ a $U(a_0, Q_2)$ v souřadnicových rovinách $(U, Q_1)$ a $(U, Q_2)$. Tyto křivky procházejí počátkem (neboť obvykle $U(0, 0) = 0$), jsou **rostoucí** a **konkávní**.
 
 ### Příklad 6.2 — ověření vlastností a dopočet pro $U = Q_1^{1/2} Q_2^{1/3}$
 
@@ -204,14 +200,10 @@ $$
 Q_1^a \cdot Q_2^b = c. \tag{6.8}
 $$
 
-Body na téže křivce užitečnosti reprezentují kombinace $[Q_1, Q_2]$ se **stejnou úrovní uspokojení** $c$. Křivky užitečnosti vznikají jako průsečnice plochy $U = U(Q_1, Q_2)$ s rovinami $U = c$ rovnoběžnými s rovinou $(Q_1, Q_2)$ (obrázek 6.2). Jsou v příbuznosti s **izokvantami** produkčních funkcí.
-
-*Obrázek 6.3 — typický tvar křivek užitečnosti pro Cobb-Douglasovu funkci pro $a < b$ (vlevo) a $a > b$ (vpravo); různé hladiny $c_0 < c_1 < c_2$.*
-
-*Obrázek 6.4 — soustava křivek užitečnosti pro tři hladiny (10, 20, 30) v rovině $(Q_1, Q_2)$; body $A = [a_1, a_2], B = [b_1, b_2]$ leží na téže křivce (hladina 10), body $C, D$ na vyšší hladině.*
+Body na téže křivce užitečnosti reprezentují kombinace $[Q_1, Q_2]$ se **stejnou úrovní uspokojení** $c$. Křivky užitečnosti vznikají jako průsečnice plochy $U = U(Q_1, Q_2)$ s rovinami $U = c$ rovnoběžnými s rovinou $(Q_1, Q_2)$. Jsou v příbuznosti s **izokvantami** produkčních funkcí.
 
 > [!example] Příklad 6.4 — rovnice křivek užitečnosti
-> Pro $U(Q_1, Q_2) = Q_1^{1/4} Q_2^{3/4}$ mají křivky užitečnosti rovnici $Q_1^{1/4} Q_2^{3/4} = c$. Umocněním na čtvrtou mocninu dostáváme $Q_1 Q_2^{3} = c^{4}$. Pro $c = 1$: $Q_2 = Q_1^{-1/3} = \dfrac{1}{\sqrt[3]{Q_1}}$. Pro $c = 2$: $Q_2 = 2^{4/3} \cdot Q_1^{-1/3} = \dfrac{2 \sqrt[3]{2}}{\sqrt[3]{Q_1}}$ (obrázek 6.5).
+> Pro $U(Q_1, Q_2) = Q_1^{1/4} Q_2^{3/4}$ mají křivky užitečnosti rovnici $Q_1^{1/4} Q_2^{3/4} = c$. Umocněním na čtvrtou mocninu dostáváme $Q_1 Q_2^{3} = c^{4}$. Pro $c = 1$: $Q_2 = Q_1^{-1/3} = \dfrac{1}{\sqrt[3]{Q_1}}$. Pro $c = 2$: $Q_2 = 2^{4/3} \cdot Q_1^{-1/3} = \dfrac{2 \sqrt[3]{2}}{\sqrt[3]{Q_1}}$.
 
 ### Čtyři vlastnosti křivek užitečnosti
 
@@ -226,11 +218,9 @@ Body na téže křivce užitečnosti reprezentují kombinace $[Q_1, Q_2]$ se **s
 >
 > **2° Neprotínají se.** V průsečíku by týž svazek ležel na dvou různých hladinách užitečnosti, což je spor.
 >
-> **3° Čím vzdálenější od počátku, tím vyšší užitečnost** (obrázek 6.4).
+> **3° Čím vzdálenější od počátku, tím vyšší užitečnost**.
 >
 > **4° Konvexní.** Pro každé dva body $A, B$ na téže křivce leží vnitřní body úsečky $AB$ ve **vyšší** hladině užitečnosti (tj. „nad" křivkou) — vyjadřuje to preferenci smíšených svazků před krajními.
-
-*Obrázek 6.6 — klesající a konvexní průběh $U(Q_1, Q_2) = c$ s tečnou se sklonem $\operatorname{tg}\alpha$.*
 
 ## Mezní míra komoditní substituce (MRCS)
 

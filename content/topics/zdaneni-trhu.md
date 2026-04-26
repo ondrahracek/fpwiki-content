@@ -5,7 +5,7 @@ type: topic
 tags: [imek, zdaneni, dane, danove-bremeno, posun-krivek, poptavka-nabidka]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_prvni_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Zdanění trhu — dopady daně na rovnováhu
@@ -35,8 +35,6 @@ $$
 Nabídka se tedy posouvá o $T$ **svisle nahoru** (ekvivalentně doleva). Poptávka se nemění.
 
 Nový rovnovážný bod $E_1[Q_1^E, P_1^E]$ splňuje $Q_1^E < Q^E$ a $P_1^E > P^E$. Spotřebitel platí $P_1^E$, výrobci ale zůstává pouze čistá cena $P_1^E - T$ (ta je nižší než původní rovnovážná $P^E$).
-
-*Obrázek 2.17 (resp. 2.18): Posun $S \to S_1 = S + T$; svislá vzdálenost mezi křivkami je přesně $T$. Průsečík $S_1$ s $D$ je nový rovnovážný bod $E_1$.*
 
 ### Příklad 2.9
 
@@ -88,8 +86,6 @@ $$
 T_{sp} = (P_2^E + T) - P^E, \qquad T_{vyr} = P^E - P_2^E.
 $$
 
-*Obrázek 2.19: Posun $D \to D_2 = D - T$; svislá vzdálenost mezi poptávkovými křivkami je $T$. Průsečík $D_2$ s $S$ je nový rovnovážný bod $E_2$.*
-
 ### Příklad 2.10
 
 **Zadání:** Pokračuje z Příkladu 2.9 — stejný trh, poptávka $P = 12 - 2Q$, nabídka $P = 4Q$. Daň $T = 6$ Kč je tentokrát uložena na spotřebitele.
@@ -136,8 +132,6 @@ V grafu $(Q, P)$ je svislá vzdálenost mezi původní a posunutou křivkou prá
 
 - horní část odpovídá $T_{sp}$ (o kolik vzrostla cena placená spotřebitelem),
 - dolní část odpovídá $T_{vyr}$ (o kolik klesla cena přijímaná výrobcem).
-
-*Obrázky 2.20 a 2.21: Ilustrace rozkladu svislé vzdálenosti $T$ na $T_{sp}$ (nahoře) a $T_{vyr}$ (dole). Obrázek 2.21 porovnává obě varianty — daň výrobci vs. daň spotřebiteli — a ukazuje, že velikost $T_{sp}$ a $T_{vyr}$ je v obou případech stejná.*
 
 ### Sklony křivek a rozklad
 

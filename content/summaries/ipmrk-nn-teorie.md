@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, neuronove-site, perceptron, backpropagation, aktivacni-funkce]
 sources: [raw/ipmrk/nn-teorie.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Umělé neuronové sítě — teorie
-
-Zdroj: `raw/ipmrk/nn-teorie.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 
