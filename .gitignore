@@ -1,0 +1,37 @@
+# =============================================================================
+# fpwiki-content .gitignore
+#
+# This repo is populated by an automated rsync that whitelists specific file
+# extensions, so most junk can't leak in via the publisher. The patterns below
+# are a defense-in-depth net for the rare case that someone clones, tinkers
+# locally, and pushes by hand against the no-PR rule (please don't).
+# =============================================================================
+
+# OS junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Editor scratch
+.idea
+.vscode
+.fleet
+.history
+*.swp
+*.swo
+*~
+
+# Misc local
+*.bak
+*.tmp
+*.orig
+*.log
+tmp/
