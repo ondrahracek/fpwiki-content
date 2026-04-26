@@ -5,12 +5,12 @@ type: summary
 tags: [imork, isms, dora, mica, dlt, blockchain]
 sources: [raw/imork/2005 VUT_Bezp_Finanční sektor_2023.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # ISMS ve finančním sektoru
 
-Přednáška z 17. ledna 2023. Regulatorní rámec EU pro kybernetickou bezpečnost a digitální odolnost ve finančním sektoru.
+Regulatorní rámec EU pro kybernetickou bezpečnost a digitální odolnost ve finančním sektoru.
 
 ## Kontext
 

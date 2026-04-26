@@ -5,7 +5,7 @@ type: summary
 tags: [imek, kniha, meznik, uvod-do-matematicke-ekonomie, mikroekonomie, makroekonomie]
 sources: [raw/imek/kniha_scanned/]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Kniha — *Úvod do matematické ekonomie pro ekonomy*
@@ -69,7 +69,6 @@ Obsah knihy byl sloučen s již existujícími přednáškovými shrnutími do n
 ## Co kniha neobsahuje (v naskenovaných stránkách)
 
 - **Kapitola 1** (str. 1–33) — pravděpodobně úvod / matematický aparát (funkce, derivace, integrály, Lagrange). Teorie je pokryta v [[zaklady-matematicke-ekonomie]], [[derivace]], [[integral]], [[funkce-vice-promennych]], [[lagrangeova-metoda]] ze zdrojů ve vysokoškolských blocích.
-- Chybějící strany ve skenech: **64, 65** (konec teorie / úvod kap. 3), **82** (začátek kap. 4), **112** (úvod kap. 6). Obsah byl pokud možno dovozen z kontextu sousedních stran a z přednášek.
 
 ## Vlastní úlohy / otázky
 
@@ -78,5 +77,4 @@ Kniha obsahuje rozsáhlé soubory **úloh k samostatnému řešení** a **otáze
 ## Navigace
 
 - **Kurz:** [[imek|Matematická ekonomie]]
-- **Manifest skenu:** `raw/imek/kniha_scanned/_manifest.md` (mapování fotografií → stránky)
 - **Přednášková shrnutí:** [[imek-blok-01]], [[imek-blok-02]], [[imek-blok-03]]

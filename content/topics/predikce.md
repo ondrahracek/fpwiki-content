@@ -5,7 +5,7 @@ type: topic
 tags: [ipmrk, predikce, casove-rady, prognozovani]
 sources: [raw/ipmrk/nn-aplikace.md, raw/ipmrk/ga-vyuziti.md, raw/ipmrk/chaos.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Predikce a prognózování
@@ -22,12 +22,10 @@ Předpovídání budoucích hodnot na základě historických dat. Jedna z nejd�
 
 ## Metody predikce v kontextu kurzu
 
-| Metoda | Role v predikci |
-|---|---|
-| [[umele-neuronove-site\|Neuronové sítě]] | Přímo se učí vzory z dat a predikují budoucí hodnoty |
-| [[geneticke-algoritmy\|Genetické algoritmy]] | Optimalizují parametry predikčního modelu nebo obchodní strategie |
-| [[fuzzy-logika\|Fuzzy logika]] | Modeluje expertní pravidla pro rozhodování o predikcích |
-| [[anfis\|ANFIS]] | Hybridně kombinuje fuzzy pravidla s učením z dat |
+- [[umele-neuronove-site|Neuronové sítě]] — přímo se učí vzory z dat a predikují budoucí hodnoty
+- [[geneticke-algoritmy|Genetické algoritmy]] — optimalizují parametry predikčního modelu nebo obchodní strategie
+- [[fuzzy-logika|Fuzzy logika]] — modeluje expertní pravidla pro rozhodování o predikcích
+- [[anfis|ANFIS]] — hybridně kombinuje fuzzy pravidla s učením z dat
 
 ## Omezení
 

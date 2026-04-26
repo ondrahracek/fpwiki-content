@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, chaos, atraktory, fraktaly, hurst, motyli-efekt, logisticka-funkce]
 sources: [raw/ipmrk/chaos.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Teorie chaosu
-
-Zdroj: `raw/ipmrk/chaos.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 

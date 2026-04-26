@@ -5,14 +5,14 @@ type: summary
 tags: [imork, isms, strategie, enisa, ncss, cmmc, nukib, eu]
 sources: [raw/imork/2101 VUT_Bezpečnostní strategie-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Bezpečnostní strategie
 
 ![[imork-strategie-hierarchie.jpeg|Hierarchie bezpečnostních strategií — EU → ČR → Organizace]]
 
-Přednáška pokrývající bezpečnostní strategie na třech úrovních: EU → ČR → organizace. Strategické řízení, modely vyspělosti a konkrétní rámce.
+Bezpečnostní strategie na třech úrovních: EU → ČR → organizace. Strategické řízení, modely vyspělosti a konkrétní rámce.
 
 ## Strategické koncepty
 

@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, evolucni-algoritmy, metaheuristiky, simulated-annealing, tabu-search, aco, pso, soma]
 sources: [raw/ipmrk/evolucni-algoritmy-online.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Evoluční algoritmy — principy a přehled
-
-Zdroj: `raw/ipmrk/evolucni-algoritmy-online.md` (418 řádků, 13 algoritmů, ověřeno z Wikipedia, Cornell, Springer).
 
 ## Hlavní přínos zdroje
 

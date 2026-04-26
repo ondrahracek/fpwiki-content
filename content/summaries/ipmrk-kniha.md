@@ -5,7 +5,7 @@ type: summary
 tags: [ipmrk, kniha, fuzzy, neuronove-site, geneticke-algoritmy, evolucni-algoritmy, chaos, datamining]
 sources: [raw/ipmrk/kniha.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # IpmrK Kniha — Pokročilé metody analýz a modelování
@@ -32,7 +32,7 @@ Shrnutí učebnice prof. Dostála pokrývající všech 7 kapitol kurzu [[ipmrk|
 - Účelová funkce, omezující podmínky, velikost populace, délka chromozomu
 - Parametry křížení, selekce, přechod do další generace
 
-### 4. [[evolucni-algoritmy|Evoluční algoritmy]] (kap. 5) ⭐ NOVÉ
+### 4. [[evolucni-algoritmy|Evoluční algoritmy]] (kap. 5)
 - Přehled algoritmů: Exhaustive/Random/Blind/Scatter Search, Backtracking, Greedy, Hill Climbing, Tabu Search, Simulated Annealing
 - Rojové metody: Ant Colony, Particle Swarms, Artificial Bee Colony, Glowworm Swarm
 - Genetické varianty: DNA Based GA, Parallel Genetic Search, Diploid/Haploid GA
@@ -45,13 +45,13 @@ Shrnutí učebnice prof. Dostála pokrývající všech 7 kapitol kurzu [[ipmrk|
 - Elliottovy vlny, zakladatel teorie fraktálů
 - Ekonomické systémy → chaotický atraktor, omezená predikce
 
-### 6. [[optimalizace|Optimalizace]] (kap. 7) ⭐ NOVÉ
+### 6. [[optimalizace|Optimalizace]] (kap. 7)
 - Hledání minima/maxima funkce f(x) na množině M
 - Účelová (cílová) funkce, množina přípustných řešení
 - Omezení: soustavy rovnic/nerovnic
 - MATLAB příkazy pro optimalizaci, nastavení parametrů
 
-### 7. [[datamining|Datamining]] (kap. 8) ⭐ NOVÉ
+### 7. [[datamining|Datamining]] (kap. 8)
 - „Dolování z dat" — rozvoj od 90. let (kreditní karty bank)
 - Cíl: zvýšení zisku, snížení nákladů a rizika
 - Techniky: Link analýza, klastrování, rozhodovací stromy

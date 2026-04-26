@@ -5,7 +5,7 @@ type: topic
 tags: [imek, narodni-duchod, makroekonomie, gnp, mpc, mps, is-lm, multiplikator]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_treti_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Národní důchod
@@ -73,23 +73,17 @@ $$C = C(Y) = aY + b, \qquad (7.3)$$
 
 kde $b > 0$ a $0 < a < 1$. Směrnice $a = \mathrm{tg}\,\alpha = \Delta C / \Delta Y$: vzroste-li důchod o jednotku, spotřeba vzroste o méně než 1 (část „dodatečné jednotky“ jde na úspory). Domácnost v tomto modelu nevydává na spotřebu víc, než kolik dostala navíc — pokud by čerpala víc, musela by sáhnout do úspor; toto je reálné zejména pro malé $Y$.
 
-*Obrázek 7.1 — Přímka spotřeby $C = aY + b$ se směrnicí $a = \mathrm{tg}\,\alpha = \Delta C/\Delta Y$; znázornění $\Delta C$ při jednotkovém přírůstku $\Delta Y = 1$.*
-
 Dosazením do (7.2) plyne **lineární model úspor**:
 
 $$S = Y - C(Y) = Y - (aY + b) = (1 - a)Y - b. \qquad (7.4)$$
 
 Úspory jsou také lineární a „pomalu rostoucí“ (protože $0 < 1 - a < 1$).
 
-*Obrázek 7.2 — Přímky $C = aY + b$ a $S = (1-a)Y - b$. Přímka úspor protíná osu $Y$ v bodě $Y = b/(1-a)$ a osu $C, S$ v bodě $-b$.*
-
 ### Příklad 7.1
 
 Pro spotřebu $C = 0{,}4Y + 10$ jsou úspory
 
 $$S = Y - C = Y - 0{,}4Y - 10 = 0{,}6Y - 10.$$
-
-*Obrázek 7.3 — Přímky $C = 0{,}4Y + 10$ a $S = 0{,}6Y - 10$; průsečík přímky úspor s osou $Y$ je $\approx 16{,}\bar{6}$, s osou $C, S$ je $-10$; přímka spotřeby prochází bodem $(0, 10)$.*
 
 Funkce úspor může nabývat záporných hodnot — pro $Y = 0$ je $S(0) = -b < 0$; hovoří se o **autonomních úsporách** (*autonomous savings*). Analogicky $C(0) = b$ je **autonomní spotřeba** (*autonomous consumption*) — spotřeba při nulovém důchodu krytá dřívějšími úsporami.
 
@@ -166,8 +160,6 @@ V modelu $C\text{-}I$ je $C = 0{,}6Y + 10$ a $I = 12 = I^*$. Soustava
 $$\begin{aligned} Y &= C + 12, \\ C &= 0{,}6Y + 10, \end{aligned}$$
 
 má řešení $Y^E = 55$, $C^E = 43$ (a $S^E = 12$).
-
-*Obrázek 7.5 — Přímky $C = Y - 12$ (rovnováha $Y = C + I$) a $C = 0{,}6Y + 10$ (funkce spotřeby) se protínají v bodě $[Y^E, C^E] = [55, 43]$.*
 
 **Komentář k přechodu.** Model $C\text{-}I$ ignoruje stát. V praxi však stát vybírá daně a provádí vlastní výdaje, což ovlivňuje jak disponibilní důchod domácností, tak celkovou poptávku — přidáním vládního sektoru dostaneme **model $C\text{-}I\text{-}G$**.
 

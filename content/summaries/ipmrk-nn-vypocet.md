@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, neuronove-site, uceni, vicevrstve-site, trenovani]
 sources: [raw/ipmrk/nn-vypocet.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Umělé neuronové sítě — ruční výpočet a praxe trénování
-
-Zdroj: `raw/ipmrk/nn-vypocet.md` | Kurz: [[ipmrk|IpmrK]]
 
 ## Shrnutí
 

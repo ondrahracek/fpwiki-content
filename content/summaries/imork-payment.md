@@ -5,12 +5,12 @@ type: summary
 tags: [imork, platby, pci-dss, nfc, tokenizace, emv, mobilni-platby]
 sources: [raw/imork/2204 VUT_Bezp_Případovka Payment_2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Bezpečnost plateb
 
-Případová studie (32 slidů, 29.7.2022) zabývající se bezpečností platebních karet, mobilních plateb a standardem PCI DSS. Součást kurzu [[imork|ImorK]].
+Bezpečnost platebních karet, mobilních plateb a standardu PCI DSS.
 
 ## Bezkontaktní karty — rizika
 

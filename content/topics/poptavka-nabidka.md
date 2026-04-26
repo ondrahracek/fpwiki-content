@@ -5,7 +5,7 @@ type: topic
 tags: [imek, poptavka, nabidka, rovnovaha, multiplikator, zdaneni, prebytek]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_prvni_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 <!-- updated: 2026-04-22 — sekce „Zdanění trhu" vyčleněna do [[zdaneni-trhu]] -->
@@ -68,15 +68,13 @@ Graf této funkce se nazývá **křivka poptávky** (*demand curve*).
 
 > **Roste-li cena $P$, pak množství $Q$ klesá; klesá-li cena $P$, pak množství $Q$ roste.**
 
-Spotřebitelé jsou ochotni nakoupit větší množství za nižší cenu (mezní užitečnost — viz kap. 6). Zákon platí za **normálních podmínek**; první kvantitativní formulaci podal Marshall (1890).
+Spotřebitelé jsou ochotni nakoupit větší množství za nižší cenu (mezní užitečnost — viz [[uzitecnost]]). Zákon platí za **normálních podmínek**; první kvantitativní formulaci podal Marshall (1890).
 
 > [!info] Intuice — proč zákon platí
 > - **Substituční efekt** — růst ceny vede ke snaze nahradit zboží jiným.
 > - **Důchodový efekt** — růst ceny způsobí nevítaný úbytek reálného důchodu.
 
 Každá funkce poptávky je tedy klesající. Cena $P$ se vynáší na svislou osu, množství $Q$ na vodorovnou. Hypotetická křivka prochází body $[0, P_0]$ (cena, při níž je zboží neprodejné) a $[Q_0, 0]$ (teoretický objem při nulové ceně). Interval $(0, P_0)$ je **reálné cenové rozpětí**. Za teoretických předpokladů je křivka **konvexní**.
-
-*Obrázek 2.1: Hypotetická křivka poptávky v rovině $(Q, P)$ — klesající, konvexní, procházející body $[0, P_0]$ a $[Q_0, 0]$.*
 
 #### Lineární model poptávky
 
@@ -98,8 +96,6 @@ Křivka poptávky je přímka se záporným sklonem. Alternativně $Q = \tfrac{1
 | --- | --- | --- |
 | $Q$ | 10 | 20 |
 
-*Obrázek 2.2 / 2.3: Lineární poptávka — přímka s průsečíky $[0, b]$ a $[-b/a, 0]$.*
-
 #### Poptávka při dokonalé konkurenci
 
 Přebírá-li každý účastník trhu pevnou tržní cenu $P^*$, je funkce poptávky konstantní:
@@ -107,8 +103,6 @@ Přebírá-li každý účastník trhu pevnou tržní cenu $P^*$, je funkce popt
 $$
 P = P^*.
 $$
-
-*Obrázek 2.4: Vodorovná přímka v rovině $(Q, P)$ na úrovni $P = P^*$.*
 
 #### Giffenův statek
 
@@ -134,8 +128,6 @@ Funkce se nazývá **Engelova**, její graf **Engelova křivka**. Tvar závisí 
 - **Podřadné (inferior) zboží** — od hladiny $Y_0$ množství s růstem důchodu klesá.
 
 Mírou citlivosti je *důchodová elasticita* (viz [[elasticita]]).
-
-*Obrázek 2.6: Tři panely Engelových křivek — (a) nezbytné, (b) luxusní, (c) podřadné zboží.*
 
 #### Intuice — co vlastně znamená „podřadné"?
 
@@ -179,8 +171,6 @@ Při změně exogenní proměnné (např. důchodu) se celá křivka poptávky p
 
 Posun může být způsoben i jinými faktory (např. zdaněním spotřebitele — viz dále).
 
-*Obrázek 2.7: Posun poptávky — tři křivky $D_2, D, D_1$ v rovině $(Q, P)$, šipky naznačují posuny.*
-
 ##### Příklad 2.3 — zdanění kupujícího
 
 **Zadání:** Poptávce $P = D(Q)$ odpovídá ceně $P_0$ množství $Q_0$. Na kupujícího je uložena jednotková daň $T$.
@@ -192,8 +182,6 @@ P = D_1(Q) = D(Q) - T,
 $$
 
 tj. dojde k **posunu poptávky doleva**.
-
-*Obrázek 2.8: Dvě klesající poptávkové přímky v $(Q, P)$; na svislé ose jsou vyznačeny $P_0$, $T$, $P_0 + T$; na vodorovné $Q_1$ a $Q_0$.*
 
 ### Vícekomoditní (dvoukomoditní) trh
 
@@ -254,9 +242,7 @@ Graf je **křivka nabídky** (*supply curve*).
 
 > **Roste-li cena $P$, pak nabízené množství $Q$ roste.**
 
-Výrobce je ochoten zvýšit produkci jen za vyšší cenu, neboť rostou mezní náklady (kap. 3). Funkce nabídky je proto rostoucí. Křivka nabídky vychází z bodu $[0, P_0]$ na svislé ose (případně z $[Q_1, P_1]$), kde $P_0$ je minimální cena, při které je výrobce ochoten vyrábět.
-
-*Obrázek 2.9: Typická rostoucí křivka nabídky $S$ v $(Q, P)$.*
+Výrobce je ochoten zvýšit produkci jen za vyšší cenu, neboť rostou mezní náklady (viz [[prijem-naklady-zisk]]). Funkce nabídky je proto rostoucí. Křivka nabídky vychází z bodu $[0, P_0]$ na svislé ose (případně z $[Q_1, P_1]$), kde $P_0$ je minimální cena, při které je výrobce ochoten vyrábět.
 
 #### Lineární model nabídky
 
@@ -280,8 +266,6 @@ Alternativně $Q = \tfrac{1}{c}P - \tfrac{d}{c}$; znaménko koeficientu u $P$ z�
 
 Posun nastává při změně exogenních proměnných — nová technologie snižuje náklady (posun **doprava**: při stejné ceně $P_0$ vyrobí výrobce větší $Q_1 > Q_0$); zdražení vstupů posune křivku **doleva**.
 
-*Obrázek 2.11: Původní $S$, posunuté $S_1$ (doprava) a $S_2$ (doleva) v $(Q, P)$.*
-
 ##### Příklad 2.6 — zdanění výrobce
 
 **Zadání:** Nabídka $P = S(Q)$; na výrobce je uložena jednotková daň $T$.
@@ -293,8 +277,6 @@ P = S_1(Q) = S(Q) + T.
 $$
 
 Křivka $S$ se tedy posune o $T$ **svisle nahoru** (tj. doleva). Např. pro $P = 2Q$ a $T = 6$ je $S_1: P = 2Q + 6$.
-
-*Obrázek 2.12: Posun nabídky o $T$ svisle nahoru.*
 
 ---
 
@@ -310,8 +292,6 @@ Křivka $S$ se tedy posune o $T$ **svisle nahoru** (tj. doleva). Např. pro $P =
 Rovnovážný bod je průsečíkem křivek poptávky a nabídky; nalézá se jako řešení soustavy $P = D(Q)$, $P = S(Q)$.
 
 ![[imek-poptavka-nabidka-rovnovaha.jpeg|D, S a rovnovážný bod E]]
-
-*Obrázek 2.13: Klesající $D$ a rostoucí $S$ v rovině $(Q, P)$ protínající se v $E[Q^E, P^E]$.*
 
 ### Příklad 2.7 (kvadratický model)
 
@@ -401,8 +381,6 @@ $$
 
 Vztah (2.10) je **redukovaný tvar** (*reduced form*) pro $Q^E$: endogenní proměnná je vyjádřena pomocí exogenních **parametrů** $a, b, c, d$. Aby $E$ ležel v 1. kvadrantu, musí platit $b > d$ (neboť $c - a > 0$).
 
-*Obrázek 2.22: Lineární poptávka (úsek $b$ na ose $P$) a nabídka (úsek $d$), $b > d$, rovnovážný bod $E$ v 1. kvadrantu.*
-
 ### Definice multiplikátorů
 
 V komparativní statice jsou $a, b, c, d$ exogenní proměnné a $Q$ endogenní. Přibližná změna $Q$ se rovná totálnímu diferenciálu:
@@ -429,8 +407,6 @@ $$
 - **Kvalitativní smysl:** znaménko určuje směr reakce $Q^E$ na růst $x$.
 
 Např. růst $c$ (strmější nabídka) ⟹ pokles $Q^E$ (neboť $Q'_c < 0$).
-
-*Obrázek 2.23: Pootočení přímky nabídky z $cQ + d$ na strmější $c_1 Q + d$ (při $c_1 > c$) — rovnovážný bod se posouvá vlevo, $Q^E \downarrow$.*
 
 Při změně jediné proměnné se (2.11) redukuje např. na $\Delta Q \approx Q'_b\,db$. Analogicky lze odvodit multiplikátory pro $P^E$.
 
@@ -464,10 +440,7 @@ $$
 
 Tedy $Q_1^E \approx 8{,}571 - 0{,}735 = 7{,}836$.
 
-> [!warning] Pozn. — oprava
-> V knize je u této dílčí úlohy uvedena hodnota $\Delta Q \approx -2{,}69$, ta však neodpovídá přepočtu parciálních derivací podle (2.11) a (2.12). Správná hodnota při uvedených změnách je $\Delta Q \approx -0{,}735$. Výsledek byl v této wiki opraven.
-
-Princip multiplikátorů lze uplatnit na libovolné ekonomické proměnné — analogicky v makroekonomii (kap. 7).
+Princip multiplikátorů lze uplatnit na libovolné ekonomické proměnné — analogicky v makroekonomii (viz [[narodni-duchod]]).
 
 ---
 

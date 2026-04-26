@@ -5,7 +5,7 @@ type: topic
 tags: [imek, prebytek, cs, ps, integral, poptavka-nabidka, spotrebitel, vyrobce]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_prvni_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Přebytek spotřebitele a výrobce
@@ -47,8 +47,6 @@ $$
 - $P_0\,Q_0$ — skutečně zaplacená částka (obdélník $0\,Q_0\,A\,P_0$).
 - $CS$ je plocha mezi křivkou poptávky a vodorovnou přímkou $P = P_0$ v pásu $[0, Q_0]$ — „křivočarý trojúhelník" $P_0\,B\,A$, kde $B = [0, D(0)]$ a $A = [Q_0, P_0]$.
 
-*Obrázek 2.24: Křivka poptávky $D$, bod $A = [Q_0, P_0]$, vyšrafovaná plocha trojúhelníku $P_0\,B\,A$ představuje $CS$.*
-
 ---
 
 ## Přebytek výrobce ($PS$)
@@ -66,8 +64,6 @@ $$
 - $P_0\,Q_0$ — **tržba** výrobce za prodané množství $Q_0$.
 - $\displaystyle \int_0^{Q_0} S(Q)\,dQ$ — plocha pod křivkou nabídky; minimální částka, za kterou by byl výrobce ochoten $Q_0$ jednotek dodat (souvisí s mezními náklady).
 - $PS$ je plocha mezi vodorovnou přímkou $P = P_0$ a křivkou nabídky v pásu $[0, Q_0]$.
-
-*Obrázek 2.25: Přebytek výrobce (plocha mezi rovnovážnou cenou a křivkou nabídky) a přebytek spotřebitele (plocha mezi křivkou poptávky a rovnovážnou cenou) v rovnovážném bodě.*
 
 ---
 
@@ -122,12 +118,9 @@ $$
 
 Tedy $Q_1^E \approx 8{,}571 - 0{,}735 \doteq 7{,}836$.
 
-> [!warning] Pozn. k přepisu učebnice
-> V původním skenu přednášky byla u části (b) uvedena hodnota $\Delta Q \approx -2{,}69$, což neodpovídá součtu dílčích derivací při daných přírůstcích. Podle vlastního přepočtu vychází $dQ^E \doteq -0{,}735$. Totální diferenciál je navíc pouze **lineární aproximací**; přesná změna zjištěná ze změněného vzorce
-> $$Q_1^E = \frac{b' - d'}{c' - a'} = \frac{35 - 11}{0{,}6 - (-2{,}5)} = \frac{24}{3{,}1} \doteq 7{,}742$$
-> dává skutečnou změnu $\Delta Q \doteq -0{,}829$ — dobře konzistentní s diferenciálem. Hodnota $-2{,}69$ je tedy pravděpodobně chyba v zápisu.
-
-*Příklad 2.11 je primárně o multiplikátorech pro $Q$, ale kniha ho zařazuje před výklad přebytků jako přechod ke komparativní statice před aplikací na CS/PS. Princip redukovaného tvaru lze uplatnit na libovolné ekonomické proměnné — v kap. 7 např. pro makroekonomii.*
+Totální diferenciál je pouze **lineární aproximací**. Přesná hodnota ze změněného vzorce
+$$Q_1^E = \frac{b' - d'}{c' - a'} = \frac{35 - 11}{0{,}6 - (-2{,}5)} = \frac{24}{3{,}1} \doteq 7{,}742$$
+dává skutečnou změnu $\Delta Q \doteq -0{,}829$, dobře konzistentní s diferenciálovou aproximací $-0{,}735$.
 
 ### Příklad 2.13 — numerický výpočet $PS$
 

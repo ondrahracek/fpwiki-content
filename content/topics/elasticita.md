@@ -5,7 +5,7 @@ type: topic
 tags: [imek, elasticita, cenova-elasticita, krizova-elasticita, duchodova-elasticita, mr-tr]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_druhy_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Elasticita poptávky a nabídky
@@ -34,7 +34,7 @@ Rozhodující nejsou nominální změny (jsou měřeny v různých jednotkách),
 
 ## Pojem elasticity
 
-Obecně **elasticita** jedné veličiny vzhledem k druhé kvantifikuje, o kolik procent se první veličina přibližně změní, když se druhá veličina změní o 1 %. Jde o **bezrozměrnou veličinu** — nezávislou na jednotkách, ve kterých jsou proměnné měřeny (viz čl. 1.5.1).
+Obecně **elasticita** jedné veličiny vzhledem k druhé kvantifikuje, o kolik procent se první veličina přibližně změní, když se druhá veličina změní o 1 %. Jde o **bezrozměrnou veličinu** — nezávislou na jednotkách, ve kterých jsou proměnné měřeny.
 
 > [!info] Intuice
 > Elasticitu lze číst jako **procentní odpověď na procentní podnět**. Místo „o kolik kusů se změní prodej, když zlevním o korunu" (což závisí na jednotkách) se ptáme „o kolik procent se změní prodej, když zlevním o 1 %". Tato procentní citlivost je univerzální a umožňuje srovnávat zboží různých řádů i měn.
@@ -278,7 +278,7 @@ $$\boxed{\;E_Y = \frac{Y}{Q}\,Q'_Y\;} \tag{4.20}$$
 
 *Interpretace:* udává přibližnou procentní změnu $Q$ při 1% změně důchodu $Y$ (ceteris paribus).
 
-**Znaménko závisí na povaze základního zboží** (viz Engelova funkce, čl. 2.1.2):
+**Znaménko závisí na povaze základního zboží** (viz [[poptavka-nabidka|Engelova funkce]]):
 
 - Jde-li o **normální zboží**, s růstem $Y$ roste $Q$ $\Rightarrow\; Q'_Y > 0,\; E_Y > 0$.
 - Jde-li o **podřadné zboží**, s růstem $Y$ klesá $Q$ $\Rightarrow\; Q'_Y < 0,\; E_Y < 0$.

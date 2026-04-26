@@ -5,7 +5,7 @@ type: topic
 tags: [imek, prijem, naklady, zisk, body-zvratu, maximalizace-zisku, nabidka-firmy]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_prvni_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Příjem, náklady, zisk a nabídka firmy
@@ -58,9 +58,7 @@ $$
 TR = TR(Q) = Q(-2Q + 100) = -2Q^2 + 100Q.
 $$
 
-Křivkou je parabola (obrázek 3.1) s nulami v $Q_1 = 0$ a $Q_2 = 50$. Maxima dosahuje při $Q = 25$ ve výši $TR_{\max} = -2 \cdot 625 + 100 \cdot 25 = 1\,250$.
-
-*Obrázek 3.1: Parabola $TR = -2Q^2 + 100Q$ s nulami v $0$ a $50$ a maximem $1\,250$ v bodě $Q = 25$.*
+Křivkou je parabola s nulami v $Q_1 = 0$ a $Q_2 = 50$. Maxima dosahuje při $Q = 25$ ve výši $TR_{\max} = -2 \cdot 625 + 100 \cdot 25 = 1\,250$.
 
 ### Průměrný příjem
 
@@ -153,19 +151,13 @@ $$
 MR = 2aQ + b.
 $$
 
-Křivky $MR$ a poptávky (resp. $AR$) jsou přímky protínající svislou osu v témže bodě $b$, přičemž **přímka mezního příjmu má sklon rovný dvojnásobku sklonu přímky poptávky** ($2a$ vs. $a$, obrázek 3.2). $MR$ nabývá jak kladných, tak záporných hodnot; křivka $TR$ nejprve roste, v bodě maxima protíná $MR$ osu $Q$ v bodě $Q = -\tfrac{b}{2a}$ hodnotou $MR = 0$, a dále $TR$ klesá.
+Křivky $MR$ a poptávky (resp. $AR$) jsou přímky protínající svislou osu v témže bodě $b$, přičemž **přímka mezního příjmu má sklon rovný dvojnásobku sklonu přímky poptávky** ($2a$ vs. $a$). $MR$ nabývá jak kladných, tak záporných hodnot; křivka $TR$ nejprve roste, v bodě maxima protíná $MR$ osu $Q$ v bodě $Q = -\tfrac{b}{2a}$ hodnotou $MR = 0$, a dále $TR$ klesá.
 
 V případě **[[poptavka-nabidka|dokonalé konkurence]]**, kdy poptávka $P = D(Q) = P^*$ je pevná tržní cena, platí $TR = Q \cdot P^*$ a tedy
 
 $$
-MR = AR = P^* \quad (\text{obrázek 3.4}).
+MR = AR = P^*.
 $$
-
-*Obrázek 3.2: Přímky $AR = aQ + b$ a $MR = 2aQ + b$ v jednom grafu; společný průsečík $b$ se svislou osou, $MR$ protíná osu $Q$ v $-\tfrac{b}{2a}$, $AR$ v $-\tfrac{b}{a}$.*
-
-*Obrázek 3.3: Parabola $TR = aQ^2 + bQ$ s maximem v $Q = -\tfrac{b}{2a}$ a nulou v $Q = -\tfrac{b}{a}$.*
-
-*Obrázek 3.4: Dokonalá konkurence — vodorovná přímka $AR = MR = P^*$.*
 
 ## Náklady firmy
 
@@ -208,10 +200,6 @@ $$
 
 $AFC = \tfrac{1\,000}{Q} \to 0$ s rostoucím $Q$.
 
-*Obrázek 3.5: Přímka $TC = 1\,000 + 4Q$ protínající svislou osu ve výši $FC = 1\,000$.*
-
-*Obrázek 3.6: Hyperbola $AC = \tfrac{1\,000}{Q} + 4$ s vodorovnou asymptotou $AC = 4$.*
-
 Celkové variabilní náklady lze často vyjádřit ve tvaru
 
 $$
@@ -224,11 +212,7 @@ $$
 TC = FC + aQ.
 $$
 
-Křivkou $TC$ je přímka se svislým průsečíkem $FC$ a sklonem $\tan\alpha = a$ (obrázek 3.7). Průměrné náklady tvoří hyperbolu $AC = \tfrac{FC}{Q} + a$ tvaru $L$ s vodorovnou asymptotou $a$ (obrázek 3.8). Limity $\lim_{Q \to 0^+} \tfrac{FC}{Q} = \infty$ a $\lim_{Q \to \infty} \tfrac{FC}{Q} = 0$ vysvětlují, proč s rostoucí produkcí fixní náklady stále méně ovlivňují $AC$.
-
-*Obrázek 3.7: Přímka $TC$ s osovým průsečíkem ve výši $FC$ a se sklonem $\tan\alpha = a$.*
-
-*Obrázek 3.8: Klesající hyperbola $AC$ s vodorovnou asymptotou ve výši $a$.*
+Křivkou $TC$ je přímka se svislým průsečíkem $FC$ a sklonem $\tan\alpha = a$. Průměrné náklady tvoří hyperbolu $AC = \tfrac{FC}{Q} + a$ tvaru $L$ s vodorovnou asymptotou $a$. Limity $\lim_{Q \to 0^+} \tfrac{FC}{Q} = \infty$ a $\lim_{Q \to \infty} \tfrac{FC}{Q} = 0$ vysvětlují, proč s rostoucí produkcí fixní náklady stále méně ovlivňují $AC$.
 
 ### Mezní náklady
 
@@ -286,10 +270,6 @@ Význačné body $1{,}67$; $2{,}50$; $4{,}73$ odpovídají: $MC$ minimum v $Q \d
 
 ![[imek-ac-avc-mc.jpeg|AC, AVC, MC a jejich vzájemné vztahy]]
 
-*Obrázek 3.9: Kubické křivky $TC$ a $TVC$ rostoucí od bodu $FC = 100$; $FC$ je vodorovná přímka.*
-
-*Obrázek 3.10: Křivky $AC$, $AVC$, $MC$ ve tvaru $U$ a klesající hyperbola $AFC$. $MC$ protíná $AVC$ i $AC$ zdola v jejich minimech; význačné hodnoty na ose $Q$: $1{,}67$, $2{,}50$, $4{,}73$.*
-
 **Standardní vlastnosti:**
 
 - $TC$ a $TVC$ jsou kubické funkce;
@@ -327,7 +307,7 @@ $$
 \frac{MC(Q_0) - AC(Q_0)}{Q_0} = 0 \quad\Longleftrightarrow\quad MC(Q_0) = AC(Q_0).
 $$
 
-**Geometrická interpretace.** $MC$ protíná $AC$ právě v bodě minima $AC$ (obrázek 3.10); nalevo od $Q_0$ je $MC < AC$ (průměrné náklady klesají), napravo $MC > AC$ (průměrné náklady rostou).
+**Geometrická interpretace.** $MC$ protíná $AC$ právě v bodě minima $AC$; nalevo od $Q_0$ je $MC < AC$ (průměrné náklady klesají), napravo $MC > AC$ (průměrné náklady rostou).
 
 Za obvyklých ekonomických podmínek platí i obrácené tvrzení — jestliže $AC(Q_0) = MC(Q_0)$, pak $Q_0$ je bod minima. V praktických úlohách tedy postačí řešit rovnici $AC(Q) = MC(Q)$.
 
@@ -366,7 +346,7 @@ $$
 > [!note] Princip
 > **V bodě minima průměrných variabilních nákladů se $AVC$ rovnají mezním nákladům.**
 
-Odvození je analogické (úloha 3.14). V obrázku 3.10 odpovídá $Q_0 = 2{,}5$. Za obvyklých podmínek platí i obrácené tvrzení — postačí řešit rovnici $AVC(Q) = MC(Q)$.
+Odvození je analogické (úloha 3.14). Pro kubickou nákladovou funkci z příkladu 3.6 odpovídá $Q_0 = 2{,}5$. Za obvyklých podmínek platí i obrácené tvrzení — postačí řešit rovnici $AVC(Q) = MC(Q)$.
 
 ## Zisk a body zvratu
 
@@ -377,7 +357,7 @@ PR = PR(Q) = TR(Q) - TC(Q).
 \tag{3.12}
 $$
 
-Body rovnosti $TR$ a $TC$ se nazývají **body zvratu** (též vyrovnání, *break-even points*). V nejjednodušším modelu (lineární poptávka, konstantní $VC$) je $TR$ kvadratická a $TC$ lineární (obrázek 3.11). Křivky se protínají v bodech $A$, $B$ odpovídajících množstvím $Q_A$, $Q_B$ — firma je na **prahu rentability** (*break even*). Pro $Q < Q_A$ nebo $Q > Q_B$ je $TC > TR$ (ztráta); pro $Q_A < Q < Q_B$ je $TR > TC$ (zisk).
+Body rovnosti $TR$ a $TC$ se nazývají **body zvratu** (též vyrovnání, *break-even points*). V nejjednodušším modelu (lineární poptávka, konstantní $VC$) je $TR$ kvadratická a $TC$ lineární. Křivky se protínají v bodech $A$, $B$ odpovídajících množstvím $Q_A$, $Q_B$ — firma je na **prahu rentability** (*break even*). Pro $Q < Q_A$ nebo $Q > Q_B$ je $TC > TR$ (ztráta); pro $Q_A < Q < Q_B$ je $TR > TC$ (zisk).
 
 > [!info] Intuice — body zvratu
 > Body zvratu jsou hranice „prodělečné" a „ziskové" zóny. Mezi nimi firma vydělává, za nimi prodělává. Maximum zisku leží uvnitř tohoto intervalu — typicky v jeho středu, je-li zisk kvadratický.
@@ -385,8 +365,6 @@ Body rovnosti $TR$ a $TC$ se nazývají **body zvratu** (též vyrovnání, *bre
 Body zvratu jsou řešení rovnice $PR(Q) = 0$. Pro vyšší stupně polynomu může být nutné použít software či numerický odhad. Maximum zisku se stanoví jako extrém funkce zisku.
 
 ![[imek-tr-tc-body-zvratu.jpeg|TR, TC a body zvratu Q_A, Q_B, max zisku MR=MC]]
-
-*Obrázek 3.11: Body zvratu — křivky $TR$ (obrácená parabola) a $TC$ (přímka) se protínají v bodech $A$ a $B$ na ose $Q$ v hodnotách $Q_A$ a $Q_B$; maximum zisku leží mezi nimi v bodě $Q_{\max}$; svislá vzdálenost mezi $TR$ a $TC$ pro $Q_A < Q < Q_B$ vyznačuje zisk.*
 
 #### Příklad 3.8
 
@@ -419,13 +397,6 @@ PR(1{,}5) = -3 \cdot (1{,}5)^2 + 9 \cdot 1{,}5 - 4 = -6{,}75 + 13{,}5 - 4 = 2{,}
 $$
 
 Pro srovnání maximum celkového příjmu (bez ohledu na náklady): $TR' = -4Q + 9 = 0 \Rightarrow Q = 2{,}25$, $TR_{\max} = -2 \cdot (2{,}25)^2 + 9 \cdot 2{,}25 = 10{,}125$. Leží vpravo od bodu maxima zisku, protože při $Q = 2{,}25$ rostou už náklady rychleji než příjem.
-
-> [!warning] Nekonzistence v původním zdroji
-> Skenovaný knižní text obsahoval v tomto příkladu dvě nesourodé hodnoty: uváděl body zvratu $Q_1 = 0{,}5$, $Q_2 = 4$ (odpovídající starší verzi zadání) a zároveň maximum v $Q = 2{,}25$, $PR = 6{,}125$ (odpovídající derivaci $PR' = -4Q + 9$, tj. zisku $PR = -2Q^2 + 9Q - 4$ bez odčtení kvadratického členu $Q^2$ z $TVC$). Zde je uvedena matematicky konzistentní verze: zadané $TC = 4 + Q^2$ a $TR = -2Q^2 + 9Q$ vedou na $PR = -3Q^2 + 9Q - 4$, odkud $Q_{\max} = 1{,}5$ a $PR_{\max} = 2{,}75$.
-
-*Obrázek 3.12: Graf $TC = 4 + Q^2$ (parabola) a $TR = -2Q^2 + 9Q$ (parabola); průsečíky vyznačují body zvratu $Q_1 \doteq 0{,}54$, $Q_2 \doteq 2{,}46$.*
-
-*Obrázek 3.13: Graf zisku $PR = -3Q^2 + 9Q - 4$ s maximem v $Q = 1{,}5$ a nulami $Q_1 \doteq 0{,}54$, $Q_2 \doteq 2{,}46$.*
 
 ## Princip maximalizace zisku
 
@@ -525,7 +496,7 @@ tj. ztráta větší než $FC = 5$.
 
 ## Konstrukce křivky nabídky firmy
 
-Důležitým završením analýzy je konstrukce **funkce nabídky firmy**. S nabízeným množstvím rostou mezní náklady $MC$ a tyto určují cenu $P$, za kterou je firma ochotna toto množství realizovat. Proto platí $P = MC(Q)$ (obrázek 3.14). Cena $P$ však nemůže být nižší než $P^*$ odpovídající množství $Q^*$ v bodě **minima průměrných variabilních nákladů** (fixní náklady nelze při optimalizaci zahrnout — jsou konstantní součástí nákladů i zisku). Křivka nabídky se tedy skládá z úsečky $0Q^*$ (kde firma nenabízí nic) a rostoucí části $MC$ nad bodem $A$:
+Důležitým završením analýzy je konstrukce **funkce nabídky firmy**. S nabízeným množstvím rostou mezní náklady $MC$ a tyto určují cenu $P$, za kterou je firma ochotna toto množství realizovat. Proto platí $P = MC(Q)$. Cena $P$ však nemůže být nižší než $P^*$ odpovídající množství $Q^*$ v bodě **minima průměrných variabilních nákladů** (fixní náklady nelze při optimalizaci zahrnout — jsou konstantní součástí nákladů i zisku). Křivka nabídky se tedy skládá z úsečky $0Q^*$ (kde firma nenabízí nic) a rostoucí části $MC$ nad bodem $A$:
 
 $$
 P = S(Q) = \begin{cases} MC(Q) & \text{pro } Q \geq Q^*, \\ 0 & \text{pro } Q < Q^*, \end{cases}
@@ -540,8 +511,6 @@ kde $Q^*$ je bod minima $AVC$. Bod $(Q^*, P^*)$ se nazývá **shutdown point** �
 > 3. Vypočtěte $P^* = MC(Q^*) = AVC(Q^*)$ — minimální cenu nabídky.
 > 4. Zapište nabídku: $S(Q) = MC(Q)$ pro $Q \geq Q^*$, jinak $0$.
 > 5. V případě potřeby vyjádřete inverzi $Q = S^{-1}(P)$ doplněním na čtverec.
-
-*Obrázek 3.14: Křivky $AC$, $AVC$ a $MC$ ve tvaru $U$; křivka nabídky $P = MC(Q)$ začíná v bodě $A$ odpovídajícím minimu $AVC$ při ceně $P^*$ (minimální cena nabídky); pod $Q^*$ je nabídka nulová.*
 
 #### Příklad 3.12
 
@@ -570,8 +539,6 @@ Dále $AVC = 0{,}1Q^2 - 2Q + 15$, $AVC' = 0{,}2Q - 2 = 0 \Rightarrow Q^* = 10$, 
 $$
 P = S(Q) = \begin{cases} 0{,}3Q^2 - 4Q + 15 & \text{pro } Q \geq 10, \\ 0 & \text{pro } Q < 10. \end{cases}
 $$
-
-*Obrázek 3.15: Grafická ilustrace nabídky firmy odvozené z části křivky $MC$ ležící nad minimem $AVC$.*
 
 ## Shrnutí kapitoly 3
 

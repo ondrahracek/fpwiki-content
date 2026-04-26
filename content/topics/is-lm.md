@@ -5,7 +5,7 @@ type: topic
 tags: [imek, is-lm, makroekonomie, trh-zbozi, trh-penez, urokova-mira, investice, narodni-duchod]
 sources: [raw/imek/kniha_scanned/, raw/imek/KS_treti_blok.pdf]
 created: 2026-04-22
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # IS-LM analýza — simultánní rovnováha trhu zboží a peněz
@@ -106,8 +106,6 @@ Tento vztah se nazývá **funkce LM** (*LM schedule*), její graf **křivka LM**
 
 Řešením **soustavy dvou lineárních rovnic** (7.14) a (7.15) určíme **rovnovážný důchod** $Y^E$ a **rovnovážnou úrokovou míru** $r^E$; zpětným dosazením do (7.11) a (7.12) pak rovnovážné investice $I^E$ a rovnovážnou spotřebu $C^E$. Graficky jde o **průsečík $E$** křivek $IS$ a $LM$ v rovině $(r, Y)$.
 
-*Obrázek 7.6 — Schematický graf v rovině $(r, Y)$. Rostoucí přímka $LM$ a klesající přímka $IS$ se protínají v bodě $E$ se souřadnicemi $r^E$ (na ose $r$) a $Y^E$ (na ose $Y$); tečkované čáry z $E$ kolmé k osám vyznačují polohu rovnovážné úrokové míry a rovnovážného národního důchodu.*
-
 > [!tip] Postup — jak najít IS-LM rovnováhu
 > 1. **Z trhu zboží (7.13)** dosaď funkce $C(Y)$ a $I(r)$ a vyjádři vztah mezi $Y$ a $r$ — dostaneš rovnici **IS**.
 > 2. **Z trhu peněz (7.15)** dosaď $L_1$ a $L_2$ a vztah $M^D = M^*$ — dostaneš rovnici **LM**.
@@ -157,8 +155,6 @@ $$0{,}1(5500 - 100r) - 25r = 375 \;\Longrightarrow\; 550 - 10r - 25r = 375 \;\Lo
 **Ověření:** $C^E + I^E = 4100 + 900 = 5000 = Y^E$. ✓
 
 $$\boxed{\,Y^E = 5000, \quad r^E = 5, \quad C^E = 4100, \quad I^E = 900.\,}$$
-
-*Obrázek 7.7 — Konkrétní numerický příklad IS-LM rovnováhy. Na ose $Y$ jsou vyznačeny hodnoty 3750, 5000, 5500; na ose $r$ hodnoty 5 a 55. Přímka $LM$ stoupá z oblasti nízkých $r$, přímka $IS$ klesá a protíná osu $r$ kolem hodnoty 55. Průsečík $E$ leží v bodě $[r = 5,\ Y = 5000]$.*
 
 ## Ekonomická interpretace — fiskální a monetární politika
 

@@ -5,12 +5,12 @@ type: summary
 tags: [imork, mobilni-bezpecnost, sim, 5g, malware, nist, common-criteria]
 sources: [raw/imork/2206 VUT_Bezp_Případovka Mobilní bezpečnost-2021.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Mobilní bezpečnost
 
-Případová studie (35 slidů, 1.11.2021) pokrývající bezpečnost mobilních zařízení — od standardů NIST přes konkrétní útoky až po bezpečnost 5G sítí. Součást kurzu [[imork|ImorK]].
+Bezpečnost mobilních zařízení — od standardů NIST přes konkrétní útoky až po bezpečnost 5G sítí.
 
 ## Standardy a doporučení
 

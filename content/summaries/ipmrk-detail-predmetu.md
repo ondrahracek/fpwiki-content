@@ -5,12 +5,10 @@ type: summary
 tags: [ipmrk, info]
 sources: [raw/ipmrk/Detail předmětu.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-26'
 ---
 
 # Detail předmětu — Pokročilé metody v rozhodování
-
-Zdroj: `raw/ipmrk/Detail předmětu.md`
 
 Stránka se sylabem kurzu [[ipmrk|IpmrK]] z VUT StudIS. Obsahuje základní metadata, osnovu 13 přednášek, způsob hodnocení a doporučenou literaturu.
 
