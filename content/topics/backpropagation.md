@@ -5,12 +5,14 @@ type: topic
 tags: [ipmrk, backpropagation, neuronove-site, uceni]
 sources: [raw/ipmrk/nn-teorie.md, raw/ipmrk/nn-vypocet.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Backpropagation (zpětné šíření chyby)
 
 Základní a nejdůležitější algoritmus učení vícevrstvých [[umele-neuronove-site|neuronových sítí]].
+
+![[ipmrk-backpropagation-flow.jpeg|Backpropagation v třívrstvé síti — modrý forward pass (výpočet aktivací) a červený backward pass (šíření gradientu ∂L/∂w)]]
 
 ## Postup
 

@@ -506,5 +506,5 @@ Ve **2F modelu** se obvykle používají **Cobb-Douglasovy funkce** $Q = AL^a K^
 
 - **Související témata:** [[funkce-vice-promennych|Funkce více proměnných]] (parciální derivace, totální diferenciál), [[derivace|Derivace]], [[lagrangeova-metoda|Lagrangeova metoda]] (optimalizace produkce s rozpočtovým omezením), [[uzitecnost|Užitečnost]] (paralela: izokvanty ↔ indiferenční křivky, $MRTS$ ↔ $MRCS$), [[prijem-naklady-zisk|Příjem, náklady, zisk]] (analogie principu max $AP_L$ ↔ min $AC$).
 - **Předchozí:** [[elasticita|Elasticita]].
-- **Přednáška:** [[imek-blok-02|KS 2. blok]].
+- **Přednáška:** [[imek-blok-02|Elasticita a produkce]].
 - **Kurz:** [[imek|Matematická ekonomie]].

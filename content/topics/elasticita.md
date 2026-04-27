@@ -411,5 +411,5 @@ Množství klesne přibližně o 8.
 ## Navigace
 
 - **Související témata:** [[poptavka-nabidka|Poptávka a nabídka]], [[prijem-naklady-zisk|Příjem, náklady, zisk]], [[derivace|Derivace]]
-- **Přednáška:** [[imek-blok-02|ImeK — souhrn 2. bloku]]
+- **Přednáška:** [[imek-blok-02|Elasticita a produkce]]
 - **Kurz:** [[imek|Matematická ekonomie]]

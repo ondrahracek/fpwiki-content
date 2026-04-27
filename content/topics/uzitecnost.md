@@ -327,5 +327,5 @@ Každá $n$-tice množství jednotlivých zboží je **svazek zboží**. Přiřa
 
 - **Navazující téma:** [[optimalizace-spotrebitele|Optimalizace spotřebitele]] (Lagrange, max $U$, min $E$, funkce poptávky, Příklady 6.5–6.8, úlohy 6.8–6.13).
 - **Související pojmy:** [[funkce-vice-promennych|Funkce více proměnných]] (parciální derivace = mezní užitečnost), [[derivace|Derivace]] (parciální derivace, totální diferenciál), [[produkce|Produkce]] (paralela: MRCS ↔ MRTS, izokvanty ↔ indiferenční křivky, Cobb-Douglas), [[poptavka-nabidka|Poptávka a nabídka]] (Marshallovy poptávkové funkce $D_i$), [[lagrangeova-metoda|Lagrangeova metoda]] (vázaná optimalizace — nástroj pro navazující téma).
-- **Přednášky:** [[imek-blok-02|KS 2. blok]], [[imek-blok-03|KS 3. blok]]
+- **Přednášky:** [[imek-blok-02|Elasticita a produkce]], [[imek-blok-03|Užitečnost a národní důchod]]
 - **Kurz:** [[imek|Matematická ekonomie]]

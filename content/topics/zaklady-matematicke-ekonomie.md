@@ -49,4 +49,4 @@ Zjednodušení:
 
 - **Předchozí:** —
 - **Navazující:** [[derivace|Derivace a diferenciál]]
-- **Souvislosti:** [[imek-blok-01|Souhrn KS 1. blok]], [[imek|kurz ImeK]]
+- **Souvislosti:** [[imek-blok-01|Kalkul a mikroekonomie]], [[imek|kurz ImeK]]

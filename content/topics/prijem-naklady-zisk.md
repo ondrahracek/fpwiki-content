@@ -655,5 +655,5 @@ Celkový příjem je součin ceny a množství, kde cena je dána funkcí [[popt
 ## Navigace
 
 - **Související témata:** [[poptavka-nabidka|Poptávka a nabídka]], [[elasticita|Elasticita]], [[derivace|Derivace]], [[integral|Integrál]], [[produkce|Produkční funkce]]
-- **Přednášky:** [[imek-blok-01|KS 1. blok — souhrn]], [[imek-blok-02|KS 2. blok — souhrn]]
+- **Přednášky:** [[imek-blok-01|Kalkul a mikroekonomie]], [[imek-blok-02|Elasticita a produkce]]
 - **Kurz:** [[imek|Matematická ekonomie]]

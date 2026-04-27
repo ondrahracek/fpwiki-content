@@ -5,7 +5,7 @@ type: topic
 tags: [ipmrk, optimalizace, ucelova-funkce, matlab, fmincon, linprog, ga, omezeni]
 sources: [raw/ipmrk/kniha.md, raw/ipmrk/optimalizace-online.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Optimalizace
@@ -55,6 +55,8 @@ Nepotřebná omezení zadáváme jako `[]`.
 | Kombinatorická | Diskrétní množina řešení | `ga` |
 
 ## Lokální vs. globální optimum
+
+![[ipmrk-optimalizace-krajiny.jpeg|Krajiny optimalizace — gradient descent vs. genetický algoritmus vs. simulované žíhání na funkci s lokálními a globálním minimem]]
 
 - **Globální minimum** — absolutně nejnižší hodnota f(x) v celém definičním oboru
 - **Lokální minimum** — nejnižší hodnota v okolí, ale ne nutně nejnižší ze všech

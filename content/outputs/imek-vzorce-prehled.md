@@ -5,20 +5,13 @@ type: output
 tags: [imek, vzorce, prehled, mikroekonomie, makroekonomie]
 sources: [raw/imek/kniha_scanned/]
 created: 2026-04-24
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # ImeK — kompletní přehled vzorců se zdroji a intuicí
 
 > [!abstract] TL;DR
 > Referenční přehled **všech klíčových vzorců** kurzu [[imek|Matematická ekonomie]] v **základním (definičním) tvaru** — od poptávky a nabídky přes optimalizaci firmy a spotřebitele až po IS-LM. Pro každý vzorec: **kde se v materiálech bere** (odkaz do příslušné topic stránky) a **intuice** (co vzorec znamená ekonomicky).
-
-## Jak číst tento přehled
-
-- Všechny vzorce jsou zapsané **v definičním tvaru** — tj. tak, jak vznikají z prvních principů, beze snahy o algebraická zjednodušení. Když v jiném textu narazíš na „hezčí" tvar (např. $E = -P/(Q \cdot P'(Q))$ místo $E = -P/Q \cdot 1/(dP/dQ)$), je to zpravidla **jen dosazení jednoho kousku do druhého**.
-- Každý vzorec má vlastní řádek (displayed math), ne inline, aby byl čitelný.
-- Notace $dP/dQ$ je totéž co $P'(Q)$ — používám první tvar, protože je explicitnější.
-- Prokliky vedou vždy na **primární topic stránku**, kde najdeš úplné odvození, příklady a úlohy.
 
 ---
 
@@ -552,24 +545,10 @@ $$M^* = k_1 Y + k_2 r + k_3$$
 
 ---
 
-## Jak tenhle přehled efektivně používat
-
-> [!tip] K čemu se hodí
-> - **Před zkouškou** — rychlá revize všech klíčových vztahů bez nutnosti procházet jednotlivé topic stránky.
-> - **Při řešení úlohy** — najdi vzorec, klikni na primární topic a najdeš plné odvození + řešené příklady.
-> - **Při nejistotě** — zda jsi správně zapamatoval vzorec: porovnej s definičním tvarem zde.
-> - **Při nepochopení** — přečti si „Intuice" — často lepší než odvození.
-
-> [!warning] Co tu není
-> - **Úlohy a jejich řešení** — ty jsou na primárních topic stránkách.
-> - **Obrázky a geometrické interpretace** — většina je na topic stránkách a v knize Mezník.
-> - **Otázky k sebehodnocení** — viz konce jednotlivých topic stránek.
-> - **Podrobná odvození** — vzorce jsou zde jen ve finálním tvaru; odvození viz příslušné kapitoly.
-
-## Navigace
+## Související stránky
 
 - **Kurz:** [[imek|Matematická ekonomie (ImeK)]]
-- **Souhrny přednášek:** [[imek-blok-01|KS 1. blok]], [[imek-blok-02|KS 2. blok]], [[imek-blok-03|KS 3. blok]]
+- **Souhrny:** [[imek-blok-01|Kalkul a mikroekonomie]], [[imek-blok-02|Elasticita a produkce]], [[imek-blok-03|Užitečnost a národní důchod]]
 - **Primární zdroj:** [[imek-kniha|Kniha Mezník — Úvod do matematické ekonomie]]
 - **Matematický aparát:** [[derivace|Derivace]], [[integral|Integrál]], [[funkce-vice-promennych|Funkce více proměnných]], [[lagrangeova-metoda|Lagrangeova metoda]]
 - **Mikroekonomie:** [[poptavka-nabidka|Poptávka a nabídka]], [[zdaneni-trhu|Zdanění]], [[prebytek-spotrebitele-vyrobce|Přebytky]], [[prijem-naklady-zisk|Příjem/náklady/zisk]], [[elasticita|Elasticita]], [[produkce|Produkce]], [[uzitecnost|Užitečnost]], [[optimalizace-spotrebitele|Optimalizace spotřebitele]]

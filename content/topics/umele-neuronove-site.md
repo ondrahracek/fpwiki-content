@@ -1,11 +1,11 @@
 ---
 title: Umělé neuronové sítě
-courses: [ipmrk]
+courses: [ipmrk, irmank]
 type: topic
-tags: [ipmrk, neuronove-site, perceptron, backpropagation, deep-learning, klasifikace, predikce]
-sources: [raw/ipmrk/nn-teorie.md, raw/ipmrk/nn-vypocet.md, raw/ipmrk/nn-aplikace.md, raw/ipmrk/kniha.md]
+tags: [ipmrk, irmank, neuronove-site, perceptron, backpropagation, klasifikace, predikce]
+sources: [raw/ipmrk/nn-teorie.md, raw/ipmrk/nn-vypocet.md, raw/ipmrk/nn-aplikace.md, raw/ipmrk/kniha.md, raw/irmank/Řízení rizik druhá část.ppt]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Umělé neuronové sítě
@@ -75,11 +75,50 @@ Výpočetní model inspirovaný biologickým nervovým systémem. Soustava propo
 - [[predikce|Predikce]] časových řad (akcie, měny, komodity)
 - Diagnostika nemocí, autonomní systémy
 
+## Aplikace v řízení rizik (kurz [[irmank|IrmanK]])
+
+V kurzu **Risk management** prof. Rais používá ANN pro **klasifikaci investičních projektů** podle míry realizovatelnosti. Detail viz [[investicni-rozhodovani-bot]].
+
+**Investiční vektor X:**
+
+Každá investice je popsána vektorem $X = (X_1, X_2, ..., X_M)$, kde jednotlivé prvky kódují:
+
+- $X_1$ — typ projektu (energetika / infrastruktura / průmysl).
+- $X_2$ — obor (vodní / solární / vítr / fosil).
+- $X_3$ — velikost investice (mil USD).
+- $X_4$ — geografická lokace (země, region).
+- $X_5$ — investující společnost.
+- $X_6$ — doba trvání projektu.
+- $X_7..X_M$ — účetní data (rozvaha + výsledovka).
+
+**Trénovací matice:**
+
+| Investice | $X_1$ | $X_2$ | ... | $X_M$ | Realizovatelnost |
+|---|---|---|---|---|---|
+| $Y_1$ | $a_{11}$ | $a_{12}$ | ... | $a_{1M}$ | známá (úspěch / neúspěch) |
+| $Y_2$ | $a_{21}$ | $a_{22}$ | ... | $a_{2M}$ | známá |
+| ... | ... | ... | ... | ... | ... |
+| $Y_N$ | $a_{N1}$ | $a_{N2}$ | ... | $a_{NM}$ | známá |
+| $Y_{N+1}$ | $a_{N+1,1}$ | $a_{N+1,2}$ | ... | $a_{N+1,M}$ | **predikce ANN** |
+
+ANN je natrénována na $N$ historických případech (supervised learning) a predikuje realizovatelnost nového investičního projektu $Y_{N+1}$.
+
+**Komplementárnost s GA:**
+
+- ANN se naučí ze vzorků (data-driven).
+- [[geneticke-algoritmy|GA]] optimalizují parametry projektu (model-driven).
+- Spolu poskytují **dva nezávislé pohledy** na investiční rozhodnutí.
+
+**Caveat:** „Metody AI jsou asistenty, ne náhrada za originální tvůrčí myšlení manažera." ANN klasifikuje, ale **lidský úsudek** zůstává klíčový pro strategické rozhodnutí.
+
 ## Propojení s dalšími tématy
 
 - [[anfis|ANFIS]] — hybridní systém: fuzzy struktura + učení neuronové sítě
 - [[fuzzy-logika|Fuzzy logika]] — partner v ANFIS
 - [[geneticke-algoritmy|Genetické algoritmy]] — mohou optimalizovat architekturu sítě
+- [[investicni-rozhodovani-bot]] — ANN klasifikace investičních projektů (kurz IrmanK)
+- [[expertni-systemy]] — komplementární AI metoda v risk managementu
+- [[predikce]] — ANN pro time-series prognózování
 
 ## Kontrolní otázky ke zkoušce
 

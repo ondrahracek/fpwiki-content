@@ -678,5 +678,5 @@ Viz též [[zdaneni-trhu]].
 ## Navigace
 
 - **Související témata:** [[zdaneni-trhu|Zdanění trhu]] (dopady daně, daňové břemeno, ekvivalence), [[prebytek-spotrebitele-vyrobce|Přebytek spotřebitele a výrobce]], [[derivace|Derivace]] (zákon klesající/rostoucí, monotonie), [[integral|Integrál]] (CS a PS), [[funkce-vice-promennych|Funkce více proměnných]] (vícefaktorové modely, multiplikátory), [[lagrangeova-metoda|Lagrangeova metoda]] (optimalizace spotřebitele), [[elasticita|Elasticita]] (důchodová a cenová citlivost), [[prijem-naklady-zisk|Příjem, náklady, zisk]]
-- **Shrnutí přednášek:** [[imek-blok-01|KS — 1. blok]]
+- **Shrnutí přednášek:** [[imek-blok-01|Kalkul a mikroekonomie]]
 - **Kurz:** [[imek|Matematická ekonomie]]

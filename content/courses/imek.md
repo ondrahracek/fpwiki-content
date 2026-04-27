@@ -5,7 +5,7 @@ type: course
 tags: [imek, ekonomie, mikroekonomie, makroekonomie, lagrange, derivace, integraly]
 sources: [raw/imek/Detail předmětu.md, raw/imek/KS_prvni_blok.pdf, raw/imek/KS_druhy_blok.pdf, raw/imek/KS_treti_blok.pdf, raw/imek/kniha_scanned/]
 created: 2026-04-20
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Matematická ekonomie (ImeK)
@@ -22,9 +22,7 @@ Hlouběji proniknout do kauzální podstaty ekonomických vztahů, rozvoj schopn
 
 ## Obsah kurzu
 
-Kurz je v kombinovaném studiu rozčleněn do tří přednáškových bloků:
-
-### Blok 1 — [[imek-blok-01|Kalkul, poptávka/nabídka, příjem/náklady/zisk]]
+### [[imek-blok-01|Kalkul, poptávka/nabídka, příjem/náklady/zisk]]
 - [[zaklady-matematicke-ekonomie|Základy matematické ekonomie]] — model, endogenní/exogenní proměnné, ceteris paribus, komparativní statika
 - [[derivace|Derivace, diferenciál a extrémy 1D]] — geometrická a inženýrská interpretace, mezní veličiny
 - [[integral|Integrál]] — neurčitý a určitý, rekonstrukce TR z MR a TC z MC
@@ -35,11 +33,11 @@ Kurz je v kombinovaném studiu rozčleněn do tří přednáškových bloků:
 - [[prebytek-spotrebitele-vyrobce|Přebytek spotřebitele a výrobce]] — CS, PS, plochy pod/nad křivkami
 - [[prijem-naklady-zisk|Příjem, náklady a zisk]] — TR, AR, MR, TC, AC, MC, body zvratu, konstrukce nabídky firmy
 
-### Blok 2 — [[imek-blok-02|Elasticita a produkce]]
+### [[imek-blok-02|Elasticita a produkce]]
 - [[elasticita|Cenová, křížová a důchodová elasticita]] (jedno- i vícefaktorový model)
 - [[produkce|Produkční funkce]] — Cobb-Douglasova, CES, lineární, Leontiefova, izokvanty, MRTS, Eulerova věta
 
-### Blok 3 — [[imek-blok-03|Užitečnost a národní důchod]]
+### [[imek-blok-03|Užitečnost a národní důchod]]
 - [[uzitecnost|Užitečnost]] — pojem, mezní užitečnost, Cobb-Douglasova $U$, indiferenční křivky, MRCS
 - [[optimalizace-spotrebitele|Optimalizace spotřebitele]] — Lagrangeova maximalizace $U$, duální minimalizace výdajů, Marshallova/Hicksova poptávka
 - [[narodni-duchod|Národní důchod]] — GNP, spotřeba/úspory, MPC/MPS, modely C-I, C-I-G, C-I-G-X
@@ -48,6 +46,7 @@ Kurz je v kombinovaném studiu rozčleněn do tří přednáškových bloků:
 ## Reference a přehledy
 
 - [[imek-vzorce-prehled|Kompletní přehled vzorců]] — všechny klíčové vzorce kurzu v definičním tvaru, se zdrojem a intuicí. Referenční list pro přípravu na zkoušku.
+- [[imek-zkouska-priprava|Příprava ke zkoušce: kompletní řešení 8 zadání]] — plná řešení všech 32 zkouškových úloh (Q1 rozhodovací, Q2 definice + interpretace, Q3 optimalizace, Q4 komplexní model). Cross-reference identických zadání, postup podle typu úlohy, srovnání lineárních aproximací s přesnými hodnotami.
 
 ## Hodnocení zkoušky
 
@@ -81,7 +80,7 @@ Standardní kurz inženýrské matematiky, mikroekonomie a makroekonomie na baka
 ## Přehled zdrojů
 
 - [[imek-detail-predmetu|Detail předmětu]] — sylabus a administrativní informace
-- [[imek-blok-01|KS 1. blok]] — 57 stran, matematický aparát + mikroekonomie
-- [[imek-blok-02|KS 2. blok]] — 19 stran, elasticita a produkce
-- [[imek-blok-03|KS 3. blok]] — 25 stran, užitečnost a národní důchod
+- [[imek-blok-01|Kalkul a mikroekonomie]] — 57 stran, matematický aparát + mikroekonomie
+- [[imek-blok-02|Elasticita a produkce]] — 19 stran, elasticita a produkce
+- [[imek-blok-03|Užitečnost a národní důchod]] — 25 stran, užitečnost a národní důchod
 - [[imek-kniha|Kniha Mezník — Úvod do matematické ekonomie]] — naskenované kap. 2–7 (107 stran), kompletní teorie + Příklady + Úlohy k samostatnému řešení
