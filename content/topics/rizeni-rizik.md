@@ -5,7 +5,7 @@ type: topic
 tags: [imork, rizeni-rizik, iso-31000, iso-27005, nist, hodnoceni-rizik]
 sources: [raw/imork/2003 VUT_Bezp Risk Mngmt-2021.pdf, raw/imork/2001 VUT_Bezp Managerská 2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Řízení rizik
@@ -13,6 +13,18 @@ updated: '2026-04-25'
 ![[rizeni-rizik-proces.jpeg|Proces řízení rizik — šest fází od stanovení kontextu po monitorování]]
 
 Komplexní proces identifikace, analýzy a ošetření rizik ohrožujících bezpečnost informací v organizaci. Tvoří jádro [[isms|ISMS]].
+
+> [!info] Související pohled v kurzu [[irmank|IrmanK]] — Risk management
+> Tento topic pokrývá **kybernetické / informační** riziko podle ISO/IEC 27005. Pro **podnikové (enterprise) riziko** v širším smyslu (finanční, strategické, change-driven) viz odpovídající stránky kurzu [[irmank|IrmanK]]:
+>
+> - [[definice-rizika]] — 10 definic rizika, podnikatelské riziko, postoj k riziku
+> - [[mereni-rizika]] — statistické charakteristiky (σ, σ², KV)
+> - [[mapa-rizik]] — $R = D \times P$, matice 5×5, tři barevné zóny
+> - [[taktiky-rizeni-rizik]] — vyvárování / udržení / redukce / přenos
+> - [[klasifikace-rizik]] — kritické × důležité × běžné; dynamické × statické; čisté × spekulativní
+> - [[metody-snizovani-rizika]] — 6 strategií, ofenzivní řízení
+>
+> Oba pohledy se doplňují: ISMS / ISO 27005 je specializace pro **informační rizika**, IrmanK je obecné podnikové riziko.
 
 ## Normativní základ
 

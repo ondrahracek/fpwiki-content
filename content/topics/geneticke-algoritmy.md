@@ -1,11 +1,11 @@
 ---
 title: Genetické algoritmy
-courses: [ipmrk]
+courses: [ipmrk, irmank]
 type: topic
-tags: [ipmrk, geneticke-algoritmy, optimalizace, selekce, krizeni, mutace]
-sources: [raw/ipmrk/ga-teorie.md, raw/ipmrk/ga-vyuziti.md, raw/ipmrk/kniha.md]
+tags: [ipmrk, irmank, geneticke-algoritmy, optimalizace, selekce, krizeni, mutace]
+sources: [raw/ipmrk/ga-teorie.md, raw/ipmrk/ga-vyuziti.md, raw/ipmrk/kniha.md, raw/irmank/Řízení rizik druhá část.ppt]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Genetické algoritmy
@@ -69,11 +69,34 @@ Mapování na interval [x_min, x_max] umožňuje optimalizovat reálné parametr
 
 **Nevýhody**: negarantují globální optimum, výpočetně náročné, výsledek závisí na nastavení parametrů.
 
+## Aplikace v řízení rizik (kurz [[irmank|IrmanK]])
+
+V kurzu **Risk management** používá prof. Rais GA jako **validační nástroj** pro klasické DCF výpočty NPV u dlouhodobých investičních projektů ([[investicni-rozhodovani-bot]]).
+
+**Případ BOT vodní elektrárny (260 mil USD, 19 let):**
+
+- GA běží **~100 tisíc generací** populace investičních scénářů.
+- Každý chromozom kóduje kombinaci provozních parametrů (cena, opex, diskont, výroba).
+- Fitness funkce = NPV scénáře.
+- Populace konverguje k **Pareto-optimální množině** scénářů.
+- Výsledné NPV křivky se aproximují **Gompertzovou** nebo **exponenciální křivkou**.
+
+**Co GA přidává oproti klasické citlivostní analýze:**
+
+- Zachycuje **interakce** mezi parametry (není to one-at-a-time analýza).
+- Identifikuje **nelineární režimy** (např. tipping point ceny po roce 12).
+- Kombinuje s **umělými neuronovými sítěmi** ([[umele-neuronove-site#Aplikace v řízení rizik|ANN klasifikace investic]]) pro klasifikaci investic.
+
+**Caveat:** „Metody AI jsou asistenti, ne náhrada za originální tvůrčí myšlení manažera." GA validuje výpočet, ale **strategická úvaha zůstává na člověku**.
+
 ## Propojení s dalšími tématy
 
 - [[umele-neuronove-site|Neuronové sítě]] — GA mohou optimalizovat architekturu sítě
 - [[predikce|Predikce]] — optimalizace predikčních modelů
 - [[fuzzy-logika|Fuzzy logika]] — GA mohou ladit parametry fuzzy systému
+- [[investicni-rozhodovani-bot]] — GA pro validaci NPV (kurz IrmanK)
+- [[expertni-systemy]] — GA jako AI metoda v risk managementu
+- [[operacni-vyzkum]] — GA pro nelineární optimalizaci přesahující klasické LP
 
 ## Kontrolní otázky ke zkoušce
 

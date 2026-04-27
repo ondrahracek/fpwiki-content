@@ -5,7 +5,7 @@ type: topic
 tags: [ipmrk, evolucni-algoritmy, metaheuristiky, simulated-annealing, tabu-search, aco, pso, soma]
 sources: [raw/ipmrk/kniha.md, raw/ipmrk/evolucni-algoritmy-online.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Evoluční algoritmy
@@ -21,6 +21,8 @@ Souvisí s: [[geneticke-algoritmy|genetické algoritmy]] (podmnožina EA), [[opt
 - Parametry výpočtu: velikost populace, počet iterací, specifické parametry algoritmu
 
 ## GA vs. EA — hierarchie
+
+![[ipmrk-evolucni-algoritmy-srovnani.jpeg|Srovnání čtyř typů evolučních algoritmů — GA, ES, EP a GP — podle reprezentace, selekce a hlavního operátoru, plus evoluční cyklus]]
 
 **Evoluční algoritmy (EA)** jsou zastřešující pojem. Zahrnují:
 - **Genetické algoritmy (GA)** — binární kódování, selekce, crossover, mutace ([[geneticke-algoritmy|viz téma]])

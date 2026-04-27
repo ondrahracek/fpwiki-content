@@ -183,5 +183,5 @@ Přebytek spotřebitele $CS$ se zmenší (spotřebitelé platí víc a nakupují
 - **Nadřazené téma:** [[poptavka-nabidka|Poptávka, nabídka a tržní rovnováha]]
 - **Matematický aparát:** [[integral|Integrál]] (určitý integrál, plocha pod křivkou), [[derivace|Derivace]] (monotonie křivek)
 - **Související:** [[prijem-naklady-zisk|Příjem, náklady, zisk]]
-- **Shrnutí přednášek:** [[imek-blok-01|KS — 1. blok]]
+- **Shrnutí přednášek:** [[imek-blok-01|Kalkul a mikroekonomie]]
 - **Kurz:** [[imek|Matematická ekonomie]]

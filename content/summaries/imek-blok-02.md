@@ -1,18 +1,18 @@
 ---
-title: KS 2. blok — Elasticita a produkce
+title: ImeK — Elasticita a produkce
 course: imek
 type: summary
 tags: [imek, elasticita, produkce, cobb-douglas, ces, izokvanty, mrts]
 sources: [raw/imek/KS_druhy_blok.pdf]
 created: 2026-04-20
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
-# KS 2. blok — Elasticita a produkce
+# ImeK — Elasticita a produkce
 
-Rozcestník druhého přednáškového bloku (19 stran). Pokrývá dvě hlavní témata, každé se samostatnou stránkou.
+Rozcestník elasticity a produkce. Pokrývá dvě hlavní témata, každé se samostatnou stránkou.
 
-## Témata bloku — doporučené pořadí
+## Témata — doporučené pořadí
 
 1. [[elasticita|Elasticita]] — motivační hypotéza (procentní růst $Q$ ≥ procentní pokles $P$), cenová/křížová/důchodová elasticita poptávky, cenová elasticita nabídky, vícefaktorový model, pravidla pro TR, klasifikace (elastická / jednotkově elastická / neelastická).
 2. [[produkce|Produkce — produkční funkce]] — jednofaktorový a dvoufaktorový model $Q(L)$ resp. $Q(L, K)$, Cobb-Douglas, CES, lineární, Leontiefova funkce, mezní produkty, izokvanty, MRTS, výnosy z rozsahu, Eulerova věta.
@@ -26,11 +26,8 @@ Rozcestník druhého přednáškového bloku (19 stran). Pokrývá dvě hlavní 
 - MRTS: $\dfrac{MP_L}{MP_K} = \dfrac{Q'_L}{Q'_K}$
 - Eulerova věta (n = 1): $L \cdot MP_L + K \cdot MP_K = Q$
 
-## Vazby
+## Související stránky
 
-- **Předchozí blok:** [[imek-blok-01|KS 1. blok]] — kalkul (zejm. [[derivace]] a [[funkce-vice-promennych]] je nutný předpoklad)
-- **Navazující blok:** [[imek-blok-03|KS 3. blok]] — užitečnost (paralela izokvanty ↔ indiferenční křivky)
-
-## Související
-
+- [[imek-blok-01|Kalkul a mikroekonomie]] — kalkul (zejm. [[derivace]] a [[funkce-vice-promennych]] je nutný předpoklad).
+- [[imek-blok-03|Užitečnost a národní důchod]] — užitečnost (paralela izokvanty ↔ indiferenční křivky).
 - [[imek|Kurz ImeK]]

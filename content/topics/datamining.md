@@ -5,7 +5,7 @@ type: topic
 tags: [ipmrk, datamining, crisp-dm, link-analyza, klastrovani, rozhodovaci-stromy, apriori, witness-miner]
 sources: [raw/ipmrk/kniha.md, raw/ipmrk/datamining-online.md]
 created: 2026-04-16
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
 # Datamining
@@ -33,6 +33,8 @@ Souvisí s: [[fuzzy-logika]], [[umele-neuronove-site|neuronové sítě]], [[evol
 ---
 
 ## Proces práce s daty — CRISP-DM
+
+![[ipmrk-crisp-dm-cyklus.jpeg|CRISP-DM — šest fází data miningu (Business Understanding → Deployment) s iterativními zpětnými vazbami]]
 
 **CRISP-DM** (Cross-Industry Standard Process for Data Mining) je nejrozšířenější metodika — průzkumy ukazovaly 3–4× vyšší využití než konkurence.
 

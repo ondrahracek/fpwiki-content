@@ -1,18 +1,18 @@
 ---
-title: KS 3. blok — Užitečnost a národní důchod
+title: ImeK — Užitečnost a národní důchod
 course: imek
 type: summary
 tags: [imek, uzitecnost, lagrange, is-lm, gnp]
 sources: [raw/imek/KS_treti_blok.pdf]
 created: 2026-04-20
-updated: '2026-04-25'
+updated: '2026-04-27'
 ---
 
-# KS 3. blok — Užitečnost a národní důchod
+# ImeK — Užitečnost a národní důchod
 
-Rozcestník třetího přednáškového bloku (25 stran). Most mezi mikroekonomií (rozhodování spotřebitele) a makroekonomií (modely národní ekonomiky).
+Rozcestník — most mezi mikroekonomií (rozhodování spotřebitele) a makroekonomií (modely národní ekonomiky).
 
-## Témata bloku — doporučené pořadí
+## Témata — doporučené pořadí
 
 1. [[uzitecnost|Užitečnost]] — pojetí kardinalistické vs. ordinalistické, model užitečnosti, mezní užitečnost ($MU$), Cobb-Douglasova funkce užitečnosti, indiferenční křivky, **MRCS**, maximalizace užitečnosti při rozpočtovém omezení (Lagrange), minimalizace výdajů (duální úloha), Marshallova vs. Hicksova poptávka.
 2. [[narodni-duchod|Národní důchod]] — GNP $= C + I + G + X$, lineární model spotřeby, mezní sklon ke spotřebě/úsporám ($MPC, MPS$), modely **C-I**, **C-I-G**, **C-I-G-X**, **IS-LM**, multiplikátory (autonomní spotřeby, investic, mezního sklonu).
@@ -26,12 +26,8 @@ Rozcestník třetího přednáškového bloku (25 stran). Most mezi mikroekonomi
 - IS: $Y = \dfrac{c}{1-a}\, r + \dfrac{1}{1-a}(b + d)$
 - LM: $Y = -\dfrac{k_2}{k_1}\, r - \dfrac{k_3}{k_1} + \dfrac{M^*}{k_1}$
 
-## Vazby
+## Související stránky
 
-- **Předchozí blok:** [[imek-blok-02|KS 2. blok]] — produkce (paralela izokvanty ↔ indiferenční křivky)
-- **Navazující:** — (poslední blok kurzu)
-- **Předpoklady:** [[lagrangeova-metoda|Lagrange]], [[funkce-vice-promennych|2D kalkul]] z [[imek-blok-01|Bloku 1]]
-
-## Související
-
+- [[imek-blok-02|Elasticita a produkce]] — produkce (paralela izokvanty ↔ indiferenční křivky).
+- **Předpoklady:** [[lagrangeova-metoda|Lagrange]], [[funkce-vice-promennych|2D kalkul]] z [[imek-blok-01|Kalkul a mikroekonomie]].
 - [[imek|Kurz ImeK]]

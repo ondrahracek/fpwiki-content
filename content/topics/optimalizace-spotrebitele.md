@@ -305,5 +305,5 @@ Proč se studují obě? Marshallova poptávka je **pozorovatelná** (lze odhadno
 - **Teorie před optimalizací:** [[uzitecnost|Užitečnost]] (funkce $U$, indiferenční křivky, MRCS).
 - **Matematický aparát:** [[lagrangeova-metoda|Lagrangeova metoda]] (vázaná optimalizace), [[funkce-vice-promennych|Funkce více proměnných]] (parciální derivace), [[derivace|Derivace]].
 - **Paralely:** [[produkce|Produkce]] (MRTS ↔ MRCS, izokvanty ↔ IC, Eulerova věta pro CD), [[poptavka-nabidka|Poptávka a nabídka]] (Marshallova poptávka jako vstup tržního modelu).
-- **Přednášky:** [[imek-blok-02|KS 2. blok]], [[imek-blok-03|KS 3. blok]]
+- **Přednášky:** [[imek-blok-02|Elasticita a produkce]], [[imek-blok-03|Užitečnost a národní důchod]]
 - **Kurz:** [[imek|Matematická ekonomie]]

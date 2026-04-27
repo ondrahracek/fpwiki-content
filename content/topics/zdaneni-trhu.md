@@ -216,5 +216,5 @@ Související úvodní příklady posunu křivek při zdanění: **Příklad 2.3
 
 - **Kontext (hub):** [[poptavka-nabidka|Poptávka, nabídka a tržní rovnováha]]
 - **Související témata:** [[prebytek-spotrebitele-vyrobce|Přebytek spotřebitele a výrobce]] (daň vyvolává ztrátu blahobytu — *deadweight loss*), [[derivace|Derivace]] (sklony křivek, rovnovážný bod jako řešení soustavy), [[elasticita|Elasticita]] (kvantifikace, jak se daňové břemeno dělí podle citlivosti stran trhu)
-- **Shrnutí přednášek:** [[imek-blok-01|KS — 1. blok]]
+- **Shrnutí přednášek:** [[imek-blok-01|Kalkul a mikroekonomie]]
 - **Kurz:** [[imek|Matematická ekonomie]]
