@@ -5,7 +5,7 @@ type: summary
 tags: [imork, email, sifrovani, spf, dkim, dmarc, pgp, bec]
 sources: [raw/imork/2016 VUT_Bezp Email-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # Bezpečnost emailových služeb

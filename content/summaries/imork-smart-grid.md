@@ -1,14 +1,14 @@
 ---
-title: Smart Grid bezpečnost
+title: Smart Grid — bezpečnost
 course: imork
 type: summary
 tags: [imork, smart-grid, energetika, iot, nistir-7628, iec-62351]
 sources: [raw/imork/2008 VUT_Bezp Smart Grid-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Smart Grid bezpečnost
+# Smart Grid — bezpečnost
 
 ## Koncept Smart Grid
 

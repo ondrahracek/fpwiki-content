@@ -1,16 +1,16 @@
 ---
-title: 'Případovka: Ochrana osobních údajů — Krádež dat'
+title: Krádež dat — případová studie
 course: imork
 type: summary
 tags: [imork, ochrana-dat, pii, gdpr, iso-27701, privacy-by-design, iot, botnet]
 sources: [raw/imork/2109 VUT_Bezp Případovka Krádež dat_2020.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Případovka: Ochrana osobních údajů — Krádež dat
+# Krádež dat — případová studie
 
-P��ípadová studie z 6. listopadu 2020. Krádež osobních údajů (PII), černý trh, uživatelské pochybení a normativní rámce [[ochrana-dat|ochrany dat]].
+Případová studie z 6. listopadu 2020. Krádež osobních údajů (PII), černý trh, uživatelské pochybení a normativní rámce [[ochrana-dat|ochrany dat]].
 
 ## PII — Personally Identifiable Information
 
@@ -56,9 +56,9 @@ _Poznámka: Kalifornie od 2020 zakázala prodej síťových zařízení s předn
 4. **Infrastructure Management** — monitoring, logging, řízení hrozeb
 5. **Risk & Accountability** — řízení rizik, forenzní analýza, compliance
 
-## ISO/IEC 27701:2019
+## ISO/IEC 27701:2025 (PIMS)
 
-Rozšíření ISO 27001/27002 pro správu osobních informací (**PIMS**):
+Privacy Information Management System — rozšíření ISO 27001/27002 pro správu osobních informací (1. vydání 2019, aktuální 2025):
 - Návody pro správce, zpracovatele i pověřence
 - Mapuje požadavky GDPR — průvodce dodržováním
 - Zavádí: **DPIA**, datovou analýzu, procesní analýzu
@@ -83,7 +83,7 @@ Rozšíření ISO 27001/27002 pro správu osobních informací (**PIMS**):
 2. Pochopení a hodnocení dopadu (CIA)
 3. Definice hrozeb a hodnocení pravděpodobnosti
 4. Vyhodnocení rizika (matice pravděpodobnost × dopad)
-5. Výběr bezpečnostn��ch opatření
+5. Výběr bezpečnostních opatření
 
 ## Normy NIST
 
@@ -97,13 +97,9 @@ Rozšíření ISO 27001/27002 pro správu osobních informací (**PIMS**):
 - Privacy and Data Protection by Design (2014)
 - Handbook on Security of Personal Data Processing (2017)
 
-## Propojení s dalšími tématy
-
+## Související stránky
 - [[ochrana-dat|Ochrana dat]] — technologická řešení
 - [[imork-digitalni-identita|Digitální identita]] — PII a digitální stopa
 - [[isms|ISMS]] — ISO 27701 jako rozšíření
 - [[sae|SAE]] — povědomí o rizicích uživatelského pochybení
 
-## Zdroj v kurzu [[imork|ImorK]]
-
-- Případovka 2109 — Krádež dat (2020)

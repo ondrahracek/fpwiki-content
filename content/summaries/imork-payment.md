@@ -5,7 +5,7 @@ type: summary
 tags: [imork, platby, pci-dss, nfc, tokenizace, emv, mobilni-platby]
 sources: [raw/imork/2204 VUT_Bezp_Případovka Payment_2022.pdf]
 created: 2026-04-12
-updated: '2026-04-26'
+updated: '2026-05-04'
 ---
 
 # Bezpečnost plateb
@@ -38,9 +38,9 @@ Bezpečnost platebních karet, mobilních plateb a standardu PCI DSS.
 | **Apple Pay** | High | SE v zařízení, tokenizace, biometrie |
 | **Android Pay** (Google Pay) | Medium-High | HCE, tokenizace, bez dedikovaného SE |
 
-## PCI DSS v4.0
+## PCI DSS v4.0.1
 
-**Payment Card Industry Data Security Standard** — standard pro ochranu dat platebních karet.
+**Payment Card Industry Data Security Standard** — standard pro ochranu dat platebních karet. Aktuální verze **v4.0.1** od června 2024 (v4.0 vydána v březnu 2022, vyřazena 31. 12. 2024). Předchozí verze v3.2.1 ukončena 31. 3. 2024.
 
 ### 6 kroků k dosažení souladu
 

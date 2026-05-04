@@ -1,14 +1,14 @@
 ---
-title: 'Případovka: Správa přihlašovacích údajů'
+title: Správa přihlašování — případová studie
 course: imork
 type: summary
 tags: [imork, autentizace, hesla, privilegovane-ucty, biometrika, nist, isms]
 sources: [raw/imork/2104 VUT_Bezp_Případovka Správa login_2020.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Případovka: Správa přihlašovacích údajů
+# Správa přihlašování — případová studie
 
 Případová studie z 22. srpna 2020. Správa hesel, privilegovaných účtů, SSH klíčů a autentizačních prostředků v kontextu [[isms|ISMS]].
 
@@ -45,7 +45,7 @@ Případová studie z 22. srpna 2020. Správa hesel, privilegovaných účtů, S
 ## 11 oblastí řešení správy privilegovaných hesel
 
 1. **Automatizovaná detekce účtů** — detekce systémů bez agentů
-2. **Zabezpečené úložiště** — šifrování dle FIPS 140-2, HSM moduly
+2. **Zabezpečené úložiště** — šifrování dle FIPS 140-3 (povinný od dubna 2022; nahrazuje 140-2), HSM moduly
 3. **Automatické vynucování politik** — složitost, obnovovací cykly
 4. **Bezpečné použití hesel** — uživatel hesla nevidí ani nezíská
 5. **Heterogenní prostředí** — Windows, Linux, DB, síťová zařízení, ERP
@@ -76,13 +76,9 @@ Pokus o přihlášení → sběr dat → analýza → výpočet rizika → pří
 
 **Závěr**: Behaviorální biometrika s vícefaktorovým ověřením = nejlepší poměr použitelnosti, nákladů a bezpečnosti.
 
-## Propojení s dalšími tématy
-
+## Související stránky
 - [[isms|ISMS]] — správa přístupu jako technická vrstva
 - [[ochrana-dat|Ochrana dat]] — NAC, řízení přístupu
 - [[imork-digitalni-identita|Digitální identita]] — autentizace a identifikace
 - [[sae|SAE]] — budování povědomí o bezpečnosti hesel
 
-## Zdroj v kurzu [[imork|ImorK]]
-
-- Případovka 2104 — Správa přihlašovacích údajů (2020)

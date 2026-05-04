@@ -5,7 +5,7 @@ type: summary
 tags: [imork, mobilni-bezpecnost, sim, 5g, malware, nist, common-criteria]
 sources: [raw/imork/2206 VUT_Bezp_Případovka Mobilní bezpečnost-2021.pdf]
 created: 2026-04-12
-updated: '2026-04-26'
+updated: '2026-05-04'
 ---
 
 # Mobilní bezpečnost
@@ -21,12 +21,14 @@ Bezpečnost mobilních zařízení — od standardů NIST přes konkrétní úto
 | **ENISA Mobile App Privacy** (2017) | Ochrana soukromí v mobilních aplikacích |
 | **Agile SDL** (Microsoft) | Bezpečný životní cyklus vývoje SW — integrace bezpečnosti do agilního vývoje |
 
-## SIMJacker útok
+## SIMjacker útok
 
+- Objeven společností **AdaptiveMobile Security** (Dublin, září 2019)
+- CVE-2019-16256, CVE-2019-16257
 - Zranitelnost **S@T Browser** (SIM Application Toolkit) — zastaralá technologie v SIM kartách
 - Útočník zasílá speciálně vytvořené SMS
 - Získání **IMEI** a **polohy** zařízení bez vědomí uživatele
-- Postiženy SIM karty ve více než 30 zemích
+- Postiženy SIM karty ve více než 30 zemích (29 zemí, ~61 operátorů v původním zveřejnění)
 - Propojení s [[kyberneticka-bezpecnost|kybernetickou bezpečností]] mobilních sítí
 
 ## SIM swapping

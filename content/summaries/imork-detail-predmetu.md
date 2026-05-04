@@ -1,14 +1,14 @@
 ---
-title: ImorK — Detail předmětu
+title: Management oborových řešení — Detail předmětu
 course: imork
 type: summary
 tags: [imork, isms, informacni-bezpecnost, oborova-reseni]
 sources: [raw/imork/Detail předmětu.md]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# ImorK — Detail předmětu
+# Management oborových řešení — Detail předmětu
 
 ## Základní informace
 

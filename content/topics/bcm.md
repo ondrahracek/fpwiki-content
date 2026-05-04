@@ -5,7 +5,7 @@ type: topic
 tags: [imork, bcm, kontinuita-cinnosti, iso-22301, bia, disaster-recovery]
 sources: [raw/imork/2014 VUT_Bezp BCM-2021.pdf, raw/imork/2013 VUT_Bezp DR-2021.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # BCM — Řízení kontinuity činnosti
@@ -56,6 +56,74 @@ Identifikuje potenciální dopady incidentů a zajišťuje kontinuitu a obnovu k
 | **L**egislativní | Předpisy, zákony |
 | **E**nvironmentální | Životní prostředí, přírodní hrozby |
 
+## BIA (Business Impact Analysis)
+
+### Dva způsoby provedení
+
+1. **Bottom-up** — sběr od provozních manažerů směrem nahoru; detailní znalost procesů, ale časově náročné.
+2. **Top-down** — od vyššího managementu; rychlejší, ale může opomenout provozní detaily.
+
+### Principy BIA
+
+- Orientace na **dopad**, ne na příčinu — nezkoumá *co se stane*, ale *jaké budou následky*.
+- **Kalendář klíčových ročních událostí** — identifikuje období se zvýšenou kritičností (uzávěrky, sezónní špičky).
+
+## Mapování procesů
+
+- **Víceúrovňové mapování** — od strategických procesů po operativní detaily.
+- **Identifikace zdrojů** — lidé, technologie, prostory, dodavatelé potřební pro každý proces.
+- **SPoF** (Single Point of Failure) — identifikace jediných bodů selhání, jejichž výpadek zastaví celý proces.
+
+## Strategie kontinuity
+
+### 4 kroky strategie
+
+1. **Reakce na incident** — okamžitá odezva, aktivace krizového řízení.
+2. **Obnova kritických činností** — prioritní obnovení klíčových procesů dle BIA.
+3. **Vztahy se stakeholdery** — komunikace se zainteresovanými stranami.
+4. **Nekritické činnosti** — postupná obnova ostatních procesů.
+
+### 4 scénáře narušení
+
+1. **Zamezení přístupu** — nedostupnost budov/prostor (požár, povodeň).
+2. **Nedostatek pracovníků** — pandemie, hromadná absence.
+3. **Selhání technologie** — výpadek ICT, kybernetický útok.
+4. **Selhání dodavatele** — přerušení dodavatelského řetězce.
+
+## Implementace plánů
+
+### Obsah plánu kontinuity
+
+Účel a rozsah, role a odpovědnosti, aktivační kritéria, **DRP** (Disaster Recovery Plan) pro IT infrastrukturu, kontaktní seznamy, priority obnovy dle BIA. Dlouhodobá obnova je řízena jako **samostatný projekt**.
+
+## Testování BCM
+
+| Forma | Popis |
+|---|---|
+| **Tabletop review** | Teoretické procházení scénářů |
+| **Walkthrough** | Krokové ověření postupů s účastníky |
+| **Full exercise** | Simulace reálného incidentu |
+
+Zásady: **neočekávané testy** pro ověření reálné připravenosti; v krizové situaci **direktivní řízení pod tlakem** (centralizované rozhodování).
+
+## VKB — Vyhláška o kybernetické bezpečnosti
+
+**§15 vyhlášky č. 82/2018 Sb.** vyžaduje:
+
+- **MBCO** — minimální úroveň služeb pro kontinuitu
+- **RTO** — maximální přípustná doba výpadku
+- **RPO** — maximální přípustná ztráta dat
+
+Příloha č. 5, bod **1.23 Politika řízení kontinuity** — požadavky na dokumentaci a řízení BCM.
+
+## ISO/IEC 27031:2025
+
+Připravenost ICT pro kontinuitu podnikání — propojení mezi kritickou infrastrukturou a BCMS. Aktuální vydání 2025 (první 2011, dlouho jediné, novelizace 2025).
+
+## BCMaaS
+
+**BCM as a Service** — cloudový model poskytování BCM, outsourcing plánování a řízení kontinuity, vhodný zejména pro menší organizace bez vlastních kapacit.
+
 ## Disaster Recovery (DR)
 
 Předem stanovený scénář obnovy provozu po havárii — součást BCM.
@@ -80,13 +148,10 @@ Předem stanovený scénář obnovy provozu po havárii — součást BCM.
 - **Hot DR** — paralelní řešení v tandemu
 - **DRaaS** — Disaster Recovery as a Service (řízené/asistované/vlastní)
 
-## Propojení s dalšími tématy
+## Související stránky
 
 - [[isms|ISMS]] — BCM jako součást bezpečnostního systému
 - [[rizeni-rizik|Řízení rizik]] — krizové plány pro zbytková rizika
 - [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — reakce na incidenty
-
-## Zdroje v kurzu [[imork|ImorK]]
-
-- [[imork-bcm|BCM — shrnutí přednášky]]
-- [[imork-dr|Disaster Recovery — shrnutí přednášky]]
+- [[imork-bcm|Záznam přednášky BCM]] — bibliografická karta zdroje
+- [[imork-dr|Disaster Recovery — záznam přednášky]] — DR detail

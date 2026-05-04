@@ -5,7 +5,7 @@ type: summary
 tags: [imork, isms, zdravotnictvi, hipaa, iso-27799, ehealth, pacs]
 sources: [raw/imork/2006 VUT_Bezp zdravotnictví-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # ISMS ve zdravotnictví
@@ -30,16 +30,25 @@ Standard pro návrh a implementaci ICT infrastruktury ve zdravotnických zaříz
 
 ### HIPAA
 
-Americký zákon skládající se ze 4 částí:
+Americký zákon (1996) o ochraně zdravotních dat, **5 titulů (I–V)**:
 
-1. **Privacy Rule** — ochrana osobních zdravotních údajů
-2. **Security Rule** — technická a organizační opatření
-3. **Unique Identifiers Rule** — identifikátory subjektů
-4. **Electronic Transaction & Code Sets** — elektronické kódy a transakce
+- **Title I** — Health Care Access, Portability, and Renewability (přenositelnost zdravotního pojištění)
+- **Title II** — Administrative Simplification — administrativní zjednodušení; obsahuje klíčová prováděcí pravidla:
+  - **Privacy Rule** — ochrana osobních zdravotních údajů (PHI)
+  - **Security Rule** — technická, fyzická a administrativní opatření pro ePHI
+  - **Unique Identifiers Rule** — jednotné identifikátory subjektů (NPI, EIN)
+  - **Transactions & Code Sets Rule** — standardizované elektronické transakce
+  - **Enforcement Rule** — sankce a procesy
+  - **Breach Notification Rule** — povinnost oznámit únik dat
+- **Title III** — Tax-Related Health Provisions (daňová ustanovení)
+- **Title IV** — Application and Enforcement of Group Health Plan Requirements (skupinové zdravotní plány)
+- **Title V** — Revenue Offsets (rozpočtové kompenzace)
 
-### ISO/IEC 27799:2019
+**HITECH Act** (2009, součást ARRA) — rozšiřuje HIPAA: zavádí **Breach Notification Rule**, vztahuje povinnosti i na **business associates**, posiluje sankce.
 
-Bezpečnost zdravotnických informací — rozšíření ISO 27001 pro zdravotnictví.
+### ISO 27799:2025
+
+Bezpečnost zdravotnických informací — rozšíření ISO 27001 pro zdravotnictví. Aktuální vydání 2025 (předchozí 2016 a 2008). Pozn.: standard se publikuje jako **ISO 27799** (samostatně, ne jako ISO/IEC).
 
 ### ISO/IEC 27789:2021
 

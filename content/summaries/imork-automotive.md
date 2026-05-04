@@ -1,14 +1,14 @@
 ---
-title: Automotive bezpečnost
+title: Automotive — kybernetická bezpečnost
 course: imork
 type: summary
 tags: [imork, isms, automotive, can-bus, tisax, iso-11898]
 sources: [raw/imork/2010 VUT_Bezp Automotive-2023.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Automotive bezpečnost
+# Automotive — kybernetická bezpečnost
 
 ![[imork-automotive-vrstvy.jpeg|4 bezpečnostní vrstvy automobilu — Cloud, Komunikace, Gateway, ECU/CAN bus]]
 

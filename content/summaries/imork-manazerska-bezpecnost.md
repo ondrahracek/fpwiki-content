@@ -1,14 +1,14 @@
 ---
-title: ImorK — Manažerská informační bezpečnost
+title: Manažerská informační bezpečnost
 course: imork
 type: summary
 tags: [imork, isms, governance, siem, incident-management, iam, mobilni-bezpecnost, penetracni-testy]
 sources: [raw/imork/2001 VUT_Bezp Managerská 2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# ImorK — Manažerská informační bezpečnost
+# Manažerská informační bezpečnost
 
 ![[imork-isms-role.jpeg|Organizační schéma bezpečnostních rolí ISMS — CEO, CIO, CISO, Manažer/Architekt/Auditor KB]]
 

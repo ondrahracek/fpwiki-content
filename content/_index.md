@@ -1,7 +1,7 @@
 ---
 title: "Index"
 type: index
-updated: 2026-04-27
+updated: 2026-05-04
 ---
 
 # Index — FP VUT Wiki
@@ -11,7 +11,7 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 ## Kurzy
 
 - [[ipmrk|Pokročilé metody v rozhodování (IpmrK)]] — fuzzy logika, neuronové sítě, GA, evoluční alg., chaos, optimalizace, datamining, predikce. 13 zdrojů.
-- [[imork|Management oborových řešení (ImorK)]] — ISMS, kybernetická bezpečnost, oborová řešení. 35 zdrojů.
+- [[imork|Management oborových řešení (ImorK)]] — ISMS, kybernetická bezpečnost, oborová řešení. 34 zdrojů.
 - [[imek|Matematická ekonomie (ImeK)]] — kalkul funkcí, poptávka/nabídka, elasticita, produkce, užitečnost, národní důchod, IS-LM. 5 zdrojů (3 PDF přednášky + sylabus + kniha Mezník kap. 2–7).
 - [[mikk|Mikroekonomie 2 (mikK)]] — pokročilá teorie spotřebitele (Marshall/Hicks, Slutsky, riziko), tržní struktury (monopol, cenová diskriminace, oligopol — Cournot/Stackelberg/Bertrand, kartel, monopolistická konkurence, monopson), alternativní cíle firmy (Baumol, Williamson, Simon, Cyert-March, Doyle, Ward). Garant: prof. Škapa, vyučující (KS): Ing. Luňáček. 6 zdrojů (sylabus + 3 PDF přednášky + řešené Předtermíny + článek Buchta-Kovárník).
 - [[irmank|Risk management (IrmanK)]] — kritické faktory úspěchu firmy (7S, EFQM), modely změny (Lewin, KAIZEN), riziko a jeho měření (σ, KV, mapa rizik), taktiky snižování (vyvárování / udržení / redukce / přenos), finanční nástroje (faktoring, forfaiting, akreditiv), AI metody (FEL-EXPERT, GA, ANN), investiční rozhodování (BOT case study), krizové řízení. 3 zdroje.
@@ -86,6 +86,7 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[sae|SAE]] — Security Awareness and Education, budování bezpečnostního povědomí
 - [[bcm|BCM]] — Business Continuity Management, Disaster Recovery, ISO 22301
 - [[ochrana-dat|Ochrana dat]] — NAC, IDS/IPS, SIEM, DLP, šifrování, IPv6
+- [[gdpr|GDPR]] — nařízení (EU) 2016/679; DPIA, Privacy by Design, ISO 27701, čl. 33 (72 h notif.), pokuty 4 % obratu
 
 ### IrmanK (Risk management)
 - [[kriticke-faktory-uspechu|Kritické faktory úspěchu firmy]] — McKinsey 7S, EFQM model exelence, tichí zabijáci org. efektivity, Walton's Decalogue, úspěšný manažer
@@ -141,8 +142,8 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[imork-detail-predmetu|Detail předmětu]] — sylabus, garant Ing. Novák, 13 přednášek
 - [[imork-manazerska-bezpecnost|Manažerská bezpečnost]] — governance, SIEM, ISACA, NBA, incident management, IAM/IdM, access control, mobilní bezpečnost, penetrační testy
 - [[imork-bezpecnostni-strategie|Bezpečnostní strategie]] — tvorba ICT bezpečnostní strategie
-- [[imork-sae|SAE]] — povědomí, výcvik, vzdělávání, profesní rozvoj (NIST SP 800-50/16)
-- [[imork-risk-management|Risk Management]] — ISO 31000, ISO 27005, RTP, PoA/SoA, NIST SP 800-30
+- [[imork-sae|Záznam přednášky SAE]] — bibliografická karta zdroje; plný výklad na [[sae|SAE]]
+- [[imork-risk-management|Záznam přednášky Risk Management]] — bibliografická karta zdroje; plný výklad na [[rizeni-rizik|Řízení rizik]]
 
 ### Oborová ISMS
 - [[imork-akademicke-prostredi|Akademické prostředí]] — kampus, WiFi, BICSI, VIS, TLP
@@ -158,13 +159,13 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 ### Bezpečnost aplikací a dat
 - [[imork-www|Bezpečnost webu]] — OWASP, XSS, SQL injection, Solid, NIST SP 800-95, IPsec, TLS, XML Security, data diodes
 - [[imork-email|Bezpečnost emailu]] — SPF, DKIM, DMARC, S/MIME, STARTTLS, PGP/OpenPGP, BEC, Mimecast, sandboxing
-- [[imork-ochrana-dat|Ochrana dat]] — NAC, IDS/IPS, SIEM, DLP, ransomware, IPv6, kryptografie, steganografie, e-podpis, eIDAS, ENISA
+- [[imork-ochrana-dat|Záznam přednášky Ochrana dat]] — bibliografická karta zdroje; plný výklad na [[ochrana-dat|Ochrana dat]]
 
 ### Kontinuita a obnova
-- [[imork-bcm|BCM]] — ISO 22301, PDCA, BIA, STEEPLE, strategie kontinuity, testování BCM, VKB §15, BCMaaS
+- [[imork-bcm|Záznam přednášky BCM]] — bibliografická karta zdroje; plný výklad na [[bcm|BCM]]
 - [[imork-dr|Disaster Recovery]] — RPO/RTO, cloud DR, 7 tiers, DRaaS
 
-### Kybernetické útoky a cvičení
+### Kybernetické útoky
 - [[imork-anatomie-utoku|Anatomie útoku]] — APT 4 fáze, exploit/payload, MITRE ATT&CK, sociální inženýrství, phishing, supply chain, amplifikační útoky, ISO/OSI vrstvy
 - [[imork-ai-utoky|AI útoky]] — WormGPT, BEC 5 typů, obrana
 - [[imork-sitove-utoky|Síťové útoky]] — DDoS, spoofing, ISO/OSI L1–L7, Emotet→Trickbot→Ryuk
@@ -209,3 +210,5 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[mikk-vzorce-prehled|MikK — Kompletní přehled vzorců]] — referenční list všech vzorců kurzu MikK v definičním tvaru, 18 sekcí (užitek, optimalizace, dualita, elasticity, monopol, diskriminace, oligopol, MK, behavior, Ward, riziko)
 - [[mikk-vzorove-zkousky|MikK — Vzorové zkoušky a Předtermíny]] — 14 řešených zkouškových termínů + Test KS + zkouška β; typologie otázek a studijní strategie
 - [[mikk-srovnani-modelu-oligopolu|MikK — Srovnání oligopolních modelů]] — master tabulka koluze/Cournot/Bertrand/Stackelberg pro $P=a-bQ$, $MC=0$ s odvozením a numerickými příklady
+- [[imork-normy-prehled|ImorK — Přehled norem podle sektoru]] — referenční tabulka rodiny ISO 27000, NIST SP 800, EU regulací (GDPR, eIDAS, NIS2, DORA, MiCA, UN R155), českých předpisů (ZKB, VKB, nZKB) a frameworků (NIST CSF, MITRE ATT&CK, OWASP, CMMC) zařazených podle oborového sektoru
+- [[imork-glosar|ImorK — Glosář pojmů a zkratek]] — abecední slovník ~120 pojmů a zkratek kurzu (AAA, APT, BCM, BIA, CIA, DPIA, GDPR, ISMS, MITRE ATT&CK, NIS2, PCI DSS, SAE, SoA, RaaS, RPO/RTO, …)

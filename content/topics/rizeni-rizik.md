@@ -5,7 +5,7 @@ type: topic
 tags: [imork, rizeni-rizik, iso-31000, iso-27005, nist, hodnoceni-rizik]
 sources: [raw/imork/2003 VUT_Bezp Risk Mngmt-2021.pdf, raw/imork/2001 VUT_Bezp Managerská 2022.pdf]
 created: 2026-04-12
-updated: '2026-04-27'
+updated: '2026-05-04'
 ---
 
 # Řízení rizik
@@ -30,9 +30,9 @@ Komplexní proces identifikace, analýzy a ošetření rizik ohrožujících bez
 
 | Norma | Zaměření |
 |---|---|
-| **ISO 31000:2019** | Obecné smrnice pro management rizik |
-| **ISO 31010:2020** | Techniky posuzování rizik |
-| **ISO/IEC 27005:2019** | Řízení rizik bezpečnosti informací |
+| **ISO 31000:2018** | Obecné směrnice pro management rizik |
+| **IEC 31010:2019** | Techniky posuzování rizik |
+| **ISO/IEC 27005:2022** | Řízení rizik bezpečnosti informací |
 | **NIST SP 800-30** | Průvodce hodnocením rizik |
 | **NIST SP 800-39** | Proces řízení bezpečnostních rizik |
 
@@ -61,8 +61,15 @@ Hrozba → Systém → Zranitelnost → Zneužitelnost? → Riziko → Přijatel
 
 ## Klíčové dokumenty
 
-- **RTP** (Risk Treatment Plan) — plán zvládání rizik s opatřeními, prioritami, termíny, zdroji
-- **PoA/SoA** (Statement of Applicability) — přehled aplikovaných a neaplikovaných opatření
+- **RTP** (Risk Treatment Plan) — plán zvládání rizik s vybranými opatřeními pro jednotlivá rizika, odpovědnými osobami, termíny implementace, potřebnými zdroji.
+- **SoA / PoA** (Statement of Applicability / Prohlášení o aplikovatelnosti) — seznam všech opatření z Přílohy A normy ISO 27001 s uvedením, zda je opatření aplikováno, zdůvodnění zahrnutí/vyloučení a stavu implementace.
+
+## Metodika pro organizace s KII / VIS
+
+Specifický postup hodnocení rizik dle požadavků zákona o kybernetické bezpečnosti (**ZKB 181/2014 Sb.**) a prováděcích vyhlášek pro organizace provozující:
+
+- **KII** — kritickou informační infrastrukturu
+- **VIS** — významné informační systémy
 
 ## Bezpečnostní role dle ZKB
 
@@ -80,14 +87,11 @@ Hrozba → Systém → Zranitelnost → Zneužitelnost? → Riziko → Přijatel
 | Stupeň 2 | Poslání/obchodní procesy | Taktické riziko |
 | Stupeň 3 | Informační systémy | Operační riziko |
 
-## Propojení s dalšími tématy
+## Související stránky
 
 - [[isms|ISMS]] — řízení rizik jako součást systému
 - [[bcm|BCM]] — kontinuita činnosti při materializaci rizik
 - [[imork-dr|Disaster Recovery]] — obnova po havárii
 - [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — kontext hrozeb
-
-## Zdroje v kurzu [[imork|ImorK]]
-
-- [[imork-risk-management|Risk Management — shrnutí přednášky]]
-- [[imork-manazerska-bezpecnost|Manažerská bezpečnost]]
+- [[imork-risk-management|Záznam přednášky Risk Management]] — bibliografická karta zdroje
+- [[imork-manazerska-bezpecnost|Manažerská bezpečnost]] — governance kontext

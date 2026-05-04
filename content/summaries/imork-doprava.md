@@ -5,7 +5,7 @@ type: summary
 tags: [imork, isms, doprava, zeleznice, kriticka-infrastruktura, enisa]
 sources: [raw/imork/2009 VUT_Bezp Doprava-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # ISMS v dopravě (železnice)

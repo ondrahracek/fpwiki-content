@@ -1,14 +1,14 @@
 ---
-title: ISMS pro ISP
+title: ISMS u ISP a telekomunikací
 course: imork
 type: summary
 tags: [imork, isms, isp, telekomunikace, ngn, 5g, iso-27011]
 sources: [raw/imork/2011 VUT_Bezp ISP-2020.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# ISMS pro ISP
+# ISMS u ISP a telekomunikací
 
 ## Definice ISP
 
