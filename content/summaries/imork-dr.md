@@ -1,14 +1,14 @@
 ---
-title: Disaster Recovery (DR)
+title: Disaster Recovery
 course: imork
 type: summary
 tags: [imork, dr, disaster-recovery, rpo, rto, cloud, draas]
 sources: [raw/imork/2013 VUT_Bezp DR-2021.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Disaster Recovery (DR)
+# Disaster Recovery
 
 ## Vztah k BCM
 

@@ -1,14 +1,14 @@
 ---
-title: ImorK — ISMS v akademickém prostředí
+title: ISMS v akademickém prostředí
 course: imork
 type: summary
 tags: [imork, isms, univerzity, kampus, wifi]
 sources: [raw/imork/2004 VUT_Bezp akademici-2021.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# ImorK — ISMS v akademickém prostředí
+# ISMS v akademickém prostředí
 
 ## Specifika univerzitního kampusu
 

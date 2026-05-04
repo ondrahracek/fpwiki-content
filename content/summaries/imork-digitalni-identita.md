@@ -5,7 +5,7 @@ type: summary
 tags: [imork, digitalni-identita, digitalni-stopa, soukromi, autentizace]
 sources: [raw/imork/PRIS 2208 VUT_Bezp Digi identita a stopa.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # Digitální identita a digitální stopa
@@ -38,13 +38,9 @@ updated: '2026-04-25'
 - Zneužití digitální identity
 - Odstranění digitální stopy je prakticky **nerealizovatelné** — lze pouze minimalizovat (např. TOR)
 
-## Propojení s dalšími tématy
-
+## Související stránky
 - [[imork-ochrana-dat|Ochrana dat]] — technologie ochrany osobních údajů
 - [[imork-www|Bezpečnost webu]] — online identita a webové služby
 - [[imork-email|Bezpečnost emailu]] — ověřování identity odesílatele
 - [[imork-sae|SAE]] — budování povědomí o digitální stopě
 
-## Zdroj v kurzu [[imork|ImorK]]
-
-- Přednáška PRIS 2208 — Digitální identita a stopa

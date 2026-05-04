@@ -1,14 +1,14 @@
 ---
-title: TOR — The Onion Router
+title: TOR — anonymizační síť
 course: imork
 type: summary
 tags: [imork, tor, anonymizace, sifrovani, darknet, nsa]
 sources: [raw/imork/CV 05 VUT_TOR.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# TOR — The Onion Router
+# TOR — anonymizační síť
 
 Anonymizační síť založená na principu cibulového směrování (onion routing) — každý uzel v řetězci zná pouze předchozí a následující uzel.
 
@@ -35,7 +35,7 @@ Uživatel → [TOR síť — šifrovaný provoz] → Exit relay → Cíl (nešif
 
 ## Sledování TOR uživatelů
 
-- **NSA / X-Keyscore** — program pro sledování a identifikaci uživatelů TOR (odhalen Edwardem Snowdenem, 2013)
+- **NSA / X-Keyscore** — program pro sledování a identifikaci uživatelů TOR (Snowdenův únik 2013; specifická pravidla cílící na TOR uživatele zveřejnila ARD/Tagesschau v červenci 2014)
 - **BadExit blacklist** — seznam škodlivých výstupních uzlů, které odposlouchávají provoz
 - I při použití TOR existují [[kyberneticka-bezpecnost\|bezpečnostní rizika]] na výstupním uzlu
 
@@ -51,8 +51,7 @@ Uživatel → [TOR síť — šifrovaný provoz] → Exit relay → Cíl (nešif
 - **Iniciativa Francie + Německo** — požadavek na zadní vrátka (backdoor) v šifrovaných komunikacích
 - Konflikt mezi [[ochrana-dat|ochranou soukromí]] a bezpečnostními potřebami státu
 
-## Vazby na další témata
-
+## Související stránky
 - [[imork-rizeny-hacking|Řízený hacking / APT]] — TOR jako nástroj anonymizace útočníků
 - [[imork-sitove-utoky|Síťové útoky]] — sniffing na exit relay
 - [[imork-ransomware|Ransomware]] — TOR jako distribuční kanál

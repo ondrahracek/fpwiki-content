@@ -5,7 +5,7 @@ type: topic
 tags: [imork, isms, iso-27001, iso-27002, informacni-bezpecnost, governance]
 sources: [raw/imork/2001 VUT_Bezp Managerská 2022.pdf, raw/imork/2003 VUT_Bezp Risk Mngmt-2021.pdf, raw/imork/Detail předmětu.md]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # ISMS — Systém řízení bezpečnosti informací
@@ -35,7 +35,7 @@ Information Security Management System (ISMS) je systematický přístup k říz
 - **ISO/IEC 27014** — governance bezpečnosti informací
 - **ISO/IEC 27011** — ISMS pro [[imork-isp|telekomunikace]]
 - **ISO/IEC 27019** — ISMS pro [[imork-energetika|energetiku]]
-- **ISO/IEC 27799** — ISMS pro [[imork-zdravotnictvi|zdravotnictví]]
+- **ISO 27799** — ISMS pro [[imork-zdravotnictvi|zdravotnictví]] (publikováno samostatně, ne ISO/IEC)
 
 ### Další rámce
 
@@ -85,16 +85,13 @@ Kurz [[imork|ImorK]] pokrývá ISMS specifika pro:
 - [[imork-mcn|Mission Critical Networks]]
 - [[imork-financni-sektor|Finanční sektor]]
 
-## Propojení s dalšími tématy
+## Související stránky
 
 - [[rizeni-rizik|Řízení rizik]] — jádro ISMS procesu
 - [[sae|SAE]] — budování bezpečnostního povědomí
 - [[bcm|BCM]] — kontinuita činnosti
 - [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — širší kontext
 - [[ochrana-dat|Ochrana dat]] — technologická opatření
-
-## Zdroje v kurzu [[imork|ImorK]]
-
-- [[imork-manazerska-bezpecnost|Manažerská bezpečnost]]
-- [[imork-risk-management|Risk Management]]
-- [[imork-bezpecnostni-strategie|Bezpečnostní strategie]]
+- [[imork-manazerska-bezpecnost|Manažerská bezpečnost]] — governance kontext
+- [[imork-risk-management|Záznam přednášky Risk Management]] — bibliografická karta
+- [[imork-bezpecnostni-strategie|Bezpečnostní strategie]] — ENISA NCSS, NÚKIB strategie

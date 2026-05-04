@@ -1,14 +1,14 @@
 ---
-title: Mission Critical Networks (MCN)
+title: Mission Critical Networks
 course: imork
 type: summary
 tags: [imork, mcn, ncpi, dostupnost, spolehlivost, model-hrozeb]
 sources: [raw/imork/2012 VUT_Bezp MCN-2015.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Mission Critical Networks (MCN)
+# Mission Critical Networks
 
 ## Definice
 

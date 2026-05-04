@@ -1,14 +1,14 @@
 ---
-title: Řízený hacking — Advanced Persistent Threat (APT)
+title: Řízený hacking a APT skupiny
 course: imork
 type: summary
 tags: [imork, apt, fancy-bear, informacni-valka, osint]
 sources: [raw/imork/CV 04 VUT_Řízený hacking.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Řízený hacking — Advanced Persistent Threat (APT)
+# Řízený hacking a APT skupiny
 
 Případová studie zaměřená na pokročilé přetrvávající hrozby (APT) — organizované, dlouhodobé kybernetické operace řízené státními aktéry.
 
@@ -25,11 +25,11 @@ Případová studie zaměřená na pokročilé přetrvávající hrozby (APT) �
 
 | Skupina | Alias | Stát | Cíle |
 |---------|-------|------|------|
-| **APT28** | Fancy Bear / Sofacy | Rusko | NATO, západní vlády, [[kyberneticka-bezpecnost\|kritická infrastruktura]] |
-| **APT29** | Cozy Bear | Rusko | Pentagon, DNC (Demokratická strana USA) |
-| **APT34** | — | Írán | Blízký východ, energetika |
-| **APT37** | Reaper | Severní Korea | Jihokorejské cíle |
-| **APT41** | Winnti | Čína | Globální technologické firmy |
+| **APT28** | Fancy Bear / Sofacy (GRU Unit 26165) | Rusko | NATO, západní vlády, [[kyberneticka-bezpecnost\|kritická infrastruktura]] |
+| **APT29** | Cozy Bear (SVR) | Rusko | Pentagon, DNC (Demokratická strana USA) |
+| **APT34** | OilRig | Írán | Blízký východ, energetika |
+| **APT37** | Reaper / ScarCruft / Ricochet Chollima | Severní Korea | Jihokorejské cíle |
+| **APT41** | Wicked Panda / BARIUM / Winnti | Čína | Globální technologické firmy |
 | **Ghost Net** | — | Čína | 100+ zemí, diplomatické cíle |
 
 ## Ruské informační operace
@@ -53,8 +53,7 @@ Případová studie zaměřená na pokročilé přetrvávající hrozby (APT) �
 - **Virtual Execution Engine** — spouštění podezřelého kódu v izolovaném prostředí
 - Propojení s [[isms|ISMS]] a [[rizeni-rizik|řízením rizik]] v organizaci
 
-## Vazby na další témata
-
+## Související stránky
 - [[imork-anatomie-utoku|Anatomie kybernetického útoku]] — obecný kill chain model
 - [[imork-sitove-utoky|Síťové útoky]] — technické vektory průniku
 - [[imork-tor|TOR síť]] — anonymizace útočníků

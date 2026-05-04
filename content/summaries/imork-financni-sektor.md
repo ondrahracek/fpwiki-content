@@ -5,7 +5,7 @@ type: summary
 tags: [imork, isms, dora, mica, dlt, blockchain]
 sources: [raw/imork/2005 VUT_Bezp_Finanční sektor_2023.pdf]
 created: 2026-04-12
-updated: '2026-04-26'
+updated: '2026-05-04'
 ---
 
 # ISMS ve finančním sektoru
@@ -75,13 +75,9 @@ Technologie sdíleného/distribuovaného registru. Pilotní režim EU pro tržn�
 - MiCA → regulace kryptoaktiv
 - DLT → pilotní tržní infrastruktury
 
-## Propojení s dalšími tématy
-
+## Související stránky
 - [[isms|ISMS]] — DORA jako sektorový regulační rámec
 - [[rizeni-rizik|Řízení rizik]] — řízení IKT rizik jako jádro DORA
 - [[imork-bcm|BCM]] — digitální provozní odolnost = kontinuita
 - [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — hlášení incidentů, testování
 
-## Zdroj v kurzu [[imork|ImorK]]
-
-- Přednáška 2005 — ISMS ve finančním sektoru (2023)

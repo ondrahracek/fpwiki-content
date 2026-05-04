@@ -1,18 +1,18 @@
 ---
-title: 'Případovka: Kybernetické útoky na české nemocnice'
+title: Útoky na nemocnice — případové studie
 course: imork
 type: summary
 tags: [imork, ransomware, zdravotnictvi, nemocnice, ryuk, kriticka-infrastruktura, nukib]
 sources: [raw/imork/2106 VUT_Bezp_Případovka Nemocnice-2025.pdf, raw/imork/2106 VUT_Bezp_Případovka Nemocnice-2020.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Případovka: Kybernetické útoky na české nemocnice
+# Útoky na nemocnice — případové studie
 
 ![[imork-nemocnice-ekonomika.jpeg|Nemocnice Benešov — prevence 8M Kč vs. škody 70M Kč]]
 
-Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české nemocnice �� Benešov, Brno, Nymburk.
+Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české nemocnice — Benešov, Brno, Nymburk.
 
 ## Nemocnice Benešov — RYUK (prosinec 2019)
 
@@ -20,7 +20,7 @@ Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české 
 
 | Čas | Událost |
 |---|---|
-| Neznámo | Malware proniká do sítě (týdny–měs��ce před aktivací) |
+| Neznámo | Malware proniká do sítě (týdny–měsíce před aktivací) |
 | 11.12.2019, 2:50 | Nahlášení problémů |
 | 3:20 | Detekce kybernetického útoku |
 | 3:30 | IT oddělení vypíná síť |
@@ -34,7 +34,7 @@ Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české 
 
 ### Dopady
 
-- Napadena **páteřní síť** včetně všech připojených zdravotnických p��ístrojů
+- Napadena **páteřní síť** včetně všech připojených zdravotnických přístrojů
 - Nefunkční komunikace s jinými nemocnicemi
 - Napadeno **600 koncových stanic** a všechny servery
 - Zasaženy: laboratorní, ultrazvukové, rentgenové přístroje, CT a MR
@@ -47,7 +47,9 @@ Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české 
 | Přímé škody | 38 000 000 Kč |
 | Reinstalace SW | 2 000 000 Kč |
 | Ušlé platby pojišťoven | 30 000 000 Kč |
-| **Celkem** | **~70 000 000 Kč** |
+| **Celkem (NÚKIB případová studie)** | **~70 000 000 Kč** |
+
+Pozn.: Oficiální závěr Policie ČR (srpen 2020, ukončení vyšetřování) uvádí **přes 59 mil. Kč**; rozdíl ~11 mil. Kč v NÚKIB studii zahrnuje další nepřímé položky (laboratorní vybavení, krevní deriváty, investice do bezpečnosti).
 
 ### Prevence vs. škoda
 
@@ -67,7 +69,7 @@ Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české 
 - Nenavratně ztracena data vědeckého významu a NIS
 - Obnovena pacientská data a e-mailová komunikace
 - Nemocnice se s následky vyrovnávala **roky**
-- **Neoficiální odhad škod: minimálně 300–350 000 000 Kč** (odhady se liší dle zdroje)
+- **Odhad škod v řádu stovek milionů Kč** (oficiální číslo nebylo zveřejněno; odhady se liší dle zdroje, nejčastěji uváděno 300–350 mil. Kč)
 - Útoky provedeny celkem na **16 dalších nemocnic**
 - Ztracen internetový objednávkový systém u dárců krve
 
@@ -76,7 +78,7 @@ Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české 
 - Ransomware ochromil téměř vše včetně přístrojového vybavení
 - Nefungovaly vjezdové brány, zvonky, přístupy do systému
 - Pacient převezen do jiné nemocnice
-- Osobní údaje skutečně odcizeny ��točníky
+- Osobní údaje skutečně odcizeny útočníky
 - Nemocnice se vrátila do „papírové doby" minimálně do září 2025
 - NÚKIB poskytuje součinnost, policie vyšetřuje
 
@@ -95,13 +97,9 @@ Případová studie z 6. dubna 2025. Tři reálné ransomware útoky na české 
 - Pravidelné [[sae|školení personálu]] proti phishingu
 - Sdílení informací s NÚKIB
 
-## Propojení s dalšími tématy
-
+## Související stránky
 - [[imork-zdravotnictvi|ISMS ve zdravotnictví]] — oborový kontext
 - [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — ransomware, APT
 - [[bcm|BCM]] / [[imork-dr|DR]] — obnova po havárii
 - [[rizeni-rizik|Řízení rizik]] — ekonomické srovnání prevence vs. škod
 
-## Zdroj v kurzu [[imork|ImorK]]
-
-- Případovka 2106 — Útoky na nemocnice (2025)

@@ -5,7 +5,7 @@ type: summary
 tags: [imork, kyberneticka-bezpecnost, apt, exploit, phishing, socialni-inzenyrstvi, malware, supply-chain]
 sources: [raw/imork/CV 02 VUT_Anatomie útoku-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # Anatomie kybernetického útoku

@@ -5,7 +5,7 @@ type: summary
 tags: [imork, isms, energetika, smart-grid, iec-61850, scada, plc]
 sources: [raw/imork/2007 VUT_Bezp energetika-2023.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # ISMS v energetice

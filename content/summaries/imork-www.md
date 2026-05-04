@@ -5,7 +5,7 @@ type: summary
 tags: [imork, web, owasp, ssl, tls, ipsec, xml-security, data-diodes]
 sources: [raw/imork/2015 VUT_Bezp WWW-2019.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # Bezpečnost webových služeb
@@ -141,6 +141,10 @@ Praktická doporučení pro ověření důvěryhodnosti webu:
 4. Antiphishing certifikát a další bezpečnostní indikátory
 5. Kontrola kontaktních údajů, obchodních podmínek, grafické kvality a dalších signálů důvěryhodnosti
 
-## SSL certifikáty
+## Související stránky
 
-Zabezpečení komunikace pomocí SSL/TLS certifikátů — šifrování přenosu mezi klientem a serverem.
+- [[ochrana-dat|Ochrana dat]] — širší kontext bezpečnostních technologií (NAC, IDS/IPS, SIEM, DLP)
+- [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — útoky a obrana
+- [[isms|ISMS]] — manažerský rámec
+- [[imork-email|Bezpečnost emailových služeb]] — komplementární doména
+- [[imork-anatomie-utoku|Anatomie útoku]] — XSS, SQL injection v kontextu attack chain

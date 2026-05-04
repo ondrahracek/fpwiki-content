@@ -1,25 +1,23 @@
 ---
-title: Ransomware — komplexní případová studie
+title: Ransomware
 course: imork
 type: summary
 tags: [imork, ransomware, raas, wannacry, nistir-8374, incident-response, vykupne]
 sources: [raw/imork/CV 06 VUT_Ransomware.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Ransomware — komplexní případová studie
+# Ransomware
 
 ![[imork-ransomware-kill-chain.jpeg|Kill chain ransomware útoku — Emotet → Trickbot → Ryuk s obrannými body]]
-
-Rozsáhlá prezentace (56 slidů) pokrývající historii, techniky, ekonomiku a obranu proti ransomware útokům.
 
 ## Historie ransomware (1989–2024)
 
 | Rok | Ransomware | Význam |
 |-----|-----------|--------|
 | 1989 | **AIDS Trojan** | První známý ransomware — šířen na disketách |
-| 2004 | **GPCode** | Šifrování RSA klíčem |
+| 2004 | **GPCode** | Šifrování souborů (RSA až od varianty Gpcode.ac z 2006) |
 | 2013 | **CryptoLocker** | Průlomový — Bitcoin platby, silné šifrování |
 | 2017 | **WannaCry** | Exploit **EternalBlue** (uniklý z NSA), 200 000+ obětí ve 150 zemích |
 | 2017 | **Petya / NotPetya** | Destruktivní wiper maskovaný jako ransomware |
@@ -41,7 +39,7 @@ Rozsáhlá prezentace (56 slidů) pokrývající historii, techniky, ekonomiku a
 |--------|---------|--------|
 | **Colonial Pipeline** | $4,4M | Odstávka největšího palivovodu v USA |
 | **JBS Foods** | $11M | Největší zpracovatel masa na světě |
-| **Kia Motors** | $20M | Požadavek skupiny DoppelPaymer |
+| **Kia Motors** | $20M (požadováno) | DoppelPaymer požadavek; Kia útok ransomwarem oficiálně popřela, platba nepotvrzena |
 
 ### 2022 — Nové trendy
 
@@ -52,18 +50,18 @@ Rozsáhlá prezentace (56 slidů) pokrývající historii, techniky, ekonomiku a
 
 - **HardBit 2.0** — útočníci žádají oběti o informace o pojistném krytí ([[rizeni-rizik|pojistný podvod]])
 - **Rorschach** — nejrychlejší známé šifrování (dosud)
-- **Phobos** — varování CISA, cílení na SMB segment
+- **Phobos** — varování CISA (advisory AA24-060A z 2/2024); cílení na samosprávy, školství, zdravotnictví, kritickou infrastrukturu; iniciální přístup přes phishing a nezabezpečené RDP
 
 ## Statistiky a ekonomika
 
-- **75 %** obětí, které zaplatí, získá data zpět
-- Průměrné výkupné Q3/2019: **$41 000**
-- Náklady na obnovu: **7,5× výše výkupného** (downtime, reputace, forenzní analýza)
-- Trend výkupného strmě stoupá — v roce 2021 průměr přes $200 000
+- Podíl obětí, které po platbě získají data zpět, kolísá podle ročníků — starší studie Sophos uváděly ~75 %, novější (2024–2025) klesají k cca 50 %
+- Průměrné výkupné Q3/2019: **$41 198** (Coveware)
+- Náklady na obnovu: **5–10× výše výkupného** (downtime, reputace, forenzní analýza)
+- Trend výkupného strmě stoupá — v roce 2021 průměr přes **$200 000** (Coveware Q4/2021)
 
 ## NISTIR 8374 — rámec obrany proti ransomware
 
-Založeno na NIST Cybersecurity Framework — 5 pilířů:
+Založeno na NIST Cybersecurity Framework (NISTIR 8374 z 2/2022 = profil CSF **1.1**, 5 pilířů; pozn. **CSF 2.0** z 2024 přidává 6. pilíř **Govern**):
 
 | Pilíř | Aktivity |
 |-------|----------|
@@ -91,7 +89,7 @@ Založeno na NIST Cybersecurity Framework — 5 pilířů:
 - Financování dalšího zločinu
 - Opakované cílení na „platící" oběti
 - **Projekt No More Ransom** (Europol + partneri) — bezplatné dešifrovací nástroje
-- **Český trestní zákoník § 230** — financování terorismu / organizovaného zločinu
+- **Český trestní zákoník** (zák. č. 40/2009 Sb.) — platba ransomu může být v určitých případech kvalifikovaná podle **§312d** (financování terorismu, je-li skupina napojená na terorismus), **§361** (účast na organizované zločinecké skupině, typicky u RaaS) nebo **§216** (legalizace výnosů z trestné činnosti). §230 trestního zákoníku se naopak týká útočníka — neoprávněný přístup k počítačovému systému
 
 ## Pravidlo 3-2-1 pro zálohy
 
@@ -106,8 +104,7 @@ Založeno na NIST Cybersecurity Framework — 5 pilířů:
 - **NGFW** — blokování C2 komunikace
 - [[sae|Bezpečnostní analýzy]] — pravidelné hodnocení zranitelností
 
-## Vazby na další témata
-
+## Související stránky
 - [[imork-sitove-utoky|Síťové útoky]] — řetězec Emotet → Trickbot → Ryuk
 - [[imork-rizeny-hacking|Řízený hacking / APT]] — APT skupiny provozující RaaS
 - [[imork-tor|TOR síť]] — distribuce ransomware přes Tor

@@ -5,7 +5,7 @@ type: summary
 tags: [imork, isms, strategie, enisa, ncss, cmmc, nukib, eu]
 sources: [raw/imork/2101 VUT_Bezpečnostní strategie-2022.pdf]
 created: 2026-04-12
-updated: '2026-04-26'
+updated: '2026-05-04'
 ---
 
 # Bezpečnostní strategie
@@ -120,13 +120,9 @@ Odvozuje se hierarchicky: **EU → ČR → Organizace**
 - Logicky zdůvodněná
 - Projednaná a přijatá
 
-## Propojení s dalšími tématy
-
+## Související stránky
 - [[isms|ISMS]] — strategické řízení bezpečnosti jako jádro ISMS
 - [[rizeni-rizik|Řízení rizik]] — strategická analýza hrozeb
 - [[sae|SAE]] — strategický cíl č. 5 (zvyšování povědomí)
 - [[imork-manazerska-bezpecnost|Manažerská bezpečnost]] — governance a role
 
-## Zdroj v kurzu [[imork|ImorK]]
-
-- Přednáška 2101 — Bezpečnostní strategie (2022)

@@ -1,14 +1,14 @@
 ---
-title: Síťové útoky — komplexní přehled
+title: Síťové útoky
 course: imork
 type: summary
 tags: [imork, sitove-utoky, ddos, spoofing, sniffing, mitm, emotet, ryuk]
 sources: [raw/imork/CV 03 VUT_Síťové útoky-2023.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# Síťové útoky — komplexní přehled
+# Síťové útoky
 
 Cvičení zaměřené na klasifikaci, techniky a obranu proti síťovým útokům napříč vrstvami modelu ISO/OSI.
 
@@ -84,8 +84,7 @@ Tento řetězec demonstruje, jak se moderní útoky skládají z více fází a 
 - Sandboxing podezřelých souborů
 - Propojení s [[isms|ISMS]] a [[rizeni-rizik|řízením rizik]]
 
-## Vazby na další témata
-
+## Související stránky
 - [[imork-anatomie-utoku|Anatomie kybernetického útoku]] — obecný model útočného řetězce
 - [[imork-rizeny-hacking|Řízený hacking / APT]] — APT skupiny využívající tyto techniky
 - [[imork-tor|TOR síť]] — anonymizace útočníků

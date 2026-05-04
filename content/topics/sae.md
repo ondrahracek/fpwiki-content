@@ -5,14 +5,18 @@ type: topic
 tags: [imork, sae, bezpecnostni-povedomi, skoleni, nist, kyberneticka-hygiena]
 sources: [raw/imork/2002 VUT_Bezp SAE-2025.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # SAE — Budování bezpečnostního povědomí
 
 ![[sae-pyramida.jpeg|Pyramida SAE — Povědomí, Výcvik, Vzdělávání, Profesní rozvoj]]
 
-Program definovaný doporučeními NIST řady SP 800, sloužící k budování a zvyšování bezpečnostního povědomí uživatelů ICT. Základní součást kybernetické hygieny.
+Program definovaný doporučeními NIST řady SP 800 (zejména **NIST SP 800-50** *Building an IT Security Awareness and Training Program* a **NIST SP 800-16** *IT Security Training Requirements*), sloužící k budování a zvyšování bezpečnostního povědomí uživatelů ICT. Základní součást kybernetické hygieny.
+
+## SAE Continuum Model
+
+Postupný rozvoj od základního povědomí přes školení a vzdělávání až po profesní specializaci. Každá úroveň staví na předchozí — uživatel nejprve rozpoznává hrozbu, pak ji umí řešit, posléze rozumí proč a nakonec vede ostatní.
 
 ## Čtyři úrovně SAE
 
@@ -43,16 +47,25 @@ Program definovaný doporučeními NIST řady SP 800, sloužící k budování a
 - **Částečně decentralizovaný** — politiky centrálně, implementace distribuovaně
 - **Plně decentralizovaný** — pouze politika centrálně, vše ostatní delegováno
 
-## Doporučená témata dle nZKB (vyhl. 409/2025 Sb.)
+## Doporučená témata dle vyhlášky č. 409/2025 Sb.
 
-25 témat včetně: bezpečné použití přenosných médií, cloud, hlášení incidentů, BYOD, aktuální hrozby, firewall, malware, hesla, MFA, sociální inženýrství, VPN, šifrování, zálohování aj.
+Vyhláška o bezpečnostních opatřeních poskytovatele regulované služby v režimu vyšších povinností (prováděcí předpis k novému ZKB č. 264/2025 Sb. — transpozice NIS2; účinná od 1. 11. 2025). Příloha č. 6 obsahuje doporučená témata SAE: bezpečné chování na internetu, rozpoznání phishingu a sociálního inženýrství, práce s hesly a vícefaktorová autentizace, klasifikace informací, hlášení incidentů, BYOD, cloud, firewall, malware, VPN, šifrování, zálohování, fyzická bezpečnost, mobilní zařízení.
 
-## Propojení s dalšími tématy
+## Matice školení (NIST SP 500-172)
+
+Mapuje role v organizaci na požadované úrovně znalostí a dovedností v oblasti informační bezpečnosti — od běžného uživatele přes IT správce a manažery až po bezpečnostní specialisty.
+
+## Rozšíření na dodavatelský řetězec
+
+SAE se netýká jen interních zaměstnanců — zahrnuje i dodavatele, partnery a třetí strany s přístupem k informačním systémům. Smluvně lze požadovat doložení absolvovaného školení.
+
+## Související certifikace ISACA
+
+Pro profesionály v oblasti SAE a bezpečnostního řízení: **CISM** (Certified Information Security Manager), **CISA** (Certified Information Systems Auditor), **CRISC** (Certified in Risk and Information Systems Control), **CGEIT** (Certified in Governance of Enterprise IT).
+
+## Související stránky
 
 - [[isms|ISMS]] — SAE jako součást provozní bezpečnosti
 - [[kyberneticka-bezpecnost|Kybernetická bezpečnost]] — povědomí jako obrana č. 1
 - [[rizeni-rizik|Řízení rizik]] — snižování rizika lidského faktoru
-
-## Zdroje v kurzu [[imork|ImorK]]
-
-- [[imork-sae|SAE — shrnutí přednášky]]
+- [[imork-sae|Záznam přednášky SAE]] — bibliografická karta zdroje

@@ -1,14 +1,14 @@
 ---
-title: AI útoky a kybernetická kriminalita
+title: AI útoky a obrana
 course: imork
 type: summary
-tags: [imork, ai, wormgpt, bec, phishing, kyberneticka-kriminalita]
+tags: [imork, ai, wormgpt, bec, phishing, kyberneticka-bezpecnost]
 sources: [raw/imork/CV 05 VUT_ AI útoky-2023 (1).pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
-# AI útoky a kybernetická kriminalita
+# AI útoky a obrana
 
 ## WormGPT
 

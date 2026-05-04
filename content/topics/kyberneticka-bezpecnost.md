@@ -5,7 +5,7 @@ type: topic
 tags: [imork, kyberneticka-bezpecnost, utoky, apt, ransomware, phishing, owasp]
 sources: [raw/imork/CV 02 VUT_Anatomie útoku-2022.pdf, raw/imork/CV 05 VUT_ AI útoky-2023 (1).pdf, raw/imork/2001 VUT_Bezp Managerská 2022.pdf]
 created: 2026-04-12
-updated: '2026-04-25'
+updated: '2026-05-04'
 ---
 
 # Kybernetická bezpečnost
@@ -86,7 +86,7 @@ Zneužití firemního emailu k podvodným platbám. 5 typů dle FBI:
 - **DLP** — prevence úniku dat
 - **FW/VPN** — perimetrová ochrana
 
-## Propojení s dalšími tématy
+## Související stránky
 
 - [[isms|ISMS]] — manažerský rámec bezpečnosti
 - [[rizeni-rizik|Řízení rizik]] — hodnocení hrozeb a zranitelností
@@ -94,10 +94,23 @@ Zneužití firemního emailu k podvodným platbám. 5 typů dle FBI:
 - [[bcm|BCM]] / [[imork-dr|DR]] — reakce na incidenty a obnova
 - [[ochrana-dat|Ochrana dat]] — technologická ochrana
 
-## Zdroje v kurzu [[imork|ImorK]]
+### Záznamy přednášek a útočné techniky
 
-- [[imork-anatomie-utoku|Anatomie kybernetického útoku]]
-- [[imork-ai-utoky|AI útoky]]
-- [[imork-www|Bezpečnost webu]]
-- [[imork-sitove-utoky|Síťové útoky]]
-- [[imork-pripadovky|Případové studie]]
+- [[imork-anatomie-utoku|Anatomie kybernetického útoku]] — APT, vektory, MITRE ATT&CK
+- [[imork-ai-utoky|AI útoky a obrana]] — WormGPT, BEC
+- [[imork-sitove-utoky|Síťové útoky]] — DDoS, spoofing, ISO/OSI L1–L7
+- [[imork-ransomware|Ransomware]] — historie, RaaS, NISTIR 8374
+- [[imork-rizeny-hacking|Řízený hacking a APT skupiny]] — APT28/29/41
+- [[imork-internetova-bezpecnost|Internetová bezpečnost]] — OSINT, behaviorální biometrika
+- [[imork-www|Bezpečnost webových služeb]] — OWASP, XSS, SQL injection
+
+### Případové studie
+
+- [[imork-nemocnice|Útoky na nemocnice]] — Benešov, FN Brno, Nymburk
+- [[imork-kradez-dat|Krádež dat]] — PII, ISO 27701
+- [[imork-sprava-login|Správa přihlašování]] — privilegované účty, NIST SP 800-63
+- [[imork-payment|Bezpečnost plateb]] — PCI DSS v4.0.1
+- [[imork-mobilni-bezpecnost|Mobilní bezpečnost]] — SIMJaker, 5G
+- [[imork-tor|TOR síť]] — onion routing, dark web
+- [[imork-audio-hack|Audio Hack]] — CVE-2022-38392
+- [[imork-ehealth|eHealth]] — telemedicína, NSeZ

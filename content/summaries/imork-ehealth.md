@@ -1,14 +1,14 @@
 ---
-title: eHealth v ČR
+title: eHealth — případová studie
 course: imork
 type: summary
 tags: [imork, ehealth, zdravotnictvi, telemedicina, ehr, elektronicka-preskripce]
 sources: [raw/imork/2105 VUT_Bezp_Případovka eHealth_2021.pdf]
 created: 2026-04-12
-updated: '2026-04-26'
+updated: '2026-05-04'
 ---
 
-# eHealth v ČR
+# eHealth — případová studie
 
 Elektronizace zdravotnictví v České republice a v Evropě.
 
