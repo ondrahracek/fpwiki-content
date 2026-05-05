@@ -88,7 +88,7 @@ Zpravodajství z otevřených zdrojů — 5 procesních kroků:
 - Aktualizace SW a OS
 - Používání antivirového řešení
 - Šifrování komunikace
-- Bezpečné [[imork-sprava-login|hesla]] a vícefaktorová autentizace
+- Bezpečná [[imork-sprava-login|hesla]] a vícefaktorová autentizace
 
 ## KRACKs (Key Reinstallation Attacks)
 

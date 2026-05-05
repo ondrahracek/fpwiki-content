@@ -66,7 +66,7 @@ Pozn.: Oficiální závěr Policie ČR (srpen 2020, ukončení vyšetřování) 
 
 - Kryptovirus (ransomware)
 - Ztracena administrativní a ekonomická data
-- Nenavratně ztracena data vědeckého významu a NIS
+- Nenávratně ztracena data vědeckého významu a NIS
 - Obnovena pacientská data a e-mailová komunikace
 - Nemocnice se s následky vyrovnávala **roky**
 - **Odhad škod v řádu stovek milionů Kč** (oficiální číslo nebylo zveřejněno; odhady se liší dle zdroje, nejčastěji uváděno 300–350 mil. Kč)
