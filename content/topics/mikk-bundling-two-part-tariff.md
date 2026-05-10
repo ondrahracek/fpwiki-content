@@ -122,6 +122,21 @@ $$\frac{\partial \pi}{\partial T} = n(T) + T \cdot n'(T) + (P - MC) \cdot Q'(T) 
 
 kde $n(T)$ je počet kupujících při daném vstupu a $Q(T)$ celkové množství usage napříč nimi.
 
+```graph
+title: Two-Part Tariff — zisk jako funkce vstupního poplatku T
+alt: Graf ukazuje konkávní průběh celkového zisku firmy v závislosti na výši vstupního poplatku; nízké T znamená drtivé využití přes usage fee, vysoké T odráží mnoho zákazníků a pokles počtu kupujících, optimum leží uprostřed.
+xAxis: { label: "T (vstupní poplatek)", domain: [0, 100] }
+yAxis: { label: "Zisk π(T)", domain: [0, 5000] }
+params:
+  - { name: Smax, label: "Max přebytek spotřebitele", min: 50, max: 100, default: 80, step: 5 }
+  - { name: Pusage, label: "Marže z usage na zákazníka", min: 5, max: 50, default: 20, step: 1 }
+  - { name: NN, label: "Velikost trhu N", min: 50, max: 200, default: 100, step: 10 }
+curves:
+  - { fn: "max(0, NN * (1 - x/Smax)) * (x + Pusage)", label: "π(T)", color: "fp-purple" }
+markers:
+  - { x: "(Smax - Pusage)/2", label: "T* (přibližné optimum)" }
+```
+
 ---
 
 ## Polaroid case — modelový příklad

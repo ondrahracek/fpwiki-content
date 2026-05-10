@@ -189,10 +189,49 @@ Pokud je $\pi_{min} = 10\,000$, Baumolovo řešení je přípustné a firma vyr�
 o 25 % více než zisko-maximalizující firma. Pokud by $\pi_{min} = 14\,500$,
 omezení by aktivovalo a firma by vyráběla mezi 400 a 500 jednotkami.
 
+```graph
+title: Baumolův model — TR, TC a zisk (P = aa - bb*Q, TC = FC + cc*Q)
+alt: Křivky TR, TC a zisku pro Baumolův numerický příklad. Zisk maximální v Q_pi* = (aa-cc)/(2bb), tržby maximální v Q_TR* = aa/(2bb). Markery ukazují oba body současně, zisk Baumola je nižší o pi(Q_pi) - pi(Q_TR).
+xAxis: { label: "Q", domain: [0, 700] }
+yAxis: { label: "TR, TC, pi", domain: [-2000, 28000] }
+params:
+  - { name: aa, label: "intercept poptávky aa", min: 60, max: 120, default: 100, step: 1 }
+  - { name: bb, label: "sklon poptávky bb", min: 0.08, max: 0.2, default: 0.1, step: 0.01 }
+  - { name: FC, label: "fixní náklady FC", min: 0, max: 3000, default: 1000, step: 100 }
+  - { name: cc, label: "mezní náklady cc", min: 5, max: 50, default: 20, step: 1 }
+curves:
+  - { fn: "aa*x - bb*x*x", label: "TR(Q) = aa*Q - bb*Q^2", color: "fp-purple" }
+  - { fn: "FC + cc*x", label: "TC(Q) = FC + cc*Q", color: "fp-red" }
+  - { fn: "aa*x - bb*x*x - FC - cc*x", label: "pi(Q) = TR - TC", color: "paper-700" }
+markers:
+  - { x: "(aa - cc)/(2*bb)", label: "Q_pi* (MR = MC)" }
+  - { x: "aa/(2*bb)", label: "Q_TR* (MR = 0)" }
+```
+
 > [!tip] Souvislost s alokační efektivností
 > Baumolovo řešení je **alokačně efektivnější** než monopolní zisk-max řešení
 > v tom smyslu, že vyrábí blíže ke konkurenčnímu výstupu (viz Předtermín X).
 > Z hlediska akcionáře je však méně efektivní (nižší zisk).
+
+```graph
+title: Baumol s aktivním omezením pi >= pi_min
+alt: Křivka zisku pi(Q) pod osou pi_min. Baumolovo řešení je pravý průsečík (větší kořen). Posun pi_min nahoru tlačí Q_B doleva ke Q_pi. Při pi_min > pi_max omezení neumožní řešení.
+xAxis: { label: "Q", domain: [0, 700] }
+yAxis: { label: "pi, pi_min", domain: [-2000, 18000] }
+params:
+  - { name: aa, label: "intercept poptávky aa", min: 60, max: 120, default: 100, step: 1 }
+  - { name: bb, label: "sklon poptávky bb", min: 0.08, max: 0.2, default: 0.1, step: 0.01 }
+  - { name: FC, label: "fixní náklady FC", min: 0, max: 3000, default: 1000, step: 100 }
+  - { name: cc, label: "mezní náklady cc", min: 5, max: 50, default: 20, step: 1 }
+  - { name: pimin, label: "minimální zisk pi_min", min: 0, max: 14000, default: 10000, step: 500 }
+curves:
+  - { fn: "aa*x - bb*x*x - FC - cc*x", label: "pi(Q)", color: "fp-purple" }
+  - { fn: "pimin", label: "pi_min", color: "fp-red" }
+markers:
+  - { x: "(aa - cc)/(2*bb)", label: "Q_pi* (max zisku)" }
+  - { x: "aa/(2*bb)", label: "Q_TR* (max obratu, neomezený)" }
+  - { x: "((aa-cc) + sqrt((aa-cc)*(aa-cc) - 4*bb*(FC+pimin)))/(2*bb)", label: "Q_B (Baumol s pi_min)" }
+```
 
 ## 5 Williamsonův model managerial discretion
 

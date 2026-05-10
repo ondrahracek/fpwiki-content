@@ -111,6 +111,19 @@ Splnění těchto axiomů zaručuje existenci $u(\cdot)$ tak, že porovnání lo
 
 Tvar užitkové funkce $u(W)$ nad bohatstvím rozhoduje o postoji k riziku. Rozhodující je **konkavita / linearita / konvexita**.
 
+```graph
+title: "Tři postoje k riziku — averze, neutrál, sklon (užitek z bohatství)"
+alt: "Tři typické tvary užitkové funkce z bohatství u(W). Konkávní √W (averze k riziku), lineární W (neutralita) a konvexní W² (sklon k riziku). Pozor — jde o užitek z bohatství, nikoli z fyzických statků."
+xAxis: { label: "W (bohatství)", domain: [0, 100] }
+yAxis: { label: "u(W) — užitek z bohatství", domain: [0, 12] }
+params: []
+curves:
+  - { fn: "sqrt(x)", label: "Averzní: u = √W", color: "fp-purple" }
+  - { fn: "x/10", label: "Neutrální: u = W/10", color: "paper-700" }
+  - { fn: "(x*x)/1000", label: "Sklon: u = W²/1000", color: "fp-red" }
+markers: []
+```
+
 ### 4.1 Risk-averse (averze k riziku)
 
 - Užitková funkce $u$ je **konkávní** ($u'' < 0$).
@@ -153,6 +166,25 @@ Pro názornost uvažujme dvouvýstupovou loterii $L = \{(W_1, p), (W_2, 1-p)\}$ 
 
 > [!example] Vizualizace
 > Představte si tětivu napjatou mezi dvěma body na konkávním kopci. Tětiva (= možnosti loterie) sedí pod hřebenem (= jisté výplaty). Spotřebitel preferuje stát na hřebeni.
+
+```graph
+title: "Konkávní užitek z bohatství u(W) = √W a Jensenova nerovnost"
+alt: "Konkávní užitková funkce z bohatství u = √W. Tětiva mezi body W-Ll a Ww leží pod křivkou. Markery ukazují E(W) = Ww - Pp·Ll, jistotní ekvivalent CE a body W-Ll, Ww. Vertikální vzdálenost mezi křivkou a tětivou v bodě E(W) je riziková prémie. Pozor — užitek je z bohatství, ne ze statků."
+xAxis: { label: "W (bohatství)", domain: [0, 250] }
+yAxis: { label: "u(W) = √W", domain: [0, 16] }
+params:
+  - { name: Ww, label: "Bohatství W", min: 80, max: 200, default: 100, step: 5 }
+  - { name: Ll, label: "Ztráta L", min: 10, max: 75, default: 75, step: 5 }
+  - { name: Pp, label: "Pravděpodobnost ztráty", min: 0.05, max: 0.5, default: 0.1, step: 0.05 }
+curves:
+  - { fn: "sqrt(x)", label: "u(W) = √W", color: "fp-purple" }
+  - { fn: "sqrt(Ww - Ll) + (sqrt(Ww) - sqrt(Ww - Ll)) * (x - (Ww - Ll)) / Ll", label: "Tětiva mezi (W-L) a W", color: "fp-red" }
+markers:
+  - { x: "Ww - Ll", label: "W - L" }
+  - { x: "Ww - Pp*Ll", label: "E(W)" }
+  - { x: "pow((1-Pp)*sqrt(Ww) + Pp*sqrt(Ww - Ll), 2)", label: "CE" }
+  - { x: "Ww", label: "W" }
+```
 
 Pro **konvexní** $u$ je situace zrcadlová: sečna leží **nad** křivkou, $E[u(L)] > u[E(W)]$.
 Pro **lineární** $u$ sečna **splývá** s grafem: $E[u(L)] = u[E(W)]$.
@@ -254,6 +286,21 @@ $$
 | risk-neutral     | $\pi_F = \pi_{\max}$ | Indiferentní vůči fair premium, neplatí nadprůměr. |
 | risk-loving      | $\pi_F > \pi_{\max}$ | Fair premium je pro něj **drahé**, nepojistí se ani férově. |
 
+```graph
+title: "Fair vs maximum pojistné jako funkce pravděpodobnosti"
+alt: "Spravedlivé pojistné π_F = p·L (přímka) a maximální pojistné π_max = W - [(1-p)·√W + p·√(W-L)]² (konvexní křivka) jako funkce pravděpodobnosti ztráty p. Vzdálenost mezi křivkami v daném bodě je riziková prémie risk-averzního spotřebitele s u(W)=√W. Pozor — užitek je z bohatství."
+xAxis: { label: "p — pravděpodobnost ztráty", domain: [0, 1] }
+yAxis: { label: "Pojistné", domain: [0, 80] }
+params:
+  - { name: Ww, label: "Bohatství W", min: 80, max: 200, default: 100, step: 5 }
+  - { name: Ll, label: "Ztráta L", min: 10, max: 75, default: 75, step: 5 }
+curves:
+  - { fn: "x*Ll", label: "Fair π_F = p·L", color: "fp-purple" }
+  - { fn: "Ww - pow((1-x)*sqrt(Ww) + x*sqrt(Ww - Ll), 2)", label: "Max π_max", color: "fp-red" }
+markers:
+  - { x: "0.1", label: "p=0.1 (z příkladu)" }
+```
+
 > [!note] Proč pojišťovny existují
 > Fakticky pojišťovny účtují **víc** než fair premium (musí pokrýt režii, kapitálovou rezervu, zisk). Existují, protože většina populace je risk-averse a má $\pi_{\max} > \pi_F + \text{režie}$. Riziková prémie je důvod, proč je pojištění životaschopným byznysem.
 
@@ -354,6 +401,18 @@ Užitečná, protože je **bezrozměrná** a reaguje na změny škály bohatstv�
 | $u(W) = \sqrt{W}$    | $1/(2W)$      | $1/2$    | CRRA s $\gamma = 1/2$                      |
 | $u(W) = -e^{-aW}$    | $a$           | $aW$     | konstantní absolutní averze (CARA)         |
 | $u(W) = W^2$         | $-1/W$        | $-1$     | risk-loving                                |
+
+```graph
+title: "CARA — užitek z bohatství u(W) = 1 - exp(-aa·W)"
+alt: "Exponenciální CARA užitek z bohatství. Posuvník aa odpovídá Arrow-Prattovu koeficientu absolutní averze — vyšší aa znamená silnější averzi (silněji konkávní křivka), aa blízké nule odpovídá risk-neutralitě. Užitek je z bohatství, nikoli ze spotřeby statků."
+xAxis: { label: "W (bohatství)", domain: [0, 200] }
+yAxis: { label: "u(W)", domain: [0, 1] }
+params:
+  - { name: aa, label: "Koeficient absolutní averze aa", min: 0.005, max: 0.05, default: 0.02, step: 0.001 }
+curves:
+  - { fn: "1 - exp(-aa*x)", label: "u(W) = 1 - exp(-aa·W)", color: "fp-purple" }
+markers: []
+```
 
 ### 9.4 Empirické zjištění
 

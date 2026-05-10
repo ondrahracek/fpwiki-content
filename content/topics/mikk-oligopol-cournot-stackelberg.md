@@ -235,6 +235,23 @@ firma 1 nedělá nic.
 
 ![[mikk-cournot-best-response.jpeg|Best-response funkce dvou firem v Cournotově oligopolu, jejich průsečík (Cournot-Nash) a Stackelbergův bod]]
 
+```graph
+title: Reakční křivky a Cournot-Nashova rovnováha
+alt: Best-response funkce dvou firem v Cournotově duopolu, jejich průsečík (Cournot-Nashova rovnováha) a srovnání s monopolním a Stackelbergovým bodem.
+xAxis: { label: "q_2", domain: [0, 60] }
+yAxis: { label: "q_1", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept poptávky a", min: 10, max: 60, default: 30, step: 1 }
+  - { name: bb, label: "sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: cc1, label: "MC firmy 1", min: 0, max: 20, default: 0, step: 1 }
+  - { name: cc2, label: "MC firmy 2", min: 0, max: 20, default: 0, step: 1 }
+curves:
+  - { fn: "(aa - cc1)/(2*bb) - x/2", label: "R1: q1 = (a-MC1)/(2b) - q2/2", color: "fp-purple" }
+  - { fn: "(aa - cc2)/bb - 2*x", label: "R2: q1 = (a-MC2)/b - 2 q2", color: "fp-red" }
+markers:
+  - { x: "(aa - 2*cc1 + cc2)/(3*bb)", label: "Cournot-Nash" }
+```
+
 Rovnováha je bod, kde **obě reakční křivky** jsou splněny současně:
 
 $$
@@ -410,6 +427,24 @@ $$
 MR_1 = \frac{\mathrm{d} TR_1}{\mathrm{d} Q_1} = 15 - Q_1.
 $$
 
+```graph
+title: Liderův TR a MR po dosazení followerovy reakce
+alt: Liderův celkový příjem (parabola) a marginální příjem (klesající přímka) jako funkce vlastního výstupu q1, s vodorovnou čarou MC; optimum lidera leží v průsečíku MR a MC.
+xAxis: { label: "q_1", domain: [0, 35] }
+yAxis: { label: "Kč", domain: [-20, 800] }
+params:
+  - { name: aa, label: "intercept poptávky a", min: 10, max: 60, default: 30, step: 1 }
+  - { name: bb, label: "sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: cc1, label: "MC lidera", min: 0, max: 20, default: 0, step: 1 }
+  - { name: cc2, label: "MC followera", min: 0, max: 20, default: 0, step: 1 }
+curves:
+  - { fn: "((aa - cc2)/2)*x - (bb/2)*x*x", label: "TR_1 (po substituci)", color: "fp-purple" }
+  - { fn: "(aa - cc2)/2 - bb*x", label: "MR_1", color: "fp-red" }
+  - { fn: "cc1 + 0*x", label: "MC_1", color: "paper-700" }
+markers:
+  - { x: "(aa - 2*cc1 + cc2)/(2*bb)", label: "q_1* (Stack lider)" }
+```
+
 Optimum:
 
 $$
@@ -437,6 +472,24 @@ $$
 $$
 \pi_2 = P \cdot Q_2 = 7{,}5 \cdot 7{,}5 = 56{,}25.
 $$
+
+```graph
+title: Stackelbergova rovnováha — lider commitne, follower reaguje
+alt: Stackelbergova sekvenční hra v rovině q1-q2 — lider volí q1 dle vzorce a/(2b), follower reaguje podle své Cournotovy reakční křivky R2, výsledný bod leží na R2 mimo Cournotův průsečík.
+xAxis: { label: "q_2", domain: [0, 60] }
+yAxis: { label: "q_1", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept poptávky a", min: 10, max: 60, default: 30, step: 1 }
+  - { name: bb, label: "sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: cc1, label: "MC lidera (firma 1)", min: 0, max: 20, default: 0, step: 1 }
+  - { name: cc2, label: "MC followera (firma 2)", min: 0, max: 20, default: 0, step: 1 }
+curves:
+  - { fn: "(aa - cc1)/(2*bb) - x/2", label: "R1 (Cournot)", color: "paper-500" }
+  - { fn: "(aa - cc2)/bb - 2*x", label: "R2 (followerova reakce)", color: "fp-red" }
+markers:
+  - { x: "(aa - 2*cc1 + cc2)/(3*bb)", label: "Cournot" }
+  - { x: "(aa - cc2)/(4*bb)", label: "Stackelberg follower q_2*" }
+```
 
 ### 5.4 Shrnutí — first-mover advantage
 
@@ -588,6 +641,24 @@ Obecné výsledky pro lineární poptávku a nulové mezní náklady:
 | Stackelberg | 15 | 7,5 | 22,5 | 7,5 | 112,5 | 56,25 | 168,75 |
 
 Vše sedí.
+
+```graph
+title: Srovnání 4 modelů na inverzní poptávce P = a - bQ
+alt: Inverzní tržní poptávka s vyznačenými rovnovážnými cenami pro koluzi, Stackelberg, Cournot a Bertrand — ukazuje, jak roste celkový výstup a klesá cena s intenzitou konkurence.
+xAxis: { label: "Q (celkový tržní výstup)", domain: [0, 60] }
+yAxis: { label: "P", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept poptávky a", min: 10, max: 30, default: 30, step: 1 }
+  - { name: bb, label: "sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+curves:
+  - { fn: "max(aa - bb*x, 0)", label: "P = a - bQ", color: "fp-purple" }
+  - { fn: "0 + 0*x", label: "MC = 0", color: "paper-700" }
+markers:
+  - { x: "aa/(2*bb)", label: "Q koluze" }
+  - { x: "2*aa/(3*bb)", label: "Q Cournot" }
+  - { x: "3*aa/(4*bb)", label: "Q Stackelberg" }
+  - { x: "aa/bb", label: "Q Bertrand" }
+```
 
 ### 7.2 Odvození jednotlivých řádků
 

@@ -38,6 +38,22 @@ $$MR = P \left(1 + \frac{1}{E_D}\right).$$
 
 Z toho přímo plyne **Lernerův index** monopolní moci $L = (P-MC)/P = -1/E_D$. Detailní odvození je v [[mikk-monopol-pokrocily|Monopol (pokročilé)]].
 
+```graph
+title: Lineární poptávka, TR a MR — bod E_D = -1 = max TR = (MR = 0)
+alt: Lineární inverzní poptávka P = aa - bb*Q, mezní příjem MR = aa - 2bb*Q a celkový příjem TR = (aa-bb*Q)*Q. Marker Q* = aa/(2bb) je bod jednotkové elasticity, kde MR=0 a TR je maximální.
+xAxis: { label: "Q", domain: [0, 25] }
+yAxis: { label: "P, MR, TR", domain: [-50, 500] }
+params:
+  - { name: aa, label: "intercept poptávky aa (max cena)", min: 20, max: 40, default: 40, step: 1 }
+  - { name: bb, label: "sklon poptávky bb", min: 1, max: 5, default: 2, step: 0.1 }
+curves:
+  - { fn: "aa - bb*x", label: "P = aa - bb*Q", color: "fp-purple" }
+  - { fn: "aa - 2*bb*x", label: "MR = aa - 2bb*Q", color: "fp-red" }
+  - { fn: "(aa - bb*x)*x", label: "TR(Q) = P*Q", color: "paper-700" }
+markers:
+  - { x: "aa/(2*bb)", label: "Q* (E_D = -1, TR max, MR = 0)" }
+```
+
 ## 2. Cenová elasticita poptávky $E_D$
 
 ### Definice
@@ -125,6 +141,21 @@ $$E_D = \frac{P}{Q}\cdot\frac{1}{dP/dQ} = \frac{A\,Q^a}{Q}\cdot\frac{1}{a\,A\,Q^
 
 $$\boxed{\; P = A\,Q^a \;\Longrightarrow\; E_D = \dfrac{1}{a} \;\text{(konstanta)}\;}$$
 
+```graph
+title: Konstantní elasticita poptávky P = AA*Q^eled
+alt: Mocninná poptávka P = AA*Q^eled má v každém bodě stejnou elasticitu E_D = 1/eled. TR = AA*Q^(eled+1) roste pro |eled|<1, klesá pro |eled|>1, je konstantní pro eled = -1. Marker ukazuje, že max TR v konečném Q neexistuje (kromě eled = -1).
+xAxis: { label: "Q", domain: [1, 30] }
+yAxis: { label: "P, TR", domain: [0, 500] }
+params:
+  - { name: AA, label: "škála AA", min: 20, max: 100, default: 66, step: 1 }
+  - { name: eled, label: "exponent eled (= 1/E_D)", min: -3, max: -0.3, default: -0.333, step: 0.05 }
+curves:
+  - { fn: "AA*exp(eled*log(x))", label: "P = AA*Q^eled", color: "fp-purple" }
+  - { fn: "AA*exp((eled+1)*log(x))", label: "TR = AA*Q^(eled+1)", color: "fp-red" }
+markers:
+  - { x: "exp(log(2/AA)/eled)", label: "Q při P = 2 (pro srovnání s MC)" }
+```
+
 ### Důsledky konstantní elasticity
 
 1. **Nezávislost na bodě**: ať si zvolíme jakoukoliv cenu nebo množství, elasticita zůstává stejná.
@@ -160,7 +191,7 @@ $$e_{ID} = \frac{X_2 - X_1}{P_2 - P_1}\cdot\frac{P_1 + P_2}{X_1 + X_2}.$$
 > [!tip] Postup výpočtu krok za krokem
 > 1. Identifikuj poptávkovou funkci (zda je $Q(P)$ či $P(Q)$).
 > 2. Spočítej derivaci ve správném směru.
-> 3. Dosadž bod $(P, Q)$, ve kterém měříš.
+> 3. Dosaď bod $(P, Q)$, ve kterém měříš.
 > 4. Aplikuj $E_D = (P/Q)\cdot dQ/dP$.
 > 5. Pokud je zadání diskrétní, použij midpoint (oblouk).
 

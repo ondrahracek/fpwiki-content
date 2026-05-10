@@ -74,6 +74,21 @@ Tato podmínka odráží známý vztah z teorie celkových tržeb:
 - $E_D < 1$ (nepružná poptávka) — růst ceny zvyšuje $TR$.
 - $E_D = 1$ (jednotková elasticita) — $TR$ je v lokálním maximu.
 
+```graph
+title: Tržní potenciál MP = P·Q a bod maximalizace (E_D=1)
+alt: Tržní potenciál MP = P·Q jako parabola v rovině Q-MP (modrofialově) spolu s lineární poptávkou P = aa - bb·Q (šedě) jako reference. Maximum MP nastává v bodě Q* = aa/(2bb), kde cenová elasticita poptávky je rovna jedné. Hodnoty MP řádově převyšují hodnoty P, takže poptávková přímka leží blízko vodorovné osy.
+xAxis: { label: "Q (množství)", domain: [0, 50] }
+yAxis: { label: "MP, P", domain: [0, 2700] }
+params:
+  - { name: aa, label: "Intercept inverzní poptávky aa", min: 30, max: 100, default: 50, step: 2 }
+  - { name: bb, label: "Sklon inverzní poptávky bb", min: 1, max: 4, default: 2, step: 0.1 }
+curves:
+  - { fn: "aa*x - bb*x*x", label: "MP = aa·Q - bb·Q²", color: "fp-purple" }
+  - { fn: "aa - bb*x", label: "P = aa - bb·Q", color: "paper-700" }
+markers:
+  - { x: "aa/(2*bb)", label: "Q* (E_D=1)" }
+```
+
 > [!tip] Praktický důsledek
 > Firma odhadující tržní potenciál **musí znát elasticitu** (alespoň
 > v okolí současné ceny). Bez ní nelze rozhodnout, zda zvyšovat nebo
@@ -217,6 +232,21 @@ $$\log Q_d = a \log P_o + b \log P_c + c \log P_s + d \log Y_d + e \log T + \ldo
 > každý koeficient je elasticita příslušného faktoru. To výrazně
 > usnadňuje srovnání s tabulkovými hodnotami (Baye, Gwartney) a vstupy
 > do strategického rozhodování.
+
+```graph
+title: Lineární vs log-log forma poptávkové funkce
+alt: Srovnání dvou funkčních forem poptávky v rovině Q-P. Lineární tvar Q = aa - bb·P (modrofialově) má konstantní sklon ale měnící se elasticitu. Log-log tvar Q = aa·P^(-EE) (červeně) má konstantní cenovou elasticitu rovnou EE. Posuvník EE mění strmost log-log křivky.
+xAxis: { label: "Q (množství)", domain: [1, 200] }
+yAxis: { label: "P (cena)", domain: [0, 150] }
+params:
+  - { name: aa, label: "Měřítko aa", min: 50, max: 200, default: 100, step: 5 }
+  - { name: bb, label: "Lineární sklon bb", min: 0.5, max: 4, default: 1, step: 0.1 }
+  - { name: EE, label: "Elasticita EE (log-log)", min: 0.3, max: 3, default: 1, step: 0.1 }
+curves:
+  - { fn: "(aa - x)/bb", label: "Lineární: P = (aa - Q)/bb", color: "fp-purple" }
+  - { fn: "pow(aa/x, 1/EE)", label: "Log-log: P = (aa/Q)^(1/EE)", color: "fp-red" }
+markers: []
+```
 
 ### Ekonometrický postup
 
@@ -395,6 +425,21 @@ data s rostoucí amplitudou výkyvů).
 6. **Predikce.** Pro budoucí čas $t^*$:
    $$\hat{X}_{t^*} = T_{t^*} + \hat{S}_{\text{period}(t^*)}$$
 
+```graph
+title: Dekompozice časové řady X_t = T_t + S_t (aditivní model)
+alt: Aditivní dekompozice časové řady X_t. Trendová složka T_t = aa + bb·t je přímka (modrofialově), součet trend + sezóna T_t + AA·sin(π·t/2) je oscilující kolem trendu (červeně). Posuvníky aa, bb mění intercept a sklon trendu, AA mění amplitudu sezónních výkyvů.
+xAxis: { label: "t (čtvrtletí)", domain: [0, 20] }
+yAxis: { label: "X_t", domain: [-200, 1500] }
+params:
+  - { name: aa, label: "Intercept trendu aa", min: 100, max: 1000, default: 500, step: 25 }
+  - { name: bb, label: "Sklon trendu bb", min: -15, max: 25, default: 15, step: 2.5 }
+  - { name: AA, label: "Amplituda sezóny AA", min: 0, max: 200, default: 100, step: 10 }
+curves:
+  - { fn: "aa + bb*x", label: "Trend T_t", color: "fp-purple" }
+  - { fn: "aa + bb*x + AA*sin(3.14159*x/2)", label: "Trend + sezóna T_t + S_t", color: "fp-red" }
+markers: []
+```
+
 ### Příklad — výkup mléka 2009–2010
 
 | Období | Q (mil. l) | P (Kč/l) |
@@ -489,6 +534,22 @@ pro reportování.
 | MAE | ne | nezvýraznění | data |
 | MSE | ne | zvýraznění | data² |
 | RMSE | ne | zvýraznění | data |
+
+```graph
+title: Schématické rezidua predikce — ME, MAE, RMSE jako vodorovné reference
+alt: Schématický průběh reziduí e_t = AA·sin(t) + bb (modrofialově) a vodorovné reference ME ≈ bb, MAE a RMSE pro porovnání tří metrik přesnosti predikce. Posuvník AA mění amplitudu reziduí, posuvník bb posouvá střední hodnotu (bias). ME se může vykrátit při souměrném rozptylu kolem nuly, zatímco MAE a RMSE detekují i symetrické chyby.
+xAxis: { label: "t (období)", domain: [0, 12] }
+yAxis: { label: "e_t a metriky", domain: [-80, 80] }
+params:
+  - { name: AA, label: "Amplituda reziduí AA", min: 0, max: 50, default: 30, step: 2 }
+  - { name: bb, label: "Bias bb", min: -20, max: 20, default: 0, step: 2 }
+curves:
+  - { fn: "AA*sin(x) + bb", label: "Reziduum e_t", color: "fp-purple" }
+  - { fn: "bb", label: "ME ≈ bb", color: "paper-700" }
+  - { fn: "AA*0.6366 + abs(bb)", label: "MAE (přibližně)", color: "fp-red" }
+  - { fn: "sqrt(AA*AA/2 + bb*bb)", label: "RMSE", color: "ink" }
+markers: []
+```
 
 ## 12. Ostatní metody predikce
 
