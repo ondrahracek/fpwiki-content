@@ -5,7 +5,7 @@ type: topic
 tags: [mikk, mikroekonomie, monopol, lerner, markup, mrtva-vaha]
 sources: [raw/mikk/mik2K prednaska 3 blok 2026.pdf, raw/mikk/mikK test KS reseni.pdf]
 created: 2026-04-27
-updated: '2026-04-27'
+updated: '2026-05-12'
 ---
 
 # Monopol — pokročilá analýza
@@ -196,7 +196,7 @@ $$
 Dosazením $MC = 0{,}35$ (střed odhadu) a $|E_d| = 1{,}35$:
 
 $$
-P \;=\; 0{,}35 \cdot \frac{1{,}35}{1{,}35 - 1} \;=\; 0{,}35 \cdot \frac{1{,}35}{0{,}35} \;=\; 0{,}35 \cdot 3{,}857 \;\approx\; \$1{,}35.
+P \;=\; 0{,}35 \cdot \frac{1{,}35}{1{,}35 - 1} \;=\; 0{,}35 \cdot \frac{1{,}35}{0{,}35} \;=\; 0{,}35 \cdot 3{,}857 \;\approx\; 1{,}35.
 $$
 
 Při použití vyšší vstupní MC (přibližně $1$ ve studii pro „plně alokované náklady“) vychází číslo **$3{,}89**, které je velmi blízko skutečné ceně **$3{,}50**.

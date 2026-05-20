@@ -213,7 +213,7 @@ Tato vlastnost je důsledkem axiomu úplnosti: spotřebitel umí každou kombina
 IC je konvexní = nezakřivená "ven" od počátku, ale "dovnitř". Geometricky to znamená, že **průměry kombinací jsou preferovány před extrémy**: je-li spotřebitel indiferentní mezi $A = (10, 2)$ a $B = (2, 10)$, pak průměr $C = (6, 6)$ leží na **vyšší** IC než A a B.
 
 > [!info] Konvexita ≠ racionalita
-> Skutečnost, že IC jsou **konvexní**, není podmínkou racionálního chování. Existují výjimečné spotřebitelé s konkávními IC (extrémně preferují jeden statek před diverzifikací) — model jim však *nezakazuje* být racionální. Konvexita je **empirická generalizace** chování běžných spotřebitelů.
+> Skutečnost, že IC jsou **konvexní**, není podmínkou racionálního chování. Existují výjimečně spotřebitelé s konkávními IC (extrémně preferují jeden statek před diverzifikací) — model jim však *nezakazuje* být racionální. Konvexita je **empirická generalizace** chování běžných spotřebitelů.
 
 ### Matematická definice konvexity preferencí
 
