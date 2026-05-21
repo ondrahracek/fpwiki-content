@@ -63,6 +63,21 @@ Rozpočtová přímka se posouvá v reakci na změnu jejích tří parametrů:
 | ↑ $P_Y$           | Rotace kolem bodu $(I/P_X, 0)$ na ose $X$ dovnitř.                               |
 | ↓ $P_Y$           | Rotace kolem $(I/P_X, 0)$ ven (přímka se napřímí, $|sklon|$ klesá).              |
 
+```graph
+title: Rozpočtová přímka — posuny při změně Mm a Pp
+alt: Rozpočtová přímka v rovině X-Y. Posuvník důchodu Mm paralelně posouvá přímku, posuvník ceny Pp ji rotuje kolem průsečíku s osou Y.
+xAxis: { label: "X (videokazety)", domain: [0, 30] }
+yAxis: { label: "Y (koncerty)", domain: [0, 16] }
+params:
+  - { name: Mm, label: "Důchod I (Kč)", min: 2000, max: 9000, default: 4400, step: 100 }
+  - { name: Pp, label: "Cena Px (Kč)", min: 100, max: 500, default: 200, step: 10 }
+curves:
+  - { fn: "Mm/600 - (Pp/600)*x", label: "Rozpočtová přímka", color: "fp-purple" }
+markers:
+  - { x: "Mm/Pp", label: "I/Px" }
+  - { x: "0", label: "I/Py" }
+```
+
 > [!tip] Mnemotechnická pomůcka
 > Při změně ceny zboží **se nemění** ten průsečík, který se daného zboží **netýká** (protože v něm je nakupované množství onoho zboží nulové). Přímka kolem něj rotuje.
 
@@ -297,6 +312,19 @@ $$\lambda = \dfrac{\partial U^*(I)}{\partial I}.$$
 
 Anglicky se tomu říká *shadow price of income*. V našem příkladu $\lambda = 0{,}03$ znamená, že **každá další koruna ročního kulturního rozpočtu Petra zvýší jeho užitek z kultury o 0{,}03 jednotky užitku** (v okolí současného optima).
 
+```graph
+title: Nepřímý užitek V(I) a stínová cena λ
+alt: Konkávní křivka nepřímého užitku V jako funkce důchodu I. Sklon křivky v daném bodě odpovídá Lagrangeově multiplikátoru λ. V bodě nasycení I=16400 sklon klesá k nule.
+xAxis: { label: "Důchod I (Kč)", domain: [0, 18000] }
+yAxis: { label: "V(I) — užitek", domain: [0, 360] }
+params: []
+curves:
+  - { fn: "10*((x+3600)/2000) + 24*(3*(x+3600)/2000 - 6) - 0.5*pow((x+3600)/2000,2) - 0.5*pow(3*(x+3600)/2000 - 6, 2)", label: "V(I)", color: "fp-purple" }
+markers:
+  - { x: "4400", label: "I = 4400" }
+  - { x: "16400", label: "Bod nasycení I̅" }
+```
+
 ### 7.4b Ekvivalentní podoba interpretace přes mezní užitky
 
 Z rovnic (1) a (2) můžeme vyjádřit:
@@ -458,6 +486,21 @@ $$-MRS_C = -\dfrac{P_X}{P_Y} \;\Leftrightarrow\; MRS_C = \dfrac{P_X}{P_Y}.$$
 Indiferenční křivka leží **uvnitř** souboru tržních příležitostí (pod rozpočtovou přímkou) všude kromě bodu doteku — kdyby protínala přímku, znamenalo by to, že existuje jiný dostupný koš na vyšší indiferenční křivce, takže původní bod by nebyl optimum.
 
 **Algoritmický pohled:** posouvejme indiferenční křivku od počátku nahoru, dokud se právě dotýká rozpočtové přímky. Bod doteku = optimum.
+
+```graph
+title: Tečnost IC a rozpočtové přímky pro U = 10X + 24Y - 0.5X² - 0.5Y²
+alt: Indiferenční křivka kvadratického užitku U(X,Y)=158 a rozpočtová přímka X+3Y=22. Posuvník U0 mění úroveň užitku, posuvník Pp mění sklon rozpočtové přímky a posouvá bod tečnosti.
+xAxis: { label: "X", domain: [0, 12] }
+yAxis: { label: "Y", domain: [0, 12] }
+params:
+  - { name: U0, label: "Úroveň užitku U0", min: 100, max: 200, default: 158, step: 1 }
+  - { name: Pp, label: "Cena Px", min: 100, max: 500, default: 200, step: 10 }
+curves:
+  - { fn: "24 - sqrt(576 - 2*U0 + 20*x - x*x)", label: "Indiferenční křivka U=U0", color: "fp-red" }
+  - { fn: "(4400 - Pp*x)/600", label: "Rozpočtová přímka", color: "fp-purple" }
+markers:
+  - { x: "4", label: "X* = 4" }
+```
 
 ---
 

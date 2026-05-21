@@ -109,6 +109,25 @@ Intuice: zaměstnanci přijmou nového člena pouze tehdy, pokud jeho příspěv
 | Reakce na $P \uparrow$ | $L \uparrow$ (najmout) | $L \downarrow$ (propustit) |
 | Reakce na $r \uparrow$ | $L$ ~ stejné (krátkoběžně) | $L \uparrow$ (FC roste, $y$ klesá) |
 
+```graph
+title: Optimum Wardovy vs. kapitalistické firmy — P*MP_L = y vs. P*MP_L = w
+alt: Křivka P*MP_L (mezní příjmový produkt) a y(L) (průměrný příjem v Ward firmě). Wardova firma volí L* tam, kde P*MP_L = y. Kapitalist s exogenní mzdou ww volí L_K, kde P*MP_L = ww. Růst Pp posouvá L* doleva (Ward), L_K doprava (kapitalist).
+xAxis: { label: "L", domain: [0.5, 25] }
+yAxis: { label: "P*MP_L, y, ww", domain: [0, 200] }
+params:
+  - { name: Pp, label: "cena produkce Pp", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: K0, label: "fixní kapitál K0", min: 50, max: 200, default: 100, step: 10 }
+  - { name: rr, label: "cena kapitálu rr", min: 0.5, max: 3, default: 1, step: 0.1 }
+  - { name: ww, label: "kapitalistická mzda ww", min: 20, max: 60, default: 25, step: 1 }
+curves:
+  - { fn: "50*Pp/sqrt(x)", label: "P*MP_L", color: "fp-purple" }
+  - { fn: "(100*Pp*sqrt(x) - rr*K0)/x", label: "y(L) — Wardův průměrný příjem", color: "fp-red" }
+  - { fn: "ww", label: "ww (kapitalistická mzda)", color: "paper-700" }
+markers:
+  - { x: "(rr*K0)*(rr*K0)/(2500*Pp*Pp)", label: "L* (Ward)" }
+  - { x: "(50*Pp/ww)*(50*Pp/ww)", label: "L_K (kapitalist)" }
+```
+
 Klíčový rozdíl je v tom, že u kapitalisty je referenční hladina pro mezní produkt **exogenní** (mzda určená trhem práce), u Wardovy firmy **endogenní** (průměr, který sama produkuje).
 
 ---
@@ -150,6 +169,21 @@ $$\Rightarrow L^{0{,}5} = \frac{2}{P} \Rightarrow L^* = \frac{4}{P^2}$$
 | 1 | 4 | 200 | 25 |
 | 2 | 1 | 100 | 100 |
 | 4 | 0,25 | 50 | 200 |
+
+```graph
+title: Wardova firma — y(L) = (100*Pp*sqrt(L) - rr*K0)/L a paradox
+alt: Příjem na zaměstnance y(L) v Cobb-Douglas firmě s Q = 100*sqrt(L). Růst ceny Pp posouvá maximum DOLEVA — slavný Wardův paradox. Marker L* = (rr*K0)^2/(2500*Pp^2) ukazuje optimální zaměstnanost.
+xAxis: { label: "L", domain: [0.1, 12] }
+yAxis: { label: "y (příjem na zaměstnance)", domain: [-50, 250] }
+params:
+  - { name: Pp, label: "cena produkce Pp", min: 0.5, max: 3, default: 1, step: 0.1 }
+  - { name: K0, label: "fixní kapitál K0", min: 50, max: 200, default: 100, step: 10 }
+  - { name: rr, label: "cena kapitálu rr", min: 0.5, max: 3, default: 1, step: 0.1 }
+curves:
+  - { fn: "(100*Pp*sqrt(x) - rr*K0)/x", label: "y(L) = (TR - FC)/L", color: "fp-purple" }
+markers:
+  - { x: "(rr*K0)*(rr*K0)/(2500*Pp*Pp)", label: "L* (max y)" }
+```
 
 Když cena vzroste z $P=1$ na $P=2$: zaměstnanost klesá ze 4 na 1, produkce klesá z 200 na 100, **ale** příjem každého zbylého zaměstnance vzroste z 25 na 100. Pro stávající členy je propuštění kolegů **racionální**.
 

@@ -39,6 +39,23 @@ Model dominantní firmy (dominant-firm model) je zjednodušený model oligopolu,
 
 ![[mikk-cenovy-vudce-dominantni-firma.jpeg|Model cenového vůdce s konkurenčním lemem — odvození reziduální poptávky D_D = D_T − S_F a optima dominantní firmy]]
 
+```graph
+title: Reziduální poptávka dominantní firmy D_D = D - S_F
+alt: Tržní poptávka, nabídka konkurenčního lemu a reziduální poptávka dominantní firmy získaná horizontální subtrakcí; ilustruje, kolik trhu zbude pro dominantní firmu při dané ceně.
+xAxis: { label: "Q", domain: [0, 120] }
+yAxis: { label: "P", domain: [0, 110] }
+params:
+  - { name: aa, label: "intercept tržní poptávky", min: 60, max: 110, default: 100, step: 5 }
+  - { name: bb, label: "sklon tržní poptávky", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: pf, label: "intercept nabídky lemu", min: 0, max: 40, default: 20, step: 1 }
+  - { name: sf, label: "sklon nabídky lemu", min: 0.2, max: 2, default: 0.5, step: 0.1 }
+curves:
+  - { fn: "aa - bb*x", label: "tržní poptávka D", color: "fp-purple" }
+  - { fn: "pf + sf*x", label: "nabídka lemu S_F", color: "paper-700" }
+  - { fn: "(aa*sf + bb*pf)/(sf+bb) - (bb*sf/(sf+bb))*x", label: "reziduální poptávka D_D", color: "fp-red" }
+markers: []
+```
+
 Postup konstrukce poptávky dominantní firmy:
 
 1. **Tržní poptávka $D$** — celková poptávka po produktu na trhu.
@@ -77,6 +94,26 @@ Při ceně $P^*$:
 > 3. Z $MR_D = MC_D$: $(140 - 2Q_D)/3 = 10 + Q_D$ → $140 - 2Q_D = 30 + 3Q_D$ → $Q_D = 22$.
 > 4. $P^* = (140 - 22)/3 \approx 39{,}3$.
 > 5. $Q_F = 2 \cdot 39{,}3 - 40 \approx 38{,}7$, $Q_T \approx 60{,}7$.
+
+```graph
+title: Optimum dominantní firmy MR_D = MC_D
+alt: Reziduální poptávka, k ní příslušející marginální příjem MR_D a marginální náklady dominantní firmy MC_D; jejich průsečík určuje optimální výstup Q_D a cenu P*.
+xAxis: { label: "Q_D", domain: [0, 60] }
+yAxis: { label: "P, MR, MC", domain: [-10, 80] }
+params:
+  - { name: aa, label: "intercept tržní poptávky", min: 60, max: 110, default: 100, step: 5 }
+  - { name: bb, label: "sklon tržní poptávky", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: pf, label: "intercept nabídky lemu", min: 0, max: 40, default: 20, step: 1 }
+  - { name: sf, label: "sklon nabídky lemu", min: 0.2, max: 2, default: 0.5, step: 0.1 }
+  - { name: kk, label: "MC dominantní firmy: konstanta", min: 0, max: 30, default: 10, step: 1 }
+  - { name: mm, label: "MC dominantní firmy: sklon", min: 0, max: 3, default: 1, step: 0.1 }
+curves:
+  - { fn: "(aa*sf + bb*pf)/(sf+bb) - (bb*sf/(sf+bb))*x", label: "D_D (reziduální poptávka)", color: "fp-purple" }
+  - { fn: "(aa*sf + bb*pf)/(sf+bb) - 2*(bb*sf/(sf+bb))*x", label: "MR_D", color: "fp-red" }
+  - { fn: "kk + mm*x", label: "MC_D", color: "paper-700" }
+markers:
+  - { x: "((aa*sf + bb*pf)/(sf+bb) - kk) / (2*(bb*sf/(sf+bb)) + mm)", label: "Q_D* (optimum)" }
+```
 
 ### 1.4 Implikace modelu
 

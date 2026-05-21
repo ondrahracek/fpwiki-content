@@ -26,6 +26,23 @@ Rovnováha trhu se v teorii definuje **třemi současně platnými znaky**:
 > $$Q_D(P_E) = Q_S(P_E) = Q_E$$
 > Při $P > P_E$ vzniká **přebytek nabídky** (zásoby tlačí cenu dolů). Při $P < P_E$ vzniká **přebytek poptávky** (nedostatek tlačí cenu nahoru). Tržní mechanismus konverguje k $P_E$.
 
+```graph
+title: Tržní rovnováha — D, S a bod E
+alt: Lineární poptávka P_D = aa - bb*Q a nabídka P_S = cc + dd*Q. Rovnovážný bod E v průsečíku, Q_E = (aa-cc)/(bb+dd). Posuny intercept-slidery posunují E.
+xAxis: { label: "Q", domain: [0, 100] }
+yAxis: { label: "P", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept poptávky aa", min: 30, max: 80, default: 50, step: 1 }
+  - { name: bb, label: "sklon poptávky bb", min: 0.2, max: 1.5, default: 0.5, step: 0.05 }
+  - { name: cc, label: "intercept nabídky cc", min: 0, max: 30, default: 6.67, step: 0.5 }
+  - { name: dd, label: "sklon nabídky dd", min: 0.1, max: 1.5, default: 0.333, step: 0.05 }
+curves:
+  - { fn: "aa - bb*x", label: "P_D = aa - bb*Q", color: "fp-purple" }
+  - { fn: "cc + dd*x", label: "P_S = cc + dd*Q", color: "fp-red" }
+markers:
+  - { x: "(aa - cc)/(bb + dd)", label: "Q_E" }
+```
+
 Tyto tři atributy jsou **idealizací**. V praxi se ptáme, zda jsou některé reálné trhy v rovnováze — bytový trh, trh zdravotní péče či vzdělání mají často **trvalé převisy** jedné strany (fronty na bydlení, čekací doby na lékaře), takže atribut č. 1 nebo č. 2 není naplněn.
 
 > [!note] Proč některé trhy v rovnováze nejsou
@@ -264,6 +281,28 @@ Po posunech $D$ či $S$ se trh ustálí v **nové rovnováze**. Cílem komparati
 > [!example] Trh chytrých telefonů 2010–2020
 > Současně rostla **poptávka** (nový segment uživatelů, růst příjmů, síťový efekt) i **nabídka** (Mooreův zákon, čínští výrobci, úspory z rozsahu). Výsledek: $Q_E$ jednoznačně nahoru (počet smartphonů rostl řádově), $P_E$ smíšeně — průměrná cena mírně klesla, ale rozpětí se rozevřelo (top segment Apple zdražoval, low-end klesal).
 
+```graph
+title: Komparativní statika — současný posun D a S
+alt: Původní D a S spolu s posunutými D' = (aa+dD)-bb*Q a S' = (cc-dS)+dd*Q. Markery ukazují původní Q_E a nové Q_E'. Při dD>0 a dS>0 jde Q nahoru, ale P je nejednoznačný.
+xAxis: { label: "Q", domain: [0, 100] }
+yAxis: { label: "P", domain: [0, 70] }
+params:
+  - { name: aa, label: "intercept D aa", min: 30, max: 70, default: 50, step: 1 }
+  - { name: bb, label: "sklon D bb", min: 0.2, max: 1, default: 0.5, step: 0.05 }
+  - { name: cc, label: "intercept S cc", min: 0, max: 20, default: 6.67, step: 0.5 }
+  - { name: dd, label: "sklon S dd", min: 0.1, max: 1, default: 0.333, step: 0.05 }
+  - { name: dD, label: "posun D (intercept ↑)", min: -15, max: 15, default: 5, step: 1 }
+  - { name: dS, label: "posun S (intercept ↓ = nabídka ↑)", min: -10, max: 10, default: 3, step: 1 }
+curves:
+  - { fn: "aa - bb*x", label: "P_D (původní)", color: "fp-purple" }
+  - { fn: "cc + dd*x", label: "P_S (původní)", color: "fp-red" }
+  - { fn: "(aa+dD) - bb*x", label: "P_D' (po posunu)", color: "paper-700" }
+  - { fn: "(cc-dS) + dd*x", label: "P_S' (po posunu)", color: "paper-500" }
+markers:
+  - { x: "(aa - cc)/(bb + dd)", label: "Q_E (původní)" }
+  - { x: "(aa + dD - cc + dS)/(bb + dd)", label: "Q_E' (nové)" }
+```
+
 ### 11.3 Předpovědní modely poptávky
 
 Klíčová otázka zní: "**Jak prognózovat vývoj trhu, například automobilů?**" Praktická odpověď kombinuje:
@@ -308,6 +347,26 @@ Zavedeme spotřební daň $t = 5$ na jednotku, kterou odvádí výrobce. Nabídk
 $$100 - 2P = -35 + 3P \quad \Longrightarrow \quad 5P = 135 \quad \Longrightarrow \quad P_E' = 27, \, Q_E' = 46.$$
 
 Cena pro spotřebitele se zvedla o 3 Kč (z 24 na 27), čistá cena výrobce klesla o 2 Kč (z 24 na 22 = 27 − 5). Daňové břemeno se rozdělilo **3:2 ve prospěch výrobce**, protože poptávka je v okolí rovnováhy strmější (méně elastická) než nabídka. Tento výpočet ilustruje princip **incidence daně**: břemeno nese více ta strana, která hůře ustoupí.
+
+```graph
+title: Daňový dopad — posun S o t
+alt: Lineární D a S, daň t na výrobce posune S vertikálně nahoru o t. Nová rovnováha má vyšší cenu pro spotřebitele a nižší čistou cenu výrobce. Rozdělení břemene závisí na poměru elasticit.
+xAxis: { label: "Q", domain: [0, 100] }
+yAxis: { label: "P", domain: [0, 70] }
+params:
+  - { name: aa, label: "intercept D aa", min: 30, max: 70, default: 50, step: 1 }
+  - { name: bb, label: "sklon D bb", min: 0.2, max: 1, default: 0.5, step: 0.05 }
+  - { name: cc, label: "intercept S cc", min: 0, max: 20, default: 6.67, step: 0.5 }
+  - { name: dd, label: "sklon S dd", min: 0.1, max: 1, default: 0.333, step: 0.05 }
+  - { name: tt, label: "daň t (na jednotku)", min: 0, max: 15, default: 5, step: 0.5 }
+curves:
+  - { fn: "aa - bb*x", label: "P_D", color: "fp-purple" }
+  - { fn: "cc + dd*x", label: "P_S (bez daně)", color: "fp-red" }
+  - { fn: "(cc + tt) + dd*x", label: "P_S + t (s daní)", color: "paper-700" }
+markers:
+  - { x: "(aa - cc)/(bb + dd)", label: "Q_E (bez daně)" }
+  - { x: "(aa - cc - tt)/(bb + dd)", label: "Q_E (s daní)" }
+```
 
 ## 13. Návaznosti
 

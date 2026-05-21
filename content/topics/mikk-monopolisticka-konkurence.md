@@ -149,6 +149,24 @@ V jiných odvětvích je diferenciace přirozená a snadná: oblečení, restaur
 
 ![[mikk-monopolisticka-konkurence-kr-dl.jpeg|Monopolistická konkurence — krátkodobý ekonomický zisk vs. dlouhodobá tečnost P=AC s nadbytečnou kapacitou]]
 
+```graph
+title: Monopolistická konkurence — krátkodobá rovnováha
+alt: Graf ukazuje klesající poptávku, dvojnásobně strmý mezní příjem, U-tvar průměrných nákladů LAC a rostoucí mezní náklady LMC; v krátkém období může cena ležet nad LAC a firma má kladný ekonomický zisk.
+xAxis: { label: "Q", domain: [1, 50] }
+yAxis: { label: "P, MR, LAC, LMC", domain: [0, 40] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 20, max: 40, default: 30, step: 1 }
+  - { name: bb, label: "Sklon poptávky b", min: 0.3, max: 1.0, default: 0.5, step: 0.05 }
+  - { name: K0, label: "Fixní část LAC (K0/Q)", min: 50, max: 200, default: 100, step: 10 }
+  - { name: b0, label: "Lineární konstanta LAC", min: 2, max: 10, default: 5, step: 1 }
+  - { name: cc, label: "Kvadratický koeficient LAC", min: 0.05, max: 0.3, default: 0.1, step: 0.01 }
+curves:
+  - { fn: "aa - bb*x", label: "D = AR", color: "fp-purple" }
+  - { fn: "aa - 2*bb*x", label: "MR", color: "fp-red" }
+  - { fn: "K0/x + b0 + cc*x", label: "LAC", color: "paper-700" }
+  - { fn: "b0 + 2*cc*x", label: "LMC", color: "ink" }
+```
+
 V krátkém období je počet firem v odvětví fixní (nedošlo zatím ke vstupu/výstupu) a každá firma řeší standardní úlohu maximalizace zisku.
 
 **Předpoklady SR**:
@@ -198,6 +216,24 @@ Tento posun trvá tak dlouho, dokud individuální poptávka neklesne (resp. nes
 > V dlouhodobé rovnováze monopolistické konkurence platí:
 > $$Q^*_{LR} < Q_{\min LAC}$$
 > Firma má **přebytečnou kapacitu** (excess capacity) — mohla by vyrábět víc s nižšími průměrnými náklady, ale poptávka jí to neumožňuje. To je **strukturální výrobní neefektivnost** monopolistické konkurence.
+
+```graph
+title: Monopolistická konkurence — LR tečnost D a LAC
+alt: Graf zachycuje dlouhodobou rovnováhu monopolistické konkurence s tečností individuální poptávky a křivky LAC; firma vyrábí v sestupné části LAC s nadbytečnou kapacitou.
+xAxis: { label: "Q", domain: [1, 50] }
+yAxis: { label: "P, MR, LAC, LMC", domain: [0, 30] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 12, max: 20, default: 15, step: 0.5 }
+  - { name: bb, label: "Sklon poptávky b", min: 0.10, max: 0.25, default: 0.15, step: 0.01 }
+  - { name: K0, label: "Fixní část LAC (K0/Q)", min: 80, max: 140, default: 100, step: 5 }
+  - { name: b0, label: "Lineární konstanta LAC", min: 4, max: 6, default: 5, step: 0.5 }
+  - { name: cc, label: "Kvadratický koeficient LAC", min: 0.08, max: 0.15, default: 0.1, step: 0.01 }
+curves:
+  - { fn: "aa - bb*x", label: "D = AR", color: "fp-purple" }
+  - { fn: "aa - 2*bb*x", label: "MR", color: "fp-red" }
+  - { fn: "K0/x + b0 + cc*x", label: "LAC", color: "paper-700" }
+  - { fn: "b0 + 2*cc*x", label: "LMC", color: "ink" }
+```
 
 ---
 
@@ -380,6 +416,20 @@ Každý prodavač chce maximalizovat svůj počet zákazníků. Pokud je $A$ na 
 > - Politické platformy dvou hlavních stran se v centristickém systému přibližují středu (medián voliče).
 > - Televizní kanály vysílají velmi podobné formáty.
 > - Restaurační řetězce v centru města jsou na sebe nalepené.
+
+```graph
+title: Hotelling — podíl prodavače A jako funkce pozice B
+alt: Graf ukazuje, jak se mění podíl prodavače A na uniformně rozložené poptávce v závislosti na pozici prodavače B; A volí svou pozici tak, aby maximalizoval svůj podíl proti libovolnému B.
+xAxis: { label: "Pozice prodavače B", domain: [0, 1] }
+yAxis: { label: "Podíl trhu prodavače A", domain: [0, 1] }
+params:
+  - { name: posA, label: "Pozice prodavače A", min: 0, max: 1, default: 0.5, step: 0.05 }
+curves:
+  - { fn: "(posA + x)/2", label: "Podíl A (když B je vpravo od A)", color: "fp-purple" }
+  - { fn: "0.5", label: "Rovný podíl 50/50", color: "paper-500" }
+markers:
+  - { x: "posA", label: "Pozice A" }
+```
 
 ### 12.3. Závěry pro duopol/oligopol
 

@@ -86,6 +86,22 @@ Tj. firma vyrábí až do bodu $Q^{**}$, kde poptávka protíná mezní náklady
 
 > **Klíčová pointa:** 1. stupeň diskriminace je **alokačně efektivní** (žádný deadweight loss), ale **distribučně extrémně asymetrický** (firma bere úplně všechno).
 
+```graph
+title: 1. stupeň diskriminace — D coincides with MR
+alt: Graf zobrazuje klesající poptávku, která je u dokonalé cenové diskriminace zároveň křivkou mezních příjmů, a vodorovné mezní náklady; rovnováha leží v průsečíku poptávky a MC, jako v dokonalé konkurenci.
+xAxis: { label: "Q", domain: [0, 100] }
+yAxis: { label: "P, MR, MC", domain: [0, 120] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 60, max: 120, default: 100, step: 1 }
+  - { name: bb, label: "Sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: MCc, label: "Mezní náklady MC", min: 0, max: 30, default: 4, step: 1 }
+curves:
+  - { fn: "aa - bb*x", label: "D = MR = AR", color: "fp-purple" }
+  - { fn: "MCc", label: "MC", color: "paper-700" }
+markers:
+  - { x: "(aa - MCc)/bb", label: "Q** (= konkurenční Q)" }
+```
+
 ### 3.3 Geometrické znázornění
 
 Přídavný zisk z 1. stupně oproti jednotné monopolní ceně lze rozdělit na dvě části:
@@ -218,6 +234,18 @@ resp.
 
 $$\frac{P_1}{P_2} = \frac{1 + 1/E_2}{1 + 1/E_1}$$
 
+```graph
+title: Poměr P_1/P_2 podle Robinsona — funkce |E_1|
+alt: Graf zobrazuje poměr cen na dvou segmentovaných trzích jako funkci absolutní elasticity prvního trhu při fixní elasticitě druhého; čím méně elastický trh 1, tím vyšší cena na něm oproti trhu 2.
+xAxis: { label: "|E_1|", domain: [1.1, 8] }
+yAxis: { label: "P_1 / P_2", domain: [0, 5] }
+params:
+  - { name: EEabs2, label: "|E_2| druhého trhu", min: 1.1, max: 6, default: 3, step: 0.1 }
+curves:
+  - { fn: "(1 - 1/EEabs2) / (1 - 1/x)", label: "P_1 / P_2", color: "fp-purple" }
+  - { fn: "1", label: "Rovnost cen (P_1 = P_2)", color: "paper-500" }
+```
+
 **Klíčový důsledek:** **Méně elastická skupina** (elasticita s menší absolutní hodnotou) **platí vyšší cenu**. Tím se vysvětluje, proč:
 
 - Senioři a studenti dostávají slevy (mají vyšší elasticitu — citliví na cenu).
@@ -300,6 +328,22 @@ $$P_1 = 80 - 2{,}5 \cdot 8 = 80 - 20 = 60$$
 $$P_2 = 180 - 10 \cdot 7 = 180 - 70 = 110$$
 
 **Kontrola:** $Q_1 + Q_2 = 8 + 7 = 15 = Q$ ✓.
+
+```graph
+title: Diskriminace na 2 trzích — joint MR a MC
+alt: Graf zobrazuje vodorovný součet mezních příjmů ze dvou trhů a rostoucí mezní náklady; jejich průsečík určuje celkové množství a společnou hodnotu mezního příjmu, kterou každý trh dosáhne.
+xAxis: { label: "Q = Q_1 + Q_2", domain: [0, 30] }
+yAxis: { label: "MR_T, MC", domain: [0, 110] }
+params:
+  - { name: aa, label: "Intercept joint MR", min: 70, max: 130, default: 100, step: 1 }
+  - { name: MCintercept, label: "MC při Q=0", min: 5, max: 20, default: 10, step: 1 }
+  - { name: Mslope, label: "Sklon MC", min: 0.5, max: 4, default: 2, step: 0.1 }
+curves:
+  - { fn: "aa - 4*x", label: "joint MR", color: "fp-purple" }
+  - { fn: "Mslope*x + MCintercept", label: "MC", color: "paper-700" }
+markers:
+  - { x: "(aa - MCintercept)/(4 + Mslope)", label: "Q*" }
+```
 
 ### 6.3 Metoda B — přes funkci zisku (parciální derivace)
 
@@ -402,6 +446,25 @@ $$\Delta \pi = \pi_{\text{disk}} - \pi_{\text{nedisk}} = 1075 - 990 = 85$$
 **85 Kč** je čistý přínos diskriminace pro firmu při jinak stejných podmínkách.
 
 > **Interpretace:** Firma prodává **stejné celkové množství**, ale tak, že **zákazníci s méně elastickou poptávkou** (trh 1, kde malá změna ceny způsobí malou změnu množství) **platí víc** ($30) a **zákazníci s pružnější poptávkou** (trh 2) **platí méně** ($20). Tím firma extrahuje větší část přebytku.
+
+```graph
+title: 3. stupeň diskriminace — dva trhy s konstantním MC
+alt: Graf zobrazuje dvě klesající poptávky a dva mezní příjmy pro dva oddělené trhy spolu s vodorovným MC; v optimu protíná MC oba mezní příjmy ve stejné úrovni a méně elastický trh má vyšší cenu.
+xAxis: { label: "Q (každý trh zvlášť)", domain: [0, 70] }
+yAxis: { label: "P, MR, MC", domain: [0, 60] }
+params:
+  - { name: aa1, label: "Intercept D_1", min: 40, max: 70, default: 55, step: 1 }
+  - { name: bb1, label: "Sklon D_1", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: aa2, label: "Intercept D_2", min: 25, max: 50, default: 35, step: 1 }
+  - { name: bb2, label: "Sklon D_2", min: 0.3, max: 1.5, default: 0.5, step: 0.1 }
+  - { name: MCc, label: "MC", min: 1, max: 20, default: 5, step: 1 }
+curves:
+  - { fn: "aa1 - bb1*x", label: "D_1", color: "fp-purple" }
+  - { fn: "aa1 - 2*bb1*x", label: "MR_1", color: "fp-red" }
+  - { fn: "aa2 - bb2*x", label: "D_2", color: "paper-700" }
+  - { fn: "aa2 - 2*bb2*x", label: "MR_2", color: "ink" }
+  - { fn: "MCc", label: "MC", color: "paper-500" }
+```
 
 ### 7.5 Identifikace stupně diskriminace
 

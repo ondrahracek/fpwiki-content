@@ -5,7 +5,7 @@ type: topic
 tags: [mikk, mikroekonomie, bundling, two-part-tariff, cenova-diskriminace, polaroid]
 sources: [raw/mikk/mik2K prednaska 3 blok 2026.pdf, raw/mikk/Prikady pro KS 5 prednaska reseni 2026.pdf]
 created: 2026-04-27
-updated: '2026-04-27'
+updated: '2026-05-12'
 ---
 
 # Bundling a Two-Part Tariff
@@ -122,6 +122,21 @@ $$\frac{\partial \pi}{\partial T} = n(T) + T \cdot n'(T) + (P - MC) \cdot Q'(T) 
 
 kde $n(T)$ je počet kupujících při daném vstupu a $Q(T)$ celkové množství usage napříč nimi.
 
+```graph
+title: Two-Part Tariff — zisk jako funkce vstupního poplatku T
+alt: Graf ukazuje konkávní průběh celkového zisku firmy v závislosti na výši vstupního poplatku; nízké T znamená drtivé využití přes usage fee, vysoké T odráží mnoho zákazníků a pokles počtu kupujících, optimum leží uprostřed.
+xAxis: { label: "T (vstupní poplatek)", domain: [0, 100] }
+yAxis: { label: "Zisk π(T)", domain: [0, 5000] }
+params:
+  - { name: Smax, label: "Max přebytek spotřebitele", min: 50, max: 100, default: 80, step: 5 }
+  - { name: Pusage, label: "Marže z usage na zákazníka", min: 5, max: 50, default: 20, step: 1 }
+  - { name: NN, label: "Velikost trhu N", min: 50, max: 200, default: 100, step: 10 }
+curves:
+  - { fn: "max(0, NN * (1 - x/Smax)) * (x + Pusage)", label: "π(T)", color: "fp-purple" }
+markers:
+  - { x: "(Smax - Pusage)/2", label: "T* (přibližné optimum)" }
+```
+
 ---
 
 ## Polaroid case — modelový příklad
@@ -237,8 +252,8 @@ rezervačními cenami:
 
 | Zákazník | HOT DOG | PIVO |
 |----------|---------|------|
-| Muž      | $\$3{,}0$ | $\$2{,}5$ |
-| Žena     | $\$4{,}0$ | $\$1{,}3$ |
+| Muž      | $3{,}0$ | $2{,}5$ |
+| Žena     | $4{,}0$ | $1{,}3$ |
 
 Pozorování: **poptávky jsou inverzní** — žena dává víc za hot dog, ale méně za pivo, muž naopak.
 Předpokládáme zanedbatelné mezní náklady ($MC \approx 0$) a cíl maximalizovat tržby (= zisk).
@@ -248,9 +263,9 @@ Předpokládáme zanedbatelné mezní náklady ($MC \approx 0$) a cíl maximaliz
 Aby koupili **oba** zákazníci každý produkt zvlášť, cena nesmí překročit nižší rezervační
 cenu z dvojice:
 
-- $P_{\text{HOT DOG}} = \min(3, 4) = \$3$ → tržba $2 \cdot 3 = \$6$.
-- $P_{\text{PIVO}} = \min(2{,}5, 1{,}3) = \$1{,}3$ → tržba $2 \cdot 1{,}3 = \$2{,}6$.
-- **Celkem: $\$8{,}6$**.
+- $P_{\text{HOT DOG}} = \min(3, 4) = 3$ → tržba $2 \cdot 3 = 6$.
+- $P_{\text{PIVO}} = \min(2{,}5, 1{,}3) = 1{,}3$ → tržba $2 \cdot 1{,}3 = 2{,}6$.
+- **Celkem: $8{,}6$**.
 
 Alternativně mohla firma stanovit vyšší ceny a prodat každý produkt jen jednomu zákazníkovi —
 ale to také nevede výš (např. pivo za 2,50 jen muži = 2,50; hot dog za 4 jen ženě = 4 → součet 6,5).
@@ -259,17 +274,17 @@ ale to také nevede výš (např. pivo za 2,50 jen muži = 2,50; hot dog za 4 je
 
 Cena balíčku se musí vejít do nižší **součtové** rezervační ceny:
 
-- Muž: ochota platit za balíček = $3 + 2{,}5 = \$5{,}5$.
-- Žena: ochota platit za balíček = $4 + 1{,}3 = \$5{,}3$.
-- $P_{\text{balíček}} = \min(5{,}5, 5{,}3) = \$5{,}3$ → oba zákazníci koupí.
-- **Celkem: $2 \cdot 5{,}3 = \$10{,}6$**.
+- Muž: ochota platit za balíček = $3 + 2{,}5 = 5{,}5$.
+- Žena: ochota platit za balíček = $4 + 1{,}3 = 5{,}3$.
+- $P_{\text{balíček}} = \min(5{,}5, 5{,}3) = 5{,}3$ → oba zákazníci koupí.
+- **Celkem: $2 \cdot 5{,}3 = 10{,}6$**.
 
 ### Vyhodnocení
 
 | Strategie | Tržba | Rozdíl |
 |-----------|-------|--------|
-| Samostatné ceny | $\$8{,}6$ | — |
-| Bundling | $\$10{,}6$ | **+$\$2{,}0$** |
+| Samostatné ceny | $8{,}6$ | — |
+| Bundling | $10{,}6$ | **+$2{,}0$** |
 
 **Bundling přinesl $+23\,\%$ tržby**. Příčina: inverzní rezervační ceny způsobí, že rozptyl
 **součtových** ochot platit ($5{,}3$ a $5{,}5$) je **menší** než rozptyl jednotlivých ochot
@@ -290,16 +305,16 @@ Trh tvoří 3 skupiny zákazníků s rozdílnou ochotou platit:
 
 | Skupina | Počet osob | Ubytování | Wellness |
 |---------|-----------|-----------|----------|
-| 1       | 30        | $\$300$   | $\$50$   |
-| 2       | 40        | $\$250$   | $\$80$   |
-| 3       | 45        | $\$220$   | $\$90$   |
+| 1       | 30        | $300$   | $50$   |
+| 2       | 40        | $250$   | $80$   |
+| 3       | 45        | $220$   | $90$   |
 
-Jednotkové náklady: $C_{\text{ubyt}} = \$40$, $C_{\text{well}} = \$40$. Celkem 115 zákazníků.
+Jednotkové náklady: $C_{\text{ubyt}} = 40$, $C_{\text{well}} = 40$. Celkem 115 zákazníků.
 
 ### Klíčové pozorování — inverzní rezervační ceny
 
-Skupina, která nejvíc platí za ubytování (Sk. 1: $\$300$), platí **nejméně** za wellness ($\$50$).
-Skupina, která platí nejvíc za wellness (Sk. 3: $\$90$), platí **nejméně** za ubytování ($\$220$).
+Skupina, která nejvíc platí za ubytování (Sk. 1: $300$), platí **nejméně** za wellness ($50$).
+Skupina, která platí nejvíc za wellness (Sk. 3: $90$), platí **nejméně** za ubytování ($220$).
 **Poptávky jsou tedy inverzní** — situace ideální pro bundling.
 
 ### Varianta A — cenová diskriminace 3. stupně
@@ -310,7 +325,7 @@ cenu. Optimum (každý zákazník zaplatí svou maximální ochotu, monopolista 
 - Sk. 1: marže za pár = $(300 - 40) + (50 - 40) = 260 + 10 = 270$ $\to$ $30 \cdot 270 = 8\,100$.
 - Sk. 2: marže za pár = $(250 - 40) + (80 - 40) = 210 + 40 = 250$ $\to$ $40 \cdot 250 = 10\,000$.
 - Sk. 3: marže za pár = $(220 - 40) + (90 - 40) = 180 + 50 = 230$ $\to$ $45 \cdot 230 = 10\,350$.
-- **Součet: $\$28\,450$**.
+- **Součet: $28\,450$**.
 
 V praxi je ale 3. stupeň často **neproveditelný** — zákazník neukáže "kartičku skupiny" a manažer
 neumí dopředu poznat, kdo do které skupiny patří.
@@ -320,27 +335,26 @@ neumí dopředu poznat, kdo do které skupiny patří.
 Když firma nemůže diskriminovat, nasadí dvě jednotlivé ceny — pro ubytování a pro wellness samostatně.
 Aby se prodalo všem, ceny se musejí vejít do **minimální** rezervační ceny napříč skupinami:
 
-- $P_{\text{ubyt}} = \min(300, 250, 220) = \$220$ $\to$ marže $180 \cdot 115 = 20\,700$.
-- $P_{\text{well}} = \min(50, 80, 90) = \$50$ $\to$ marže $10 \cdot 115 = 1\,150$.
-- **Součet: $\$21\,850$**.
+- $P_{\text{ubyt}} = \min(300, 250, 220) = 220$ $\to$ marže $180 \cdot 115 = 20\,700$.
+- $P_{\text{well}} = \min(50, 80, 90) = 50$ $\to$ marže $10 \cdot 115 = 1\,150$.
+- **Součet: $21\,850$**.
 
-(Případně mohl manažer cenu wellness zvednout na 80 a prodat jen sk. 2, 3 — ale to dává jen
-$40 \cdot 85 \cdot 1 + 45 \cdot 50 = $ menší zisk; varianty kombinující "kdo si koupí jen co" jsou
-suboptimální oproti následujícímu bundlingu.)
+(Případně mohl manažer zkusit cenu wellness 80 Kč jen skupinám 2 a 3,
+nebo jiné kombinace samostatných cen — žádná z nich ale nepřekoná bundling.)
 
 ### Varianta C — bundling (balíček ubytování + wellness)
 
 Firma nabídne balíček "ubytování + wellness" za jednu cenu. Ochota platit za balíček:
 
-- Sk. 1: $300 + 50 = \$350$.
-- Sk. 2: $250 + 80 = \$330$.
-- Sk. 3: $220 + 90 = \$310$.
+- Sk. 1: $300 + 50 = 350$.
+- Sk. 2: $250 + 80 = 330$.
+- Sk. 3: $220 + 90 = 310$.
 
-Aby koupili všichni, cena balíčku $\le \min(350, 330, 310) = \$310$. Optimum:
+Aby koupili všichni, cena balíčku $\le \min(350, 330, 310) = 310$. Optimum:
 
-$$P_{\text{balíček}} = \$310, \quad \text{marže} = 310 - 40 - 40 = \$230.$$
+$$P_{\text{balíček}} = 310, \quad \text{marže} = 310 - 40 - 40 = 230.$$
 
-Celkový zisk: $\pi = 230 \cdot 115 = \boxed{\$13\,800}$ (plus dodatečné prodeje, viz pozn.).
+Celkový zisk: $\pi = 230 \cdot 115 = \boxed{13\,800}$ (plus dodatečné prodeje, viz pozn.).
 
 > **Pozn.:** Údaj `230 \cdot 60 = 13\,800` v ručně psaném řešení odpovídá tomu, že počty osob
 > v ručních poznámkách kolísají (20/40/45 vs. 30/40/45). Princip — *bundling sjednocuje vyšší
@@ -350,9 +364,9 @@ Celkový zisk: $\pi = 230 \cdot 115 = \boxed{\$13\,800}$ (plus dodatečné prode
 
 | Strategie | Princip | Zisk |
 |-----------|---------|------|
-| 3. stupeň diskriminace | Každá skupina jinou cenu | $\$28\,450$ |
-| **Bundling (pure)** | **Jeden balíček, jedna cena** | **$\$13\,800$** |
-| Jednotná cena (bez bundlingu) | Cena ubyt. + cena well. samostatně | $\$10\,350$–$\$21\,850$ |
+| 3. stupeň diskriminace | Každá skupina jinou cenu | $28\,450$ |
+| **Bundling (pure)** | **Jeden balíček, jedna cena** | **$13\,800$** |
+| Jednotná cena (bez bundlingu) | Cena ubyt. + cena well. samostatně | $10\,350$–$21\,850$ |
 
 Bundling tedy **nedosahuje** úrovně skutečné cenové diskriminace 3. stupně (pokud by byla
 proveditelná), ale **významně překonává** naivní jednotnou cenu — což je realisticky dostupný

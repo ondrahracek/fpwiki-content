@@ -213,7 +213,7 @@ Tato vlastnost je důsledkem axiomu úplnosti: spotřebitel umí každou kombina
 IC je konvexní = nezakřivená "ven" od počátku, ale "dovnitř". Geometricky to znamená, že **průměry kombinací jsou preferovány před extrémy**: je-li spotřebitel indiferentní mezi $A = (10, 2)$ a $B = (2, 10)$, pak průměr $C = (6, 6)$ leží na **vyšší** IC než A a B.
 
 > [!info] Konvexita ≠ racionalita
-> Skutečnost, že IC jsou **konvexní**, není podmínkou racionálního chování. Existují výjimečné spotřebitelé s konkávními IC (extrémně preferují jeden statek před diverzifikací) — model jim však *nezakazuje* být racionální. Konvexita je **empirická generalizace** chování běžných spotřebitelů.
+> Skutečnost, že IC jsou **konvexní**, není podmínkou racionálního chování. Existují výjimečně spotřebitelé s konkávními IC (extrémně preferují jeden statek před diverzifikací) — model jim však *nezakazuje* být racionální. Konvexita je **empirická generalizace** chování běžných spotřebitelů.
 
 ### Matematická definice konvexity preferencí
 
@@ -265,6 +265,20 @@ Dokonalé substituty jsou statky, které spotřebitel nahrazuje **v pevném pom�
 > [!example] Káva a čaj v poměru 1:1
 > Pro spotřebitele, kterému je úplně jedno, zda pije kávu nebo čaj, je užitková funkce $U = X + Y$. MRS je konstantně 1: vždy je ochoten vyměnit 1 čaj za 1 kávu. IC jsou rovnoběžné přímky se sklonem $-1$. V optimu spotřebuje **pouze ten levnější** statek (rohové řešení).
 
+```graph
+title: Dokonalé substituty — IC je přímka se sklonem -aa/bb
+alt: Lineární indiferenční křivka pro U = aa·X + bb·Y. Posuvníky aa a bb mění sklon přímky; MRS = aa/bb je konstantní bez ohledu na množství.
+xAxis: { label: "X", domain: [0, 12] }
+yAxis: { label: "Y", domain: [0, 12] }
+params:
+  - { name: aa, label: "Koeficient aa (u X)", min: 1, max: 4, default: 1, step: 0.5 }
+  - { name: bb, label: "Koeficient bb (u Y)", min: 1, max: 4, default: 1, step: 0.5 }
+  - { name: U0, label: "Úroveň užitku U0", min: 4, max: 12, default: 8, step: 0.5 }
+curves:
+  - { fn: "(U0 - aa*x)/bb", label: "IC: aa·X + bb·Y = U0", color: "fp-purple" }
+markers: []
+```
+
 ### 10.2 Dokonalé komplementy
 
 Dokonalé komplementy jsou statky, které je třeba **konzumovat v pevném poměru** — samostatně přinášejí nulový užitek. Klasické příklady: levá a pravá bota, auto a benzín (pokud nemůžeme jít pěšky), káva a hrnek.
@@ -277,6 +291,21 @@ Dokonalé komplementy jsou statky, které je třeba **konzumovat v pevném pomě
 
 > [!example] Levá a pravá bota
 > $U(X, Y) = \min(X, Y)$, kde $X$ = levé boty, $Y$ = pravé boty. Mít 5 levých a 2 pravé boty znamená užitek $\min(5,2) = 2$ — třetí pravá bota by užitek nezvýšila bez dalšího levého protějšku. Celé další levé boty také nepřinášejí užitek bez pravých. **Optimum** vždy leží na přímce $X = Y$.
+
+```graph
+title: Dokonalé komplementy — Leontiefova L-IC
+alt: Indiferenční křivka U = min(aa·X, bb·Y) má tvar L se zlomem na přímce aa·X = bb·Y. Posuvníky mění poměr a polohu rohu, zlom se posouvá podél paprsku z počátku.
+xAxis: { label: "X", domain: [0, 10] }
+yAxis: { label: "Y", domain: [0, 10] }
+params:
+  - { name: aa, label: "Koeficient aa (u X)", min: 1, max: 3, default: 1, step: 0.5 }
+  - { name: bb, label: "Koeficient bb (u Y)", min: 1, max: 3, default: 1, step: 0.5 }
+  - { name: U0, label: "Úroveň užitku U0", min: 2, max: 8, default: 4, step: 0.5 }
+curves:
+  - { fn: "U0/bb + 8*exp(-50*(x - U0/aa))", label: "IC ≈ L (aproximace)", color: "fp-purple" }
+markers:
+  - { x: "U0/aa", label: "Roh L: X = U0/aa" }
+```
 
 ### 10.3 Neutrální zboží
 
@@ -322,6 +351,20 @@ V některých případech se může směr preferencí **měnit s úrovní spotř
 > Pro statek $X$ existuje **maximum** $X^*$, po jehož překročení další jednotky **snižují** užitek (statek se mění na nežádoucí). Před $X^*$ jsou IC klesající, po $X^*$ rostoucí. V bodě $X^*$ je **MU = 0** — tečna IC je vodorovná.
 
 Geometricky: IC kolem bodu nasycení mají tvar **uzavřených oválů** (jako vrstevnice kopce). Optimum potom leží na vrcholu kopce, **nezávisle na cenách a důchodu** — pokud je rozpočet dostatečně velký, spotřebitel se prostě "nasytí" a další utrácení mu nezvýší užitek.
+
+```graph
+title: Uzavřené IC kvadratického užitku (bod nasycení)
+alt: Indiferenční křivky pro U = 10X + 24Y - 0.5X² - 0.5Y² jsou kruhy se středem v bodě nasycení (10, 24). Posuvník U0 mění poloměr; při U0 → 338 se křivka stahuje k bodu nasycení.
+xAxis: { label: "X", domain: [0, 20] }
+yAxis: { label: "Y", domain: [0, 40] }
+params:
+  - { name: U0, label: "Úroveň užitku U0", min: 230, max: 336, default: 280, step: 2 }
+curves:
+  - { fn: "24 - sqrt(676 - 2*U0 - (x-10)*(x-10))", label: "IC dolní větev", color: "fp-purple" }
+  - { fn: "24 + sqrt(676 - 2*U0 - (x-10)*(x-10))", label: "IC horní větev", color: "fp-red" }
+markers:
+  - { x: "10", label: "Bod nasycení X̄" }
+```
 
 ### Praktický důsledek pro modelování
 
@@ -397,6 +440,19 @@ $$
 
 > [!tip] Důležitý vzorec
 > Pro Cobb-Douglas platí $MRS_C = \frac{a Y}{b X}$ — MRS závisí pouze na **poměru** $Y/X$, nikoli na absolutních úrovních. Tato vlastnost se nazývá **homotetické preference**.
+
+```graph
+title: Cobb-Douglasova IC — U = X^alfa · Y^(1-alfa)
+alt: Konvexní indiferenční křivka Cobb-Douglasovy užitkové funkce. Posuvník alfa měnit váhu zboží X; větší alfa rotuje IC k ose X (X dominuje užitku), menší k ose Y.
+xAxis: { label: "X", domain: [0.1, 12] }
+yAxis: { label: "Y", domain: [0, 12] }
+params:
+  - { name: alfa, label: "alfa (váha X v U)", min: 0.2, max: 0.8, default: 0.5, step: 0.05 }
+  - { name: U0, label: "Úroveň užitku U0", min: 2, max: 10, default: 5, step: 0.5 }
+curves:
+  - { fn: "pow(U0 / pow(x, alfa), 1/(1 - alfa))", label: "IC: U = U0", color: "fp-purple" }
+markers: []
+```
 
 ### Speciální případ $a + b = 1$
 

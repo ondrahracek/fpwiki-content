@@ -282,6 +282,18 @@ $$B = 2 P_X X = 2 P_Y Y$$
 > [!success] Marshallovy poptávky pro $U = \sqrt{XY}$
 > $$\boxed{X^M = \frac{B}{2 P_X}, \qquad Y^M = \frac{B}{2 P_Y}}$$
 
+```graph
+title: Marshallova poptávka po X pro U = √(XY)
+alt: Marshallova (necompenzovaná) poptávka X^M = B/(2·Px) jako hyperbola v rovině X-Px. Vyšší rozpočet B posouvá křivku doprava nahoru. Modrofialová barva označuje Marshalla.
+xAxis: { label: "X (množství)", domain: [10, 60] }
+yAxis: { label: "Px (cena)", domain: [0, 12] }
+params:
+  - { name: Bb, label: "Rozpočet B", min: 50, max: 200, default: 100, step: 10 }
+curves:
+  - { fn: "Bb/(2*x)", label: "X^M (Marshall)", color: "fp-purple" }
+markers: []
+```
+
 ### 12.2 Krok 2 — Nepřímá užitková funkce $V(P_X, P_Y, B)$
 
 Dosadíme Marshallovy poptávky zpět do užitkové funkce:
@@ -313,6 +325,19 @@ $$h_Y = \frac{\partial E}{\partial P_Y} = P_X^{0{,}5}\, P_Y^{-0{,}5}\, U_0$$
 > [!success] Hicksovy poptávky pro $U = \sqrt{XY}$
 > $$\boxed{h_X = \sqrt{\frac{P_Y}{P_X}}\cdot U_0, \qquad h_Y = \sqrt{\frac{P_X}{P_Y}}\cdot U_0}$$
 
+```graph
+title: Hicksova kompenzovaná poptávka po X pro U = √(XY)
+alt: Hicksova kompenzovaná poptávka h_X = √(Py/Px)·U0 v rovině X-Px. Posuvník U0 mění hladinu cílového užitku, posuvník Py demonstruje, že Hicks na rozdíl od Marshalla závisí na ceně druhého statku. Červená barva označuje Hickse.
+xAxis: { label: "X (množství)", domain: [10, 60] }
+yAxis: { label: "Px (cena)", domain: [0, 12] }
+params:
+  - { name: U0, label: "Úroveň užitku U0", min: 20, max: 60, default: 35, step: 1 }
+  - { name: Py, label: "Cena Py", min: 0.5, max: 2, default: 1, step: 0.1 }
+curves:
+  - { fn: "U0*U0*Py/(x*x)", label: "h_X (Hicks)", color: "fp-red" }
+markers: []
+```
+
 ---
 
 ## 13. Souhrnná tabulka pro $U = \sqrt{XY}$
@@ -338,6 +363,22 @@ V cenovém prostoru ($P_X$ na ose $x$, množství $X$ na ose $y$) zakreslíme ob
 - **Marshallova** křivka $X^M(P_X)$ — průchozí danou kombinací (cena, množství) — obvykle **plošší**, protože pokles ceny zvyšuje reálný důchod a posouvá poptávku doprava (zahrnuje IE).
 - **Hicksova** křivka $X^H(P_X)$ pro pevný $U_0$ — **strmější** pro normální zboží, protože odráží jen substituční efekt.
 - Obě křivky se **protnou v jednom bodě** — tom, kde počáteční cena dává Marshallově poptávce právě užitek $U_0$.
+
+```graph
+title: Marshall vs Hicks — společný graf pro U = √(XY)
+alt: Srovnání Marshallovy (modrofialově) a Hicksovy (červeně) poptávky po X v rovině X-Px. Křivky se protínají v kalibračním bodě X*=25 při Px=2; vlevo a vpravo od průniku je Hicks strmější (jen substituční efekt), Marshall plošší (zahrnuje i důchodový efekt).
+xAxis: { label: "X (množství)", domain: [10, 60] }
+yAxis: { label: "Px (cena)", domain: [0, 12] }
+params:
+  - { name: Bb, label: "Rozpočet B (Marshall)", min: 50, max: 200, default: 100, step: 10 }
+  - { name: U0, label: "Úroveň užitku U0 (Hicks)", min: 20, max: 60, default: 35.36, step: 0.5 }
+  - { name: Py, label: "Cena Py", min: 0.5, max: 2, default: 1, step: 0.1 }
+curves:
+  - { fn: "Bb/(2*x)", label: "X^M (Marshall)", color: "fp-purple" }
+  - { fn: "U0*U0*Py/(x*x)", label: "h_X (Hicks)", color: "fp-red" }
+markers:
+  - { x: "25", label: "Kalibrační bod" }
+```
 
 > [!info] Pro inferiorní zboží
 > Pro inferiorní zboží jde IE proti SE, takže **Marshallova křivka může být strmější než Hicksova** (a v krajním případě, u Giffenova zboží, kladně skloněná).

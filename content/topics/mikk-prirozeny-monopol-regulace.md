@@ -116,6 +116,20 @@ P_C ──┼──────────────────●───�
 | **Yardstick competition** | Porovnání srovnatelných regulovaných firem | Vyžaduje více srovnatelných subjektů |
 | **Antitrust** | Ex-post zákaz zneužití dominance, kontrola fúzí | Pomalejší, soudní spory roky trvají |
 
+```graph
+title: Price-cap regulace — vývoj stropu v čase
+alt: Graf zobrazuje exponenciální vývoj cenového stropu v závislosti na rozdílu inflace a očekávané efektivity; při kladném rozdílu cap roste, při záporném klesá.
+xAxis: { label: "Rok t", domain: [0, 20] }
+yAxis: { label: "Strop ceny P_bar", domain: [0, 200] }
+params:
+  - { name: P0, label: "Počáteční cap", min: 50, max: 150, default: 100, step: 5 }
+  - { name: CPI, label: "Inflace CPI", min: 0, max: 0.1, default: 0.03, step: 0.005 }
+  - { name: Xx, label: "Efficiency factor X", min: 0, max: 0.1, default: 0.02, step: 0.005 }
+curves:
+  - { fn: "P0 * pow(1 + CPI - Xx, x)", label: "P_bar(t)", color: "fp-purple" }
+  - { fn: "P0", label: "P_0", color: "paper-500" }
+```
+
 ---
 
 ## 5. Praktické problémy regulace
@@ -226,6 +240,23 @@ $$\Delta CS = CS^K - CS^M = 810 - 202{,}5 = 607{,}5$$
 ### Náklady mrtvé váhy
 
 $$DWL = \tfrac{1}{2} (P^M - P^K)(Q^K - Q^M) = \tfrac{1}{2} \cdot (55 - 10) \cdot (18 - 9) = \tfrac{1}{2} \cdot 45 \cdot 9 = 202{,}5$$
+
+```graph
+title: Monopolní DWL — D, MC, Q_M, Q_C
+alt: Graf ukazuje strmě klesající poptávku, vodorovné mezní náklady a dvě svislé značky pro monopolní a konkurenční množství; trojúhelník mezi nimi je mrtvá ztráta blahobytu.
+xAxis: { label: "Q", domain: [0, 25] }
+yAxis: { label: "P, MC", domain: [0, 110] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 50, max: 120, default: 100, step: 1 }
+  - { name: slope, label: "Sklon poptávky", min: 1, max: 10, default: 5, step: 0.5 }
+  - { name: MCc, label: "Mezní náklady", min: 0, max: 30, default: 10, step: 1 }
+curves:
+  - { fn: "aa - slope*x", label: "D", color: "fp-purple" }
+  - { fn: "MCc", label: "MC", color: "paper-700" }
+markers:
+  - { x: "(aa - MCc)/(2*slope)", label: "Q_M" }
+  - { x: "(aa - MCc)/slope", label: "Q_C" }
+```
 
 ### Odpovědi
 

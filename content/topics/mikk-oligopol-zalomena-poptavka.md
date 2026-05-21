@@ -159,6 +159,22 @@ $$
 Q^* = 40, \qquad P^* = 60
 $$
 
+```graph
+title: Sweezyho zalomená poptávka, MR a stabilní zóna MC
+alt: Zalomená poptávková křivka v bodě (40,60), dvě oddělené větve marginálního příjmu MR_1 a MR_2 s vertikálním skokem mezi hodnotami 20 a 40 při Q*=40, posuvník MC ukazuje, že optimum se nemění uvnitř pásma cenové tuhosti.
+xAxis: { label: "Q", domain: [0, 110] }
+yAxis: { label: "P, MR, MC", domain: [-30, 110] }
+params:
+  - { name: mc, label: "mezní náklady MC", min: 0, max: 80, default: 30, step: 1 }
+curves:
+  - { fn: "min(80 - 0.5*x, 100 - x)", label: "zalomená poptávka", color: "fp-purple" }
+  - { fn: "80 - x", label: "MR_2 (z elastické větve, platí pro Q<40)", color: "fp-red" }
+  - { fn: "100 - 2*x", label: "MR_1 (z neelastické větve, platí pro Q>40)", color: "paper-700" }
+  - { fn: "mc + 0*x", label: "MC", color: "ink" }
+markers:
+  - { x: "40", label: "Q* = 40 (bod zlomu)" }
+```
+
 ### 6.6 Zisk
 
 $$
@@ -168,6 +184,21 @@ $$
 ### 6.7 Pásmo cenové tuhosti
 
 > **Klíčový poznatek**: i kdyby $MC$ libovolně kolísalo v intervalu $[20,\ 40]$ (např. fluktuace ceny vstupů, výkyv mzdových sazeb), **rovnovážná cena $P^* = 60$ ani výstup $Q^* = 40$ se nezmění**. Teprve $MC > 40$ nebo $MC < 20$ posune optimum jinam.
+
+```graph
+title: Optimum Q* jako funkce MC — pásmo cenové tuhosti
+alt: Závislost optimálního výstupu na mezních nákladech v Sweezyho modelu — vodorovný úsek mezi MC=20 a MC=40 ukazuje, že v tomto pásmu se optimum vůbec nemění (cenová tuhost), mimo něj klesá lineárně.
+xAxis: { label: "MC", domain: [0, 80] }
+yAxis: { label: "Q*(MC)", domain: [0, 60] }
+params:
+  - { name: mc, label: "aktuální MC (jen pro marker)", min: 0, max: 80, default: 30, step: 1 }
+curves:
+  - { fn: "max(min(80 - x, 40), (100 - x)/2)", label: "Q*(MC)", color: "fp-purple" }
+markers:
+  - { x: "20", label: "spodní mez tuhosti" }
+  - { x: "40", label: "horní mez tuhosti" }
+  - { x: "mc", label: "aktuální MC" }
+```
 
 ## 7. Kritika modelu
 

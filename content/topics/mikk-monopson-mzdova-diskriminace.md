@@ -103,6 +103,25 @@ Předpokládejme lineární nabídku práce $W(L) = 10 + 2L$ a lineární MRPL $
 
 Monopson tedy proti dokonalé konkurenci snižuje zaměstnanost o ~28 % a mzdu o ~17 %. Renta monopsonisty je $L^\ast \cdot (MRPL(L^\ast) - W^\ast) \approx 5{,}71 \cdot (32{,}87 - 21{,}43) \approx 65{,}3$ jednotek.
 
+```graph
+title: Monopson — S_L, MCL, MRP_L a mzdové vykořisťování
+alt: Lineární nabídka práce S_L = aa + bb*L, mezní náklady na práci MCL = aa + 2bb*L (sklon dvojnásobný), MRPL = cc - dd*L. Monopson volí L* z MCL = MRPL, mzdu W* čte z S_L. Mzda W* < MRPL(L*) je míra monopsoního vykořisťování.
+xAxis: { label: "L", domain: [0, 12] }
+yAxis: { label: "W, MCL, MRPL", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept nabídky aa", min: 0, max: 20, default: 10, step: 1 }
+  - { name: bb, label: "sklon nabídky bb", min: 0.5, max: 4, default: 2, step: 0.1 }
+  - { name: cc, label: "intercept MRPL cc", min: 30, max: 70, default: 50, step: 1 }
+  - { name: dd, label: "sklon MRPL dd", min: 1, max: 5, default: 3, step: 0.1 }
+curves:
+  - { fn: "aa + bb*x", label: "S_L = aa + bb*L", color: "fp-purple" }
+  - { fn: "aa + 2*bb*x", label: "MCL = aa + 2bb*L", color: "fp-red" }
+  - { fn: "cc - dd*x", label: "MRPL = cc - dd*L", color: "paper-700" }
+markers:
+  - { x: "(cc - aa)/(2*bb + dd)", label: "L* (monopson)" }
+  - { x: "(cc - aa)/(bb + dd)", label: "L_DK (dokonalá konkurence)" }
+```
+
 ---
 
 ## 4. Tři faktory monopsoní síly
@@ -216,6 +235,25 @@ Mikroekonomická literatura nejčastěji uvádí tři základní cíle odborový
 >
 > **C) Maximalizace zaměstnanosti.** Odbory se snaží zaměstnat co nejvíce členů. Maxima dosáhnou v bodě, kde se nabídka a poptávka po práci protínají — tj. v rovnovážném bodě dokonalé konkurence. Stejný výsledek jako trh bez odborů, ale dosažený kolektivním vyjednáním proti monopsonistovi.
 
+```graph
+title: Cíle odborů — renta (A), wage bill (B), zaměstnanost (C)
+alt: Tři cíle odborů na grafu nabídky práce S_L = aa+bb*L a poptávky po práci MRPL = cc-dd*L. A maximalizuje rentu (W-W_R)*L, B maximalizuje wage bill W*L (v bodě E_D=-1 na MRPL), C maximalizuje zaměstnanost (rovnováha S_L = MRPL).
+xAxis: { label: "L", domain: [0, 15] }
+yAxis: { label: "W, MRPL", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept S_L (rezervační mzda na L=0)", min: 0, max: 20, default: 10, step: 1 }
+  - { name: bb, label: "sklon S_L bb", min: 0.5, max: 4, default: 2, step: 0.1 }
+  - { name: cc, label: "intercept MRPL cc", min: 30, max: 70, default: 50, step: 1 }
+  - { name: dd, label: "sklon MRPL dd", min: 1, max: 5, default: 3, step: 0.1 }
+curves:
+  - { fn: "aa + bb*x", label: "S_L (rezervační mzda)", color: "fp-purple" }
+  - { fn: "cc - dd*x", label: "MRPL (poptávka po práci)", color: "fp-red" }
+markers:
+  - { x: "(cc - aa)/(2*(bb + dd))", label: "L_A (max renta)" }
+  - { x: "cc/(2*dd)", label: "L_B (max wage bill, E_D = -1)" }
+  - { x: "(cc - aa)/(bb + dd)", label: "L_C (max zamestnanost = DK)" }
+```
+
 Doplňkový cíl, který někdy figuruje:
 
 **D) Maximalizace mzdy na člena (*wage maximization*).** Odbor tlačí mzdu co nejvýše, akceptuje pokles zaměstnanosti. V krajnosti to vede k restriktivním uzavřeným odborům (*closed shop*) s vysokými mzdami pro malou skupinu insiderů.
@@ -253,6 +291,28 @@ Argument lze chápat i jako diskusi o **work-sharing** politice v krizových obd
 > 3. Firma najímá až do bodu, kde $W_{min} = MRPL$ — což může být **více** než $L^\ast$.
 >
 > **Důsledek**: minimální mzda v monopsonu může současně **zvýšit mzdu** *i* **zvýšit zaměstnanost**.
+
+```graph
+title: Minimální mzda v monopsonu — Card-Krueger paradox
+alt: Při Wmin mezi W* a MRPL(L*) najímá monopson L_min = (cc-Wmin)/dd > L*. Vodorovná čára Wmin nahrazuje MCL na intervalu, kde Wmin > S_L. Přesunutí Wmin nad MRPL(L*) zaměstnanost srazí pod L*.
+xAxis: { label: "L", domain: [0, 12] }
+yAxis: { label: "W, MCL, MRPL, Wmin", domain: [0, 60] }
+params:
+  - { name: aa, label: "intercept nabídky aa", min: 0, max: 20, default: 10, step: 1 }
+  - { name: bb, label: "sklon nabídky bb", min: 0.5, max: 4, default: 2, step: 0.1 }
+  - { name: cc, label: "intercept MRPL cc", min: 30, max: 70, default: 50, step: 1 }
+  - { name: dd, label: "sklon MRPL dd", min: 1, max: 5, default: 3, step: 0.1 }
+  - { name: Wmin, label: "minimální mzda Wmin", min: 10, max: 40, default: 26, step: 0.5 }
+curves:
+  - { fn: "aa + bb*x", label: "S_L", color: "fp-purple" }
+  - { fn: "aa + 2*bb*x", label: "MCL (bez Wmin)", color: "fp-red" }
+  - { fn: "cc - dd*x", label: "MRPL", color: "paper-700" }
+  - { fn: "Wmin", label: "Wmin", color: "paper-500" }
+markers:
+  - { x: "(cc - aa)/(2*bb + dd)", label: "L* (bez Wmin)" }
+  - { x: "(cc - Wmin)/dd", label: "L na MRPL při Wmin" }
+  - { x: "(Wmin - aa)/bb", label: "L na S_L při Wmin" }
+```
 
 Tento neintuitivní výsledek nepředpovídá tradiční učebnice. Empiricky byl podpořen studií Card & Krueger (1994), která změřila zaměstnanost ve fast-food řetězcích v New Jersey po zvýšení minimální mzdy a porovnala ji s Pennsylvánií. Zaměstnanost neklesla; mírně vzrostla.
 

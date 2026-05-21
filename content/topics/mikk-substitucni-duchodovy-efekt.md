@@ -80,6 +80,25 @@ V interval $E_0 \to E_1 \to E_2$:
 - $RS =$ posun z $E_1$ do $E_2$ = **důchodový efekt**;
 - $QS =$ posun z $E_0$ do $E_2$ = **cenový efekt** = $QR + RS$.
 
+```graph
+title: Slutsky vs Hicks — dekompozice cenového efektu
+alt: Dekompozice cenového efektu při poklesu Px na rozpočtové přímky a IC v rovině X-Y. Markery ukazují polohy bodů E0 (25), E1 podle Hickse, E1 podle Slutského a E2 (50/Ppnew). Slutsky-marker leží vždy vpravo od Hicks-markeru; oba leží mezi E0 a E2 a posuvník Ppnew (nová cena Px) ukazuje směr substitučního a důchodového efektu.
+xAxis: { label: "X", domain: [15, 110] }
+yAxis: { label: "Y", domain: [0, 100] }
+params:
+  - { name: Ppnew, label: "Nová cena Px (původní = 2)", min: 0.5, max: 2, default: 1, step: 0.05 }
+curves:
+  - { fn: "1250/x", label: "IC původní (U0)", color: "fp-purple" }
+  - { fn: "2500/(Ppnew*x)", label: "IC nová (U1)", color: "fp-red" }
+  - { fn: "100 - 2*x", label: "Rozpočtová přímka L (původní)", color: "paper-700" }
+  - { fn: "100 - Ppnew*x", label: "Rozpočtová přímka L' (nová)", color: "paper-500" }
+markers:
+  - { x: "25", label: "E0" }
+  - { x: "35.36/sqrt(Ppnew)", label: "E1 Hicks" }
+  - { x: "(25*Ppnew + 50)/(2*Ppnew)", label: "E1 Slutsky" }
+  - { x: "50/Ppnew", label: "E2" }
+```
+
 Rozdíl mezi Hicksovým a Slutského rozkladem spočívá *jen* v tom, jak je definováno „stejně bohatý jako předtím" — neboli kde přesně leží pomocná přímka $L^\wedge$ a kde leží $E_1$.
 
 ## 5. Hicksova separace — zachování užitku
@@ -186,6 +205,21 @@ Pak: zlevnění $X$ → velký nárůst $I_{\text{real}}$ → spotřebitel si za
 > - **Rýže a chléb v některých chudých regionech Asie a Číny** (studie Jensen & Miller, Hunan a Gansu, kolem 2007).
 > - Stručně: „Při zdražení zboží Y poptávka po něm vzrostla."
 
+```graph
+title: Giffenova poptávka — schématické zobrazení
+alt: Schématická Giffenova poptávková křivka X = aa + bb·Px má kladný sklon — s rostoucí cenou roste poptávané množství. Posuvníky aa a bb mění průsečík a sklon. Stránka neuvádí uzavřený tvar užitkové funkce vedoucí ke Giffenovi; tento graf ilustruje pouze kvalitativní chování z příkladu s bramborami v §17d.
+xAxis: { label: "X (množství)", domain: [0, 25] }
+yAxis: { label: "Px (cena)", domain: [0, 8] }
+params:
+  - { name: aa, label: "Intercept aa", min: 4, max: 8, default: 6, step: 0.5 }
+  - { name: bb, label: "Sklon bb (kladný)", min: 0.5, max: 2, default: 1, step: 0.1 }
+curves:
+  - { fn: "(x - aa)/bb", label: "Px (Giffen): X = aa + bb·Px", color: "fp-red" }
+markers:
+  - { x: "aa + bb*3", label: "Bod (3, X)" }
+  - { x: "aa + bb*4", label: "Bod (4, X)" }
+```
+
 > [!tip] Vztah ke Slutského rovnici
 > Giffen $\iff \partial X^M/\partial P_X > 0 \iff -X \cdot \partial X^M/\partial I > -\partial X^H/\partial P_X = |SE|$. Druhá podmínka rozepíše: $X$ velké (hlavní výdajová položka), $\partial X^M/\partial I$ silně záporné (silně podřadné), $|SE|$ malé (málo substitutů).
 
@@ -198,6 +232,21 @@ Pak: zlevnění $X$ → velký nárůst $I_{\text{real}}$ → spotřebitel si za
 > **Cenová spotřební křivka (Price Consumption Curve, PCC)** je trajektorie spotřebitelových optim $E_0, E_1, E_2, \dots$ při různých hodnotách $P_X$, zatímco $P_Y$ a $I$ jsou konstantní.
 
 Jinak řečeno: pro každou hodnotu $P_X$ máme rozpočtovou přímku, na ní tečné optimum, a body všech těchto optim spojené v rovině $(X, Y)$ tvoří PCC. Z PCC se přímo odvozuje individuální Marshallova poptávková křivka $X^M(P_X)$ — projekcí každého bodu PCC do roviny $(X, P_X)$.
+
+```graph
+title: PCC — cenová spotřební křivka pro U = X^0.5·Y^0.5
+alt: PCC pro Cobb-Douglas U = √(XY) je vodorovná přímka Y = M/2 v rovině X-Y, protože Cobb-Douglas má jednotkovou cenovou elasticitu a výdaje na X jsou konstantní polovina důchodu. Posuvník Pp posouvá optimum podél této přímky vlevo (vyšší cena → méně X), posuvník Mm zvedá celou PCC.
+xAxis: { label: "X", domain: [0, 80] }
+yAxis: { label: "Y", domain: [0, 80] }
+params:
+  - { name: Pp, label: "Cena Px", min: 1, max: 4, default: 2, step: 0.1 }
+  - { name: Mm, label: "Důchod M", min: 60, max: 150, default: 100, step: 5 }
+curves:
+  - { fn: "Mm/2", label: "PCC: Y = M/2", color: "fp-purple" }
+  - { fn: "Mm - Pp*x", label: "Rozpočtová přímka", color: "paper-700" }
+markers:
+  - { x: "Mm/(2*Pp)", label: "Optimum E" }
+```
 
 ### 12.1 Tvar PCC a elasticita poptávky
 
@@ -498,6 +547,19 @@ Z $X^M = I/(3 P_X) = I/6$ při $P_X = 2$:
 | 120 | 20 |
 
 **Pozorování:** Engelova křivka je přímka $X = I/6$, lineární a rostoucí. Důchodová elasticita $E_X^I = 1$ — Cobb-Douglasovy preference popisují *zboží s jednotkovou důchodovou elasticitou*. Žádný luxus, žádné nezbytné, žádné podřadné — zlatá střední cesta. To je důvod, proč Cobb-Douglas slouží jen jako didaktický základ; reálná data vyžadují bohatší užitkové funkce (Stone-Geary, CES, kvázi-lineární).
+
+```graph
+title: Engelova křivka pro Cobb-Douglas X^alfa·Y^(1-alfa)
+alt: Engelova křivka pro Cobb-Douglas je přímka I = (Pp/alfa)·X v rovině X-I. Posuvník Pp mění sklon (vyšší cena = strmější křivka, méně X za jednotku důchodu); posuvník alfa mění váhu zboží X v užitku.
+xAxis: { label: "X (množství)", domain: [0, 50] }
+yAxis: { label: "I (důchod)", domain: [0, 200] }
+params:
+  - { name: Pp, label: "Cena Px", min: 0.5, max: 4, default: 2, step: 0.1 }
+  - { name: alfa, label: "alfa (váha X v U)", min: 0.2, max: 0.8, default: 0.333, step: 0.01 }
+curves:
+  - { fn: "(Pp/alfa)*x", label: "Engelova křivka", color: "fp-purple" }
+markers: []
+```
 
 ## 17f. Historický kontext
 

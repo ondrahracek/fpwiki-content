@@ -5,7 +5,7 @@ type: topic
 tags: [mikk, mikroekonomie, monopol, lerner, markup, mrtva-vaha]
 sources: [raw/mikk/mik2K prednaska 3 blok 2026.pdf, raw/mikk/mikK test KS reseni.pdf]
 created: 2026-04-27
-updated: '2026-04-27'
+updated: '2026-05-12'
 ---
 
 # Monopol — pokročilá analýza
@@ -137,6 +137,23 @@ Z Lernerovy rovnice plyne přímá úměra mezi nepružností poptávky a veliko
 | $1{,}1$            | $0{,}91$  | $91\%$               | Silný monopol |
 | $1$                | $1$       | nedefinováno         | Hraniční bod — viz 3.2 |
 
+```graph
+title: Monopolní rovnováha — D, MR, MC
+alt: Graf zobrazuje klesající poptávku D, dvojnásobně strmý mezní příjem MR a vodorovné mezní náklady MCc; průsečík MR a MCc určuje monopolní množství, cena se odečte z poptávky.
+xAxis: { label: "Q (množství)", domain: [0, 100] }
+yAxis: { label: "P, MR, MC (cena)", domain: [0, 120] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 60, max: 120, default: 100, step: 1 }
+  - { name: bb, label: "Sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: MCc, label: "Mezní náklady MC", min: 0, max: 30, default: 4, step: 1 }
+curves:
+  - { fn: "aa - bb*x", label: "D = AR", color: "fp-purple" }
+  - { fn: "aa - 2*bb*x", label: "MR", color: "fp-red" }
+  - { fn: "MCc", label: "MC", color: "paper-700" }
+markers:
+  - { x: "(aa - MCc)/(2*bb)", label: "Q_M" }
+```
+
 ### 3.2 Monopolista vždy operuje na elastické části poptávky
 
 **Tvrzení.** Monopolista nikdy nezvolí výstup tam, kde $|E_d| \le 1$ (neelastická oblast).
@@ -179,7 +196,7 @@ $$
 Dosazením $MC = 0{,}35$ (střed odhadu) a $|E_d| = 1{,}35$:
 
 $$
-P \;=\; 0{,}35 \cdot \frac{1{,}35}{1{,}35 - 1} \;=\; 0{,}35 \cdot \frac{1{,}35}{0{,}35} \;=\; 0{,}35 \cdot 3{,}857 \;\approx\; \$1{,}35.
+P \;=\; 0{,}35 \cdot \frac{1{,}35}{1{,}35 - 1} \;=\; 0{,}35 \cdot \frac{1{,}35}{0{,}35} \;=\; 0{,}35 \cdot 3{,}857 \;\approx\; 1{,}35.
 $$
 
 Při použití vyšší vstupní MC (přibližně $1$ ve studii pro „plně alokované náklady“) vychází číslo **$3{,}89**, které je velmi blízko skutečné ceně **$3{,}50**.
@@ -270,6 +287,21 @@ Postup řešení dvouzávodového monopolisty graficky:
 4. Z $MC_1 = MR^*$ odečteme **alokaci pro závod 1**: $Q_1$.
 5. Z $MC_2 = MR^*$ odečteme **alokaci pro závod 2**: $Q_2$.
 6. Kontrola: $Q_1 + Q_2 = Q_3$ (z konstrukce horizontálního součtu to musí platit).
+
+```graph
+title: Vícezávodový monopol — MC_1, MC_2 a MR
+alt: Graf zobrazuje vodorovnou křivku MC_1 (levný závod), rostoucí MC_2 (drahý závod) a klesající mezní příjem MR; v optimu protíná MR oba MC ve stejné vodorovné úrovni.
+xAxis: { label: "Q (jednotlivý závod nebo trh)", domain: [0, 50] }
+yAxis: { label: "MR, MC", domain: [0, 110] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 80, max: 120, default: 100, step: 1 }
+  - { name: MCflat, label: "MC závodu 1 (konstantní)", min: 1, max: 20, default: 4, step: 1 }
+  - { name: slope2, label: "Sklon MC závodu 2", min: 0.5, max: 3, default: 1, step: 0.1 }
+curves:
+  - { fn: "aa - 2*x", label: "MR", color: "fp-purple" }
+  - { fn: "MCflat", label: "MC_1", color: "fp-red" }
+  - { fn: "slope2*x", label: "MC_2", color: "paper-700" }
+```
 
 ### 6.4 Algebraický postup
 
@@ -390,6 +422,20 @@ Firma A si může účtovat **přibližně 17 % nad MC**, ne 67 % (jako by suger
 $$
 \boxed{\;L \;=\; \frac{P - MC}{P} \;=\; -\frac{1}{E_d^{\text{firma}}}\;}
 $$
+
+```graph
+title: Lernerův index L = 1/|E_d|
+alt: Graf zobrazuje Lernerův markup L jako klesající funkci absolutní hodnoty cenové elasticity; při |E_d| blízkém 1 roste markup k jedné, při |E_d| velkém klesá k nule.
+xAxis: { label: "|E_d|", domain: [1.1, 10] }
+yAxis: { label: "L = (P-MC)/P", domain: [0, 1] }
+params:
+  - { name: Lmax, label: "Referenční úroveň L", min: 0.05, max: 1, default: 0.5, step: 0.05 }
+curves:
+  - { fn: "1/x", label: "L = 1/|E_d|", color: "fp-purple" }
+  - { fn: "Lmax", label: "Reference Lmax", color: "paper-500" }
+markers:
+  - { x: "1/Lmax", label: "|E_d| pro L=Lmax" }
+```
 
 Vlastnosti:
 
@@ -546,6 +592,23 @@ $$
 
 Geometricky je to plocha trojúhelníku s podstavou $Q_C - Q_M$ a výškou $P_M - P_C$.
 
+```graph
+title: Mrtvá ztráta z monopolu — D, MC a Q_M, Q_C
+alt: Graf ukazuje klesající poptávku D, vodorovnou křivku MC a dvě svislé značky Q_M (monopolní množství) a Q_C (konkurenční množství); trojúhelník mezi D a MC od Q_M do Q_C představuje mrtvou ztrátu.
+xAxis: { label: "Q (množství)", domain: [0, 110] }
+yAxis: { label: "P, MC", domain: [0, 110] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 60, max: 110, default: 100, step: 1 }
+  - { name: bb, label: "Sklon poptávky b", min: 0.5, max: 2, default: 1, step: 0.1 }
+  - { name: MCc, label: "Mezní náklady MC", min: 0, max: 30, default: 4, step: 1 }
+curves:
+  - { fn: "aa - bb*x", label: "D", color: "fp-purple" }
+  - { fn: "MCc", label: "MC", color: "paper-700" }
+markers:
+  - { x: "(aa - MCc)/(2*bb)", label: "Q_M" }
+  - { x: "(aa - MCc)/bb", label: "Q_C" }
+```
+
 ### 11.4 Numerický příklad
 
 Vrátíme se k zadání ze sekce 7: $P = 100 - Q$, $MC = 4$ (vezměme jen závod 1 jako monopol).
@@ -626,6 +689,19 @@ Přirozené monopoly mají typicky:
 - **Nízké, často konstantní mezní náklady** (přidání jednoho zákazníka).
 - **Klesající $LAC$** v celém relevantním rozsahu výstupu.
 
+```graph
+title: Přirozený monopol — klesající LAC nad MC
+alt: Graf zobrazuje klesající křivku dlouhodobých průměrných nákladů LAC a vodorovné mezní náklady MC pod ní; čím vyšší je fixní náklad, tím výše leží celá křivka LAC.
+xAxis: { label: "Q", domain: [1, 100] }
+yAxis: { label: "LAC, MC", domain: [0, 60] }
+params:
+  - { name: FC, label: "Fixní náklady FC", min: 100, max: 2000, default: 500, step: 50 }
+  - { name: cv, label: "Variabilní náklad/jednotku", min: 1, max: 20, default: 5, step: 1 }
+curves:
+  - { fn: "FC/x + cv", label: "LAC", color: "fp-purple" }
+  - { fn: "cv", label: "MC", color: "paper-700" }
+```
+
 ### 14.4 Dilema
 
 Bez regulace přirozený monopol vyrábí $Q_M$ při ceně $P_M$ — neefektivně málo, neefektivně draho. Kdyby ale stát požadoval cenu $P_C = MC$, firma by utrpěla **ztrátu** (protože $AC > MC$ při klesajícím $LAC$) a opustila by odvětví. Žádné soukromé řešení není „first-best“.
@@ -653,6 +729,22 @@ Tato volba (označovaná jako „regulace na úrovni $P_r$“):
 - Firma má $\pi = 0$ → nikdo nevyhladoví, ale ani nezisková.
 
 > **Geometrická intuice:** $P_R$ je cena, kde se $AC$ protíná s poptávkou $D$.
+
+```graph
+title: Regulace přirozeného monopolu — D, LAC, MC
+alt: Graf zobrazuje klesající poptávku, klesající LAC a konstantní MC pod LAC; průsečík D s MC dává P_C, průsečík D s LAC dává regulovanou cenu P_R, monopolní cena P_M leží nad oběma.
+xAxis: { label: "Q", domain: [1, 100] }
+yAxis: { label: "P, LAC, MC", domain: [0, 100] }
+params:
+  - { name: aa, label: "Intercept poptávky a", min: 50, max: 100, default: 80, step: 1 }
+  - { name: bb, label: "Sklon poptávky b", min: 0.3, max: 1.5, default: 0.6, step: 0.1 }
+  - { name: FC, label: "Fixní náklady FC", min: 50, max: 1500, default: 300, step: 50 }
+  - { name: cv, label: "Variabilní náklad cv", min: 1, max: 20, default: 5, step: 1 }
+curves:
+  - { fn: "aa - bb*x", label: "D", color: "fp-purple" }
+  - { fn: "FC/x + cv", label: "LAC", color: "fp-red" }
+  - { fn: "cv", label: "MC", color: "paper-700" }
+```
 
 ### 15.3 *Rate-of-return* regulace
 

@@ -36,6 +36,22 @@ Základní předpoklady:
 
 ![[mikk-bertrand-konvergence.jpeg|Bertrandova cenová konkurence — payoff matice se sbíháním k Nash (P=MC) a cenová konvergence v poptávkovém diagramu]]
 
+```graph
+title: Bertrandův paradox — konvergence ceny k MC
+alt: Cena v Bertrandově duopolu klesá geometricky s každým kolem podsekávání a asymptoticky se blíží mezním nákladům, což ilustruje Bertrandův paradox.
+xAxis: { label: "kolo podsekávání n", domain: [0, 10] }
+yAxis: { label: "cena P", domain: [0, 50] }
+params:
+  - { name: mc, label: "mezní náklady MC", min: 0, max: 20, default: 10, step: 1 }
+  - { name: eps, label: "počáteční přirážka", min: 1, max: 20, default: 20, step: 1 }
+curves:
+  - { fn: "mc + eps * pow(2, -x)", label: "P_n = MC + eps * 2^(-n)", color: "fp-purple" }
+  - { fn: "mc + 0*x", label: "asymptota P = MC", color: "fp-red" }
+markers:
+  - { x: "0", label: "kolo 1: MC+eps" }
+  - { x: "3", label: "kolo 4: MC+eps/8" }
+```
+
 Nejpřekvapivější výsledek modelu: již **dva** soutěžící podseknou cenu až na úroveň $MC$. Postup uvažování:
 
 1. Firma 1 stanoví počáteční cenu $P_1 = MC + \epsilon$, kde $\epsilon > 0$ je malá kladná přirážka. Při této ceně by získala polovinu trhu a malý kladný zisk.
@@ -140,6 +156,23 @@ $$
 $$
 
 Pokud $MC = 20$, zisková marže je $P - MC = 40$ na jednotku — výsledek diametrálně odlišný od homogenního Bertranda, kde by bylo $P = 20$.
+
+```graph
+title: Diferencovaný Bertrand — reakční funkce a Nashova rovnováha
+alt: Reakční funkce dvou firem v diferencovaném Bertrandově modelu — obě jsou rostoucí přímky, jejich průsečík dává Bertrand-Nashovu rovnováhu s P>MC a kladným ziskem.
+xAxis: { label: "P_B", domain: [0, 120] }
+yAxis: { label: "P_A", domain: [0, 120] }
+params:
+  - { name: aa, label: "intercept poptávky a", min: 20, max: 80, default: 40, step: 1 }
+  - { name: bb, label: "vlastní cenová citlivost b", min: 0.6, max: 2, default: 1, step: 0.1 }
+  - { name: gg, label: "křížová citlivost (substituce)", min: 0.1, max: 1.0, default: 1, step: 0.1 }
+  - { name: mc, label: "mezní náklady MC", min: 0, max: 40, default: 20, step: 1 }
+curves:
+  - { fn: "(aa + bb*mc + gg*x)/(2*bb)", label: "R_A: P_A jako reakce na P_B", color: "fp-purple" }
+  - { fn: "(2*bb*x - aa - bb*mc)/gg", label: "R_B (invertovaná do P_A)", color: "fp-red" }
+markers:
+  - { x: "(aa + bb*mc)/(2*bb - gg)", label: "P_B* (Nash)" }
+```
 
 ## Bertrand vs. Cournot — kdy který model
 

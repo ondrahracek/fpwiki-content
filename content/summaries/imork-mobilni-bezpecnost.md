@@ -60,18 +60,18 @@ Podvodná výměna SIM karty — převzetí telefonního čísla oběti.
 
 ## 10 typů útoků na mobilní zařízení
 
-| # | Útok | Popis |
-|---|------|-------|
-| 1 | **GPS špehování** | Sledování polohy bez vědomí uživatele |
-| 2 | **SDK Igexin** | Škodlivý reklamní SDK ve legitimních aplikacích |
-| 3 | **Foto/video špehování** | Neoprávněný přístup ke kameře |
-| 4 | **Ransomware Charger** | Zašifrování dat na mobilu, výkupné |
-| 5 | **Brain Test** | Malware v Google Play s root exploitem |
-| 6 | **Godless exploit** | Rootování zařízení přes známé zranitelnosti |
-| 7 | **CopyCat** | Malware infikující 14M zařízení, podvodné reklamy |
-| 8 | **Audiotextové linky** | Malware tajně volající prémiová čísla |
-| 9 | **MediaTek/Adups firmware spyware** | Spyware přímo ve firmware levných zařízení |
-| 10 | **Levná čínská zařízení** | Předinstalovaný malware od výrobce |
+| #   | Útok                                | Popis                                             |
+| --- | ----------------------------------- | ------------------------------------------------- |
+| 1   | **GPS špehování**                   | Sledování polohy bez vědomí uživatele             |
+| 2   | **SDK Igexin**                      | Škodlivé reklamní SDK v legitimních aplikacích    |
+| 3   | **Foto/video špehování**            | Neoprávněný přístup ke kameře                     |
+| 4   | **Ransomware Charger**              | Zašifrování dat na mobilu, výkupné                |
+| 5   | **Brain Test**                      | Malware v Google Play s root exploitem            |
+| 6   | **Godless exploit**                 | Rootování zařízení přes známé zranitelnosti       |
+| 7   | **CopyCat**                         | Malware infikující 14M zařízení, podvodné reklamy |
+| 8   | **Audiotextové linky**              | Malware tajně volající prémiová čísla             |
+| 9   | **MediaTek/Adups firmware spyware** | Spyware přímo ve firmware levných zařízení        |
+| 10  | **Levná čínská zařízení**           | Předinstalovaný malware od výrobce                |
 
 ## Chytré hodinky — odposlech dětí
 

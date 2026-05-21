@@ -107,6 +107,25 @@ Klíčový a často přehlížený důsledek Simonova modelu:
 
 > **Postupné zvyšování aspirační úrovně může v konečném důsledku vést až k naplňování cílů, které jsou totožné s maximalizačními cíli.** (Buchta-Kovárník)
 
+```graph
+title: Simonovo satisficing — aspirační úroveň pi_a a zóna [Q_L, Q_H]
+alt: Konkávní křivka výkonu pi(Q) a vodorovná aspirační úroveň pi_a. Satisficing zóna je interval, kde pi(Q) >= pi_a; firma akceptuje libovolné Q v zóně. Růst pi_a zužuje zónu, v limitě pi_a -> pi_max se zóna stahuje do profit-max bodu.
+xAxis: { label: "Q (úroveň výkonu)", domain: [0, 50] }
+yAxis: { label: "pi, pi_a", domain: [-30, 220] }
+params:
+  - { name: aa, label: "intercept aa", min: 10, max: 30, default: 20, step: 1 }
+  - { name: bb, label: "sklon bb", min: 0.2, max: 1, default: 0.5, step: 0.05 }
+  - { name: FC, label: "fixní náklad FC", min: 0, max: 60, default: 20, step: 5 }
+  - { name: pia, label: "aspirační úroveň pi_a", min: 0, max: 170, default: 100, step: 5 }
+curves:
+  - { fn: "aa*x - bb*x*x - FC", label: "pi(Q)", color: "fp-purple" }
+  - { fn: "pia", label: "pi_a (aspirace)", color: "fp-red" }
+markers:
+  - { x: "(aa - sqrt(aa*aa - 4*bb*(FC+pia)))/(2*bb)", label: "Q_L (dolní hranice zóny)" }
+  - { x: "(aa + sqrt(aa*aa - 4*bb*(FC+pia)))/(2*bb)", label: "Q_H (horní hranice zóny)" }
+  - { x: "aa/(2*bb)", label: "Q* (max pi)" }
+```
+
 Jinými slovy: nižší a snadno splnitelné cíle se stávají **prvním stupněm** k plnění stále vyšších cílů. Firma, která satisficuje, nemusí dosahovat horších výsledků než firma, která maximalizuje — naopak, díky průběžné adaptaci se její výkonnost **zvyšuje**.
 
 To je důležitý protiargument vůči kritikům behavioristických teorií, kteří namítají, že satisficing musí vést k podprůměrným výsledkům. Empirická data (zejména March 1991 — exploration vs. exploitation) ukazují, že **adaptivní organizace** s mírnými, postupně zvyšovanými cíli často vykazují vyšší dlouhodobou výkonnost než ty, které usilují o maximum hned od začátku.

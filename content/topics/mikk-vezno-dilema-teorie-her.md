@@ -131,6 +131,25 @@ Hráč A neví, co volí B. Uvažuje obě varianty:
 > [!important] Dominantní strategie
 > Strategie "**přiznat**" je pro A **lepší ve všech scénářích**. Říkáme, že je **striktně dominantní** — nezáleží na tom, co dělá B, A je vždy lépe, když přizná.
 
+```graph
+title: Vyplatní struktura VD jako funkce odměny za kooperaci
+alt: Výplaty hráče A ve čtyřech profilech vězňova dilematu (oba kooperují, A kooperuje a B zradí, A zradí a B kooperuje, oba zradí) jako funkce odměny R za kooperaci; struktura zůstává VD, dokud R leží mezi T a P.
+xAxis: { label: "R (odměna za kooperaci)", domain: [-15, 5] }
+yAxis: { label: "výplata hráče A", domain: [-15, 5] }
+params:
+  - { name: T, label: "T - zrada proti kooperátorovi", min: -5, max: 0, default: -1, step: 0.5 }
+  - { name: PP, label: "P - oba zradí (punishment)", min: -10, max: 0, default: -5, step: 0.5 }
+  - { name: S, label: "S - oklamaný kooperátor (sucker)", min: -15, max: -5, default: -10, step: 0.5 }
+curves:
+  - { fn: "x + 0*T", label: "u_A(CC) = R", color: "fp-purple" }
+  - { fn: "T + 0*x", label: "u_A(DC) = T", color: "fp-red" }
+  - { fn: "PP + 0*x", label: "u_A(DD) = P", color: "paper-700" }
+  - { fn: "S + 0*x", label: "u_A(CD) = S", color: "ink" }
+markers:
+  - { x: "PP", label: "kde R = P (struktura prestava byt VD)" }
+  - { x: "T", label: "kde R = T (zadna strategie nedominuje)" }
+```
+
 Symetricky pro hráče B: jeho dominantní strategie je také "přiznat".
 
 ### Nashova rovnováha
@@ -218,6 +237,22 @@ Diskontní faktor $\delta$ vyjadřuje, jak moc hráči záleží na budoucích v
 
 - Krátkodobý zisk z podrazu (60 místo 50) **nepřeváží** nad ztrátou všech budoucích koluzních zisků (každé další kolo jen 30 místo 50).
 - Existuje **kritická hodnota** $\delta^*$, nad kterou je koluze udržitelná.
+
+```graph
+title: Kritický diskontní faktor pro tit-for-tat
+alt: Lineární funkce gain z kooperace v opakované hře jako funkce diskontního faktoru delta; kde funkce protíná osu (delta-star) je kritický práh, nad kterým folkův teorém umožňuje koluzi.
+xAxis: { label: "diskontní faktor", domain: [0, 1] }
+yAxis: { label: "scaled gain z kooperace", domain: [-100, 100] }
+params:
+  - { name: R, label: "R (zisk při koluzi)", min: 0, max: 100, default: 50, step: 5 }
+  - { name: T, label: "T (zisk z podrazu)", min: 0, max: 100, default: 60, step: 5 }
+  - { name: PP, label: "P (Nash punishment)", min: 0, max: 100, default: 30, step: 5 }
+curves:
+  - { fn: "R - T + x*(T - PP)", label: "scaled gain (R-T) + delta*(T-P)", color: "fp-purple" }
+  - { fn: "0 + 0*x", label: "nulová úroveň", color: "paper-500" }
+markers:
+  - { x: "(T - R)/(T - PP)", label: "delta* (kritický práh)" }
+```
 
 ### Praktická implikace
 
@@ -421,6 +456,22 @@ Hráč A dostane 100 Kč a navrhne rozdělení (X pro mě, 100-X pro B). B akcep
 - **Racionální predikce**: A nabídne 99 pro sebe, 1 pro B; B akceptuje (1 > 0).
 - **Empiricky**: A nabízí kolem 40–50; B odmítá nabídky pod ~25–30.
 - **Vysvětlení**: averze k nefér, sociální normy, emoce.
+
+```graph
+title: Akceptace v ultimátní hře — racionální vs. empirická
+alt: Pravděpodobnost akceptace nabídky x (jako podíl celku) v ultimátní hře — racionální B přijme jakoukoli kladnou nabídku (skok v x=0), ale empiricky pozorovaní hráči odmítají nabídky pod cca 25-30 procent (sigmoid).
+xAxis: { label: "nabídka x (podíl pro B)", domain: [0, 0.6] }
+yAxis: { label: "P(akceptuje)", domain: [-0.05, 1.1] }
+params:
+  - { name: kfair, label: "ostrost fairness prahu", min: 5, max: 30, default: 15, step: 1 }
+  - { name: xfair, label: "fairness práh (typicky 0.25-0.40)", min: 0.1, max: 0.5, default: 0.3, step: 0.01 }
+curves:
+  - { fn: "1/(1 + exp(-50*x))", label: "racionální akceptace (skok v x=0)", color: "fp-red" }
+  - { fn: "1/(1 + exp(-kfair*(x - xfair)))", label: "empirická akceptace (sigmoid)", color: "fp-purple" }
+markers:
+  - { x: "0", label: "racionální práh = 0" }
+  - { x: "xfair", label: "empirický fairness práh" }
+```
 
 ### Důležité odchylky
 
