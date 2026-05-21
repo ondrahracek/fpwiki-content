@@ -1,7 +1,7 @@
 ---
 title: "Index"
 type: index
-updated: 2026-05-04
+updated: '2026-05-21'
 ---
 
 # Index — FP VUT Wiki
@@ -15,6 +15,7 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[imek|Matematická ekonomie (ImeK)]] — kalkul funkcí, poptávka/nabídka, elasticita, produkce, užitečnost, národní důchod, IS-LM. 5 zdrojů (3 PDF přednášky + sylabus + kniha Mezník kap. 2–7).
 - [[mikk|Mikroekonomie 2 (mikK)]] — pokročilá teorie spotřebitele (Marshall/Hicks, Slutsky, riziko), tržní struktury (monopol, cenová diskriminace, oligopol — Cournot/Stackelberg/Bertrand, kartel, monopolistická konkurence, monopson), alternativní cíle firmy (Baumol, Williamson, Simon, Cyert-March, Doyle, Ward). Garant: prof. Škapa, vyučující (KS): Ing. Luňáček. 6 zdrojů (sylabus + 3 PDF přednášky + řešené Předtermíny + článek Buchta-Kovárník).
 - [[irmank|Risk management (IrmanK)]] — kritické faktory úspěchu firmy (7S, EFQM), modely změny (Lewin, KAIZEN), riziko a jeho měření (σ, KV, mapa rizik), taktiky snižování (vyvárování / udržení / redukce / přenos), finanční nástroje (faktoring, forfaiting, akreditiv), AI metody (FEL-EXPERT, GA, ANN), investiční rozhodování (BOT case study), krizové řízení. 3 zdroje.
+- [[icink|Competitive Intelligence (IcinK)]] — zpravodajský proces CI (9 kroků), cyklus vs. proces, zdroje (bílá/šedá/černá zóna, HUMINT), dezinformace (7 druhů + detekce/identifikace), metody (ACH, časová a T-analýza, Porter 4 rohy, 7 otázek + QUI BONO), Counter Competitive Intelligence (obchodní tajemství §504 OZ, proces CCI). Garant: doc. Bartes. 3 zdroje.
 
 ## Témata
 
@@ -112,6 +113,30 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[investicni-rozhodovani-bot|Investiční rozhodování — case study BOT vodní elektrárny]] — 260 mil USD, NPV citlivostní analýza, GA validace
 - [[krizove-rizeni|Krizové řízení firmy]] — 7 rysů neúspěšného manažera, desatero pro krizi, samostatná práce, projekt 15–20 stran
 
+### IcinK (Competitive Intelligence)
+
+#### Základy CI
+- [[competitive-intelligence|Competitive Intelligence — vymezení a procesy]] — definice, transformace data→info→znalost→zpravodajství, vymezení vůči BI/marketing intelligence, 3 procesy (ofenzivní/defenzivní/vlivový)
+- [[kvalita-informace-zdroj|Kvalita informace a zdroje]] — 6 znaků kvality informace + 6 kvalit zdroje, nomologická/heuristická/operativní informace
+- [[zpravodajsky-cyklus-vs-proces|Zpravodajský cyklus vs. zpravodajský proces]] — 4-fázový cyklus a jeho nevýhody vs. cílově orientovaný proces
+- [[zpravodajsky-proces-ci|Základní zpravodajský proces CI — 9 kroků]] — od zadání po distribuci zprávy, myšlenkový model, informační mezera
+- [[zdroje-dat-informaci|Zdroje dat a informací]] — primární vs. sekundární, bílá/šedá/černá zóna, HUMINT, etické/neetické/nezákonné metody
+
+#### Dezinformace
+- [[dezinformace|Dezinformace]] — definice, charakteristiky (záměr × cíl), 7 druhů (100% lež, klasická, filtrování, svatá pravda, negativní, symptomy, siónští mudrci), 4 fáze práce
+- [[detekce-identifikace-dezinformace|Detekce a identifikace dezinformace]] — vážné podezření, 9 kroků identifikace, **7 případů, kdy vždy uvažovat dezinformaci**
+
+#### Metody CI
+- [[analyza-konkurencnich-hypotez|Analýza konkurenčních hypotéz (ACH)]] — Heuerova metoda, 8 kroků, matice hypotéz × důkazů, diagnosticita, analýza citlivosti, milestones
+- [[casova-analyza|Časová analýza a T-analýza]] — analýza toku událostí, matice událostí, příčinná analýza, historicko-grafická analýza, T-analýza (vakuové struktury)
+- [[analyza-konkurenta-porter|Analýza konkurenta — 4 rohy podle Portera]] — současná strategie / budoucí cíle / potenciál / domněnky; profil reakce; 4 typy konkurentů
+- [[sedm-otazek-zpravodajske-analyzy|Sedm otázek zpravodajské analýzy + QUI BONO]] — KDO/CO/KDY/KDE/JAK/ČÍM/PROČ + Ciceronovo „v čí prospěch"
+
+#### Counter Competitive Intelligence
+- [[counter-competitive-intelligence|Counter Competitive Intelligence (CCI)]] — defenzivní CI, 5 prvků ochrany, 3 subsystémy (bezpečnostní politika, ostraha podniku, kontrarozvědná ochrana)
+- [[obchodni-tajemstvi-ochrana|Obchodní tajemství a ochrana informace]] — §504 z. č. 89/2012 Sb., need-to-know, fragmentace, vzorec P = s^n, 10 signálů úniku
+- [[zpravodajsky-proces-cci|Zpravodajský proces CCI — 9 kroků]] — defenzivní protějšek ofenzivního procesu, od ověření obrany po aktivní zásah
+
 ## Shrnutí zdrojů — IpmrK
 
 - [[ipmrk-detail-predmetu|Detail předmětu]] — sylabus kurzu, hodnocení, literatura
@@ -200,6 +225,12 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[mikk-prednaska-5-blok|KS Blok 5 — slides]] — 45 stran (monopolistická konkurence — Chamberlin, Hotelling; alternativní cíle firmy — Baumol, Williamson, Simon, Cyert-March, Doyle, Ward)
 - [[mikk-buchta-clanek|Článek Buchta-Kovárník — Behavioristické modely ve veřejném sektoru]] — Univerzita Pardubice 2010, aplikace Simon/Cyert-March/Doyle na vysokou školu a veřejnou správu
 - [[mikk-zkousky-predterminy|Vzorové zkoušky — Předtermíny 2017+ a Zkouška β]] — 14 řešených zkouškových termínů, Test KS, zkouška β (5 otázek vč. Bertrand duopolu)
+
+## Shrnutí zdrojů — IcinK
+
+- [[icink-detail-predmetu|Detail předmětu]] — sylabus, hodnocení (písemně 2 otázky × 20 min), zadání seminární práce (prověření obchodního partnera), garant doc. Bartes
+- [[icink-poznamky-prednasky|Poznámky z konzultací]] — bibliografická karta ~700 řádek poznámek ze 3 konzultací; tematická mapa na topic stránky
+- [[icink-bartes-kniha|Bartes — Konkurenční zpravodajství (2022)]] — strukturální karta knihy (440 s., ISBN 978-80-271-3504-2), 12 kapitol, mapování na cíle kurzu; **plný text v této wiki není** (přístup přes Bookport VUT)
 
 ## Výstupy
 
