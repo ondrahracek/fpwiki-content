@@ -93,9 +93,9 @@ params:
 curves:
   - { fn: "s^x", label: "P = s^n", color: "fp-purple" }
 markers:
-  - { x: 1, label: "n=1" }
-  - { x: 10, label: "n=10" }
-  - { x: 20, label: "n=20" }
+  - { x: "1", label: "n=1" }
+  - { x: "10", label: "n=10" }
+  - { x: "20", label: "n=20" }
 ```
 
 **Implikace:**
