@@ -2,10 +2,13 @@
 title: "Mikroekonomie 2 (mikK)"
 course: mikk
 type: course
+degree: master
+studyYear: 1
+semester: summer
 tags: [mikk, mikroekonomie, monopol, oligopol, behavior, cenova-diskriminace]
 sources: [raw/mikk/Detail předmětu.md, raw/mikk/Prednaska 1. a 2. blok.pdf, raw/mikk/mik2K prednaska 3 blok 2026.pdf, raw/mikk/Mikro KS prednaska 5 2026.pdf, raw/mikk/mikro-FINAL-2-1.pdf, raw/mikk/buchta.pdf]
 created: 2026-04-27
-updated: '2026-04-27'
+updated: '2026-10-02'
 ---
 
 # Mikroekonomie 2 (mikK)

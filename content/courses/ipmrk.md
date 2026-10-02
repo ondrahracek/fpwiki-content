@@ -2,10 +2,13 @@
 title: Pokročilé metody v rozhodování (IpmrK)
 course: ipmrk
 type: course
+degree: master
+studyYear: 1
+semester: summer
 tags: [ipmrk, fuzzy, neuronove-site, geneticke-algoritmy, evolucni-algoritmy, chaos, optimalizace, datamining]
 sources: [raw/ipmrk/Detail předmětu.md, raw/ipmrk/kniha.md, raw/ipmrk/evolucni-algoritmy-online.md, raw/ipmrk/optimalizace-online.md, raw/ipmrk/datamining-online.md]
 created: 2026-04-10
-updated: '2026-04-25'
+updated: '2026-10-02'
 ---
 
 # Pokročilé metody v rozhodování (IpmrK)
