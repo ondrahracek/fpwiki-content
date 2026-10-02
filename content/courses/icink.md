@@ -2,10 +2,13 @@
 title: Competitive Intelligence (IcinK)
 course: icink
 type: course
+degree: master
+studyYear: 1
+semester: summer
 tags: [icink, competitive-intelligence, counter-ci, zpravodajska-analyza, bartes-2022]
 sources: [raw/icink/Detail předmětu.md]
 created: 2026-05-21
-updated: '2026-05-21'
+updated: '2026-10-02'
 ---
 
 # Competitive Intelligence (IcinK)

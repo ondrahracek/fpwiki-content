@@ -2,13 +2,16 @@
 title: "Risk management (IrmanK)"
 course: irmank
 type: course
+degree: master
+studyYear: 1
+semester: summer
 tags: [irmank, riziko, kaizen, lewin, mapa-rizik, cpm-pert, npv]
 sources:
   - raw/irmank/Detail předmětu.md
   - raw/irmank/Rizeni rizik_prvni cast  začátek přednášek   2026 léto fin (1).ppt
   - raw/irmank/Řízení rizik druhá část.ppt
 created: 2026-04-27
-updated: '2026-04-27'
+updated: '2026-10-02'
 ---
 
 # Risk management (IrmanK)
