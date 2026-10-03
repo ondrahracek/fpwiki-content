@@ -24,7 +24,7 @@ If you want to fix a typo or contribute content, open an issue on
 ## How fpwiki consumes this repo
 
 fpwiki's build script downloads a tarball of this repo at a pinned commit
-SHA (recorded in fpwiki's `content-ref.txt`) and extracts it into fpwiki's
+SHA (recorded per branch in fpwiki's `content-ref/<branch>.txt`) and extracts it into fpwiki's
 `content/` and `public/wiki-assets/` directories. fpwiki itself never
 tracks those files — this mirror is the only place they live in git.
 
