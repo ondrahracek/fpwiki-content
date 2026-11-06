@@ -10,6 +10,8 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 
 ## Kurzy
 
+- [[ipis2k|Podnikové informační systémy 2 (Ipis2K)]] — integrace aplikací, robotická automatizace, audit, kontroly ITGC a cloud; přehledné zápisky, postupy a příklady. 1 zdroj.
+
 - [[ipmrk|Pokročilé metody v rozhodování (IpmrK)]] — fuzzy logika, neuronové sítě, GA, evoluční alg., chaos, optimalizace, datamining, predikce. 13 zdrojů.
 - [[imork|Management oborových řešení (ImorK)]] — ISMS, kybernetická bezpečnost, oborová řešení. 34 zdrojů.
 - [[imek|Matematická ekonomie (ImeK)]] — kalkul funkcí, poptávka/nabídka, elasticita, produkce, užitečnost, národní důchod, IS-LM. 5 zdrojů (3 PDF přednášky + sylabus + kniha Mezník kap. 2–7).
@@ -259,3 +261,15 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[imork-normy-prehled|ImorK — Přehled norem podle sektoru]] — referenční tabulka rodiny ISO 27000, NIST SP 800, EU regulací (GDPR, eIDAS, NIS2, DORA, MiCA, UN R155), českých předpisů (ZKB, VKB, nZKB) a frameworků (NIST CSF, MITRE ATT&CK, OWASP, CMMC) zařazených podle oborového sektoru
 - [[imork-glosar|ImorK — Glosář pojmů a zkratek]] — abecední slovník ~120 pojmů a zkratek kurzu (AAA, APT, BCM, BIA, CIA, DPIA, GDPR, ISMS, MITRE ATT&CK, NIS2, PCI DSS, SAE, SoA, RaaS, RPO/RTO, …)
 - [[mask-r-tahak|masK — Tahák pro R]] — volba testu podle situace (rozhodovací strom), funkce R po kapitolách, výchozí parametry R, které mění výsledek
+
+## Témata — Ipis2K
+
+- [[integrace-podnikovych-aplikaci|Integrace podnikových aplikací]] — vazby systémů, middleware, data a aplikační logika.
+- [[roboticka-automatizace-procesu|Robotická automatizace procesů]] — vhodnost procesu, vývoj, nasazení, licence a údržba.
+- [[audit-informacnich-systemu|Audit informačních systémů]] — kritéria, důkazy, compliance a ujišťovací zprávy.
+- [[rizeni-informatiky-a-itgc|Řízení informatiky a kontroly ITGC]] — rámce řízení a ověření přístupů, provozu a změn.
+- [[cloud-computing|Cloud computing]] — modely služeb a nasazení, odpovědnosti, kapacita a náklady.
+
+## Shrnutí zdrojů — Ipis2K
+
+- [[ipis2k-prezentace|Podnikové aplikace, automatizace, audit a cloud]] — propojení hlavních témat.

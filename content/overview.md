@@ -3,7 +3,7 @@ title: Přehled — Fakulta podnikatelská VUT v Brně
 type: overview
 tags: [fp-vut, prehled]
 created: 2026-04-10
-updated: '2026-11-06'
+updated: 2026-11-06
 ---
 
 # Přehled — Fakulta podnikatelská VUT v Brně
@@ -54,3 +54,9 @@ Některá témata se prolínají více kurzy:
 - **IcinK ↔ ImorK**: Defenzivní [[counter-competitive-intelligence|CCI]] (IcinK) a [[isms|ISMS]] (ImorK) se prolínají v ochraně informací. [[obchodni-tajemstvi-ochrana|Obchodní tajemství (§504 OZ)]] doplňuje [[ochrana-dat|technickou ochranu dat]] a [[gdpr|GDPR]]. [[zdroje-dat-informaci|HUMINT a sociální inženýrství]] v IcinK rezonuje s [[imork-rizeny-hacking|řízeným hackingem]] a [[imork-internetova-bezpecnost|OSINT]] v ImorK. [[dezinformace|Generativní dezinformace]] (IcinK) navazuje na [[imork-ai-utoky|AI útoky]] (ImorK).
 - **IcinK ↔ MikK**: [[analyza-konkurenta-porter|Porterova analýza konkurenta (4 rohy)]] je deskriptivní rámec, který se v MikK formalizuje v modelech [[mikk-oligopol-cournot-stackelberg|Cournot/Stackelberg]], [[mikk-oligopol-bertrand-cenova-konkurence|Bertrand]] a [[mikk-vezno-dilema-teorie-her|teorii her]]. Typy konkurentů (laxní/vybíravý/tygr/scholastický) korespondují s reakčními křivkami v oligopolu.
 - **IcinK ↔ IrmanK**: [[analyza-konkurencnich-hypotez|ACH (analýza konkurenčních hypotéz)]] je strukturovaná hypotézová metoda — analogie [[expertni-systemy|expertních systémů FEL-EXPERT]] v IrmanK. [[counter-competitive-intelligence|CCI proces (9 kroků)]] používá [[analyza-rizik-proces|analýzu rizik]] a postupy [[krizove-rizeni|krizového řízení]] pro situace úniku informace.
+
+## Podnikové informační systémy 2 (Ipis2K)
+
+[[ipis2k|Podnikové informační systémy 2]] propojují integraci aplikací, RPA, audit, ITGC a cloud. 1 zdroj.
+
+Integrace a automatizace zlepšují předávání dat a opakovanou práci; audit a ITGC ověřují, zda lze systémům důvěřovat. Cloud mění způsob provozu a rozdělení odpovědností. Zápisky navazují na [[isms|ISMS]], [[bcm|kontinuitu činnosti]] a [[rizeni-rizik|řízení informačních rizik]] z [[imork|Managementu oborových řešení]].
