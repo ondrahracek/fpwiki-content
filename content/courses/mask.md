@@ -6,59 +6,42 @@ degree: master
 studyYear: 2
 semester: winter
 tags: [mask, statistika, r, testovani-hypotez, regrese, regulacni-diagramy]
-sources: ["raw/mask/Detail předmětu.md", "raw/mask/informace k předmětu.docx"]
+sources: ["raw/mask/Detail předmětu.md", "raw/mask/informace k předmětu.docx", "raw/mask/test VZOR.docx"]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-11-06
 ---
 
 # Metody aplikované statistiky (masK)
 
-- **Fakulta:** Fakulta podnikatelská VUT v Brně
-- **Garant:** Ing. Karel Doubravský, Ph.D.
-- **Garantující ústav:** Ústav kvantitativního inženýrství
-- **Vyučující (kombinované studium):** Mgr. Eva Michalíková, Ph.D.
-- **Ukončení:** zkouška (písemný test v počítačové učebně, řešení 2–3 příkladů v programu R)
-- **Semestr:** zimní
+Aplikovaná statistika pomáhá shrnout naměřená data, porovnat skupiny a hledat souvislosti. Ve výrobě také sleduje, zda se proces v čase mění a zda výrobky splňují požadované rozměry.
 
-## Cíl předmětu
+## Základní témata
 
-Cílem kurzu je naučit se pracovat s náhodnými veličinami, zpracovat a vyhodnotit statistický materiál, používat metody statistické regulace procesu a určit a vyhodnotit indexy způsobilosti.
+1. [[nahodne-veliciny-a-rozdeleni|Náhodné veličiny a rozdělení pravděpodobnosti]] popisují náhodné výsledky, například životnost výrobku. Pomocí rozdělení počítáme pravděpodobnosti a určujeme hodnoty, které se vyskytují jen zřídka.
+2. [[popisna-statistika|Popisná statistika a datové soubory]] shrnuje, co jsme naměřili. Průměr a medián popisují střed dat, směrodatná odchylka jejich rozptýlení a histogram tvar rozdělení.
+3. [[testovani-hypotez|Testování statistických hypotéz]] pomáhá posoudit, zda pozorovaný rozdíl může být důsledkem náhodného kolísání. Výběr testu závisí na tom, co porovnáváme a jak byla data získána.
+4. [[regresni-a-korelacni-analyza|Regresní a korelační analýza]] zkoumá vztahy mezi číselnými veličinami. Regresní model například popisuje, jak souvisí produktivita zaměstnance s délkou jeho praxe.
+5. [[kontingencni-tabulky|Kontingenční tabulky]] zachycují počty v jednotlivých kategoriích. Umožňují zkoumat třeba souvislost mezi příjmem domácnosti a způsobem financování nákupů.
+6. [[regulacni-diagramy-a-indexy-zpusobilosti|Regulační diagramy a indexy způsobilosti]] odpovídají na dvě různé otázky: je výroba v čase stabilní a vejdou se její výsledky do požadovaných tolerancí?
 
-Předpokládají se základní znalosti teorie pravděpodobnosti, popisné statistiky a matematické statistiky.
+## Řešené příklady
 
-## Hodnocení
-
-Zkoušku tvoří písemný test na přibližně 45 minut v počítačové učebně, ve kterém student řeší 2 až 3 příklady v programu R. Pro úspěšné složení je nutné získat alespoň 50 bodů ze 100.
-
-| Známka | Body |
+| Příklad | Co zjišťujeme |
 |---|---|
-| A | 90–100 |
-| B | 80–89 |
-| C | 70–79 |
-| D | 60–69 |
-| E | 50–59 |
-| F | méně než 50 |
+| [[popisna-statistika\|Doba života výrobku]] | průměr, směrodatnou odchylku, medián, kvartily a tvar histogramu |
+| [[regresni-a-korelacni-analyza\|Produktivita a délka praxe]] | zda naměřené hodnoty lépe popisuje přímka, nebo logaritmická křivka |
+| [[kontingencni-tabulky\|Příjmy domácností a financování nákupů]] | zda spolu oba znaky souvisejí a jak silná je souvislost ve výběru |
+| [[regulacni-diagramy-a-indexy-zpusobilosti\|Rozměry výrobků a počty vadných kusů]] | který diagram použít, jak číst jeho signály a jak posoudit způsobilost výroby |
 
-## Náplň kurzu
+## Výpočty v R
 
-Kurz probírá látku v šesti navazujících celcích:
+U řešených příkladů je zadání dat oddělené od výpočtu. Jednotlivé kroky ukazují sestavení modelu nebo diagramu a potom přečtení výsledku.
 
-1. [[nahodne-veliciny-a-rozdeleni|Náhodné veličiny a rozdělení pravděpodobnosti]] — distribuční funkce, hustota pravděpodobnosti, normální rozdělení a odvozená rozdělení t, χ² a F.
-2. [[popisna-statistika|Popisná statistika a datové soubory]] — empirické charakteristiky, kvantily, empirická distribuční funkce, třídění naměřených dat do tříd a histogram.
-3. [[testovani-hypotez|Testování statistických hypotéz]] — jednovýběrový a párový t-test, F-test, dvouvýběrový t-test, testy normality a jejich neparametrické alternativy.
-4. [[regresni-a-korelacni-analyza|Regresní a korelační analýza]] — regresní přímka, nelineární a vícenásobná regrese, korelace a diagnostika modelu.
-5. [[kontingencni-tabulky|Kontingenční tabulky]] — test nezávislosti dvou kvalitativních znaků, Cramérův koeficient kontingence a McNemarův test pro párovaná data.
-6. [[regulacni-diagramy-a-indexy-zpusobilosti|Regulační diagramy a indexy způsobilosti]] — regulační diagramy pro regulaci měřením a srovnáváním, indexy způsobilosti $C_p$, $C_{pk}$, $C_{pm}$ a $C_{pmk}$.
+[[mask-r-tahak|Tahák pro R]] shrnuje příkazy pro načtení dat, statistické testy, regresi a regulační diagramy. U jednotlivých metod ukazuje také nastavení, která mohou změnit výsledek.
 
-## Přednášky
+## Přehledy metod
 
-Látka kurzu je shrnuta do tří přehledů podle tematických celků a doplněna sylabem předmětu:
-
-- [[mask-prednasky-veliciny-data-testy|Náhodné veličiny, datové soubory a testy hypotéz]]
-- [[mask-prednasky-regrese-kontingence|Regresní analýza a kontingenční tabulky]]
-- [[mask-prednasky-regulace-zpusobilost|Regulační diagramy a indexy způsobilosti]]
-- [[mask-detail-predmetu|Detail předmětu]]
-
-## Příprava na zkoušku
-
-- [[mask-r-tahak|masK — Tahák pro R]] — přehled volby statistického testu podle situace a funkcí v R použitých v kurzu.
+- [[mask-detail-predmetu|Přehled metod aplikované statistiky]] — propojení témat a volba metody podle otázky.
+- [[mask-prednasky-veliciny-data-testy|Náhodné veličiny, datové soubory a testy hypotéz]] — od popisu dat k rozhodování pomocí testů.
+- [[mask-prednasky-regrese-kontingence|Regresní analýza a kontingenční tabulky]] — vztahy mezi číselnými i kategoriálními údaji.
+- [[mask-prednasky-regulace-zpusobilost|Regulační diagramy a způsobilost procesu]] — stabilita výroby a splnění tolerancí.

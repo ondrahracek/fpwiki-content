@@ -1,7 +1,7 @@
 ---
 title: "Index"
 type: index
-updated: '2026-10-02'
+updated: '2026-11-06'
 ---
 
 # Index — FP VUT Wiki
@@ -10,13 +10,15 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 
 ## Kurzy
 
+- [[ipis2k|Podnikové informační systémy 2 (Ipis2K)]] — integrace aplikací, robotická automatizace, audit, kontroly ITGC a cloud; přehledné zápisky, postupy a příklady. 1 zdroj.
+
 - [[ipmrk|Pokročilé metody v rozhodování (IpmrK)]] — fuzzy logika, neuronové sítě, GA, evoluční alg., chaos, optimalizace, datamining, predikce. 13 zdrojů.
 - [[imork|Management oborových řešení (ImorK)]] — ISMS, kybernetická bezpečnost, oborová řešení. 34 zdrojů.
 - [[imek|Matematická ekonomie (ImeK)]] — kalkul funkcí, poptávka/nabídka, elasticita, produkce, užitečnost, národní důchod, IS-LM. 5 zdrojů (3 PDF přednášky + sylabus + kniha Mezník kap. 2–7).
 - [[mikk|Mikroekonomie 2 (mikK)]] — pokročilá teorie spotřebitele (Marshall/Hicks, Slutsky, riziko), tržní struktury (monopol, cenová diskriminace, oligopol — Cournot/Stackelberg/Bertrand, kartel, monopolistická konkurence, monopson), alternativní cíle firmy (Baumol, Williamson, Simon, Cyert-March, Doyle, Ward). Garant: prof. Škapa, vyučující (KS): Ing. Luňáček. 6 zdrojů (sylabus + 3 PDF přednášky + řešené Předtermíny + článek Buchta-Kovárník).
 - [[irmank|Risk management (IrmanK)]] — kritické faktory úspěchu firmy (7S, EFQM), modely změny (Lewin, KAIZEN), riziko a jeho měření (σ, KV, mapa rizik), taktiky snižování (vyvárování / udržení / redukce / přenos), finanční nástroje (faktoring, forfaiting, akreditiv), AI metody (FEL-EXPERT, GA, ANN), investiční rozhodování (BOT case study), krizové řízení. 3 zdroje.
 - [[icink|Competitive Intelligence (IcinK)]] — zpravodajský proces CI (9 kroků), cyklus vs. proces, zdroje (bílá/šedá/černá zóna, HUMINT), dezinformace (7 druhů + detekce/identifikace), metody (ACH, časová a T-analýza, Porter 4 rohy, 7 otázek + QUI BONO), Counter Competitive Intelligence (obchodní tajemství §504 OZ, proces CCI). Garant: doc. Bartes. 3 zdroje.
-- [[mask|Metody aplikované statistiky (masK)]] — náhodné veličiny a rozdělení, popisná statistika, testování hypotéz (t-testy, F-test, testy normality, neparametrické testy), regresní a korelační analýza, kontingenční tabulky, regulační diagramy a indexy způsobilosti; vše s výpočtem v R. Garant: Ing. Doubravský, vyučující (KS): Mgr. Michalíková. 4 zdroje (3 přehledy přednášek + detail předmětu).
+- [[mask|Metody aplikované statistiky (masK)]] — popis dat, pravděpodobnost, statistické testy, regrese, kontingenční tabulky a kontrola výroby. Vysvětlení metod, řešené příklady a krátké postupy v R. 4 zdroje.
 
 ## Témata
 
@@ -242,10 +244,10 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[icink-bartes-kniha|Bartes — Konkurenční zpravodajství (2022)]] — strukturální karta knihy (440 s., ISBN 978-80-271-3504-2), 12 kapitol, mapování na cíle kurzu; **plný text v této wiki není** (přístup přes Bookport VUT)
 
 ## Shrnutí zdrojů — MasK
-- [[mask-detail-predmetu|Detail předmětu]] — sylabus, garant Ing. Doubravský, vyučující (KS) Mgr. Michalíková, zkouška v R (2–3 příklady, min. 50 bodů)
-- [[mask-prednasky-veliciny-data-testy|Náhodné veličiny, datové soubory a testy hypotéz]] — přehled první části kurzu s odkazy na kapitoly
-- [[mask-prednasky-regrese-kontingence|Regresní analýza a kontingenční tabulky]] — přehled druhé části kurzu
-- [[mask-prednasky-regulace-zpusobilost|Regulační diagramy a indexy způsobilosti]] — přehled třetí části kurzu
+- [[mask-detail-predmetu|Přehled metod aplikované statistiky]] — volba metody podle otázky a návaznosti mezi tématy
+- [[mask-prednasky-veliciny-data-testy|Náhodné veličiny, datové soubory a testy hypotéz]] — od popisu dat k výběru statistického testu
+- [[mask-prednasky-regrese-kontingence|Regresní analýza a kontingenční tabulky]] — zkoumání vztahů mezi číselnými a kategoriálními údaji
+- [[mask-prednasky-regulace-zpusobilost|Regulační diagramy a způsobilost procesu]] — stabilita výroby, volba diagramu a splnění tolerancí
 
 ## Výstupy
 
@@ -259,3 +261,15 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[imork-normy-prehled|ImorK — Přehled norem podle sektoru]] — referenční tabulka rodiny ISO 27000, NIST SP 800, EU regulací (GDPR, eIDAS, NIS2, DORA, MiCA, UN R155), českých předpisů (ZKB, VKB, nZKB) a frameworků (NIST CSF, MITRE ATT&CK, OWASP, CMMC) zařazených podle oborového sektoru
 - [[imork-glosar|ImorK — Glosář pojmů a zkratek]] — abecední slovník ~120 pojmů a zkratek kurzu (AAA, APT, BCM, BIA, CIA, DPIA, GDPR, ISMS, MITRE ATT&CK, NIS2, PCI DSS, SAE, SoA, RaaS, RPO/RTO, …)
 - [[mask-r-tahak|masK — Tahák pro R]] — volba testu podle situace (rozhodovací strom), funkce R po kapitolách, výchozí parametry R, které mění výsledek
+
+## Témata — Ipis2K
+
+- [[integrace-podnikovych-aplikaci|Integrace podnikových aplikací]] — vazby systémů, middleware, data a aplikační logika.
+- [[roboticka-automatizace-procesu|Robotická automatizace procesů]] — vhodnost procesu, vývoj, nasazení, licence a údržba.
+- [[audit-informacnich-systemu|Audit informačních systémů]] — kritéria, důkazy, compliance a ujišťovací zprávy.
+- [[rizeni-informatiky-a-itgc|Řízení informatiky a kontroly ITGC]] — rámce řízení a ověření přístupů, provozu a změn.
+- [[cloud-computing|Cloud computing]] — modely služeb a nasazení, odpovědnosti, kapacita a náklady.
+
+## Shrnutí zdrojů — Ipis2K
+
+- [[ipis2k-prezentace|Podnikové aplikace, automatizace, audit a cloud]] — propojení hlavních témat.

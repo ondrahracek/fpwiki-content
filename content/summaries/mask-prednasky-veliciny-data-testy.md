@@ -1,25 +1,32 @@
 ---
-title: "MasK — Náhodné veličiny, datové soubory a testy hypotéz"
+title: "Náhodné veličiny, datové soubory a testy hypotéz"
 course: mask
 type: summary
 tags: [mask, statistika, normalni-rozdeleni, testovani-hypotez, r]
 sources: ["raw/mask/01 náhodné veličiny.pdf", "raw/mask/01 náhodné veličiny - návod R.pdf", "raw/mask/02 datové soubory.pdf", "raw/mask/02 datové soubory - návod R.pdf", "raw/mask/03 testy hypotéz.pdf", "raw/mask/03 testování hypotéz - návod R 01.pdf", "raw/mask/03 testování hypotéz - návod R 02.pdf", "raw/mask/příklady 01 a 02.docx", "raw/mask/příklady 03.docx"]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-11-06
 ---
 
-# MasK — Náhodné veličiny, datové soubory a testy hypotéz
+# Náhodné veličiny, datové soubory a testy hypotéz
 
-> [!abstract] TL;DR
-> Úvodní část kurzu [[mask|Metody aplikované statistiky]]: popis náhodných veličin a jejich rozdělení, zpracování naměřených dat do empirických charakteristik a histogramů a testování statistických hypotéz o střední hodnotě, rozptylu a shodě s rozdělením — parametricky i neparametricky, vždy s výpočtem v R.
+[[mask|Aplikovaná statistika]] začíná popisem naměřených hodnot. Průměr, medián a histogram ukážou, jak data vypadají. Rozdělení pravděpodobnosti pomůže popsat jejich náhodné kolísání a statistický test posoudit konkrétní hypotézu.
 
-## Co tato část pokrývá
+## Od dat k testu
 
-| Kapitola | Obsah |
+| Otázka | Co použijeme |
 |---|---|
-| [[nahodne-veliciny-a-rozdeleni\|Náhodné veličiny a rozdělení pravděpodobnosti]] | distribuční funkce, hustota pravděpodobnosti, normální rozdělení, kvantily normálního rozdělení, rozdělení t, χ² a F |
-| [[popisna-statistika\|Popisná statistika a datové soubory]] | výběrový průměr, rozptyl, směrodatná odchylka, kvantily, empirická distribuční funkce, třídění dat do tříd, histogram |
-| [[testovani-hypotez\|Testování statistických hypotéz]] | jednovýběrový a párový t-test, F-test, dvouvýběrový t-test, Shapiro-Wilkův a Kolmogorovův-Smirnovův test normality, Wilcoxonovy testy, Kruskalův-Wallisův test, Friedmanův test |
+| Jaké výsledky mohou nastat a jak jsou pravděpodobné? | [[nahodne-veliciny-a-rozdeleni\|Náhodnou veličinu a její rozdělení]] |
+| Kde je střed dat a jak moc se hodnoty liší? | [[popisna-statistika\|Průměr, medián, rozptyl a směrodatnou odchylku]] |
+| Jak data rozdělit a zobrazit? | [[popisna-statistika\|Kvartily, empirickou distribuční funkci a histogram]] |
+| Liší se průměry nebo rozptyly dvou výběrů? | [[testovani-hypotez\|t-test nebo F-test, pokud jsou splněny jejich předpoklady]] |
+| Jak postupovat, když předpoklady parametrického testu nejsou vhodné? | [[testovani-hypotez\|Wilcoxonovy testy a další neparametrické metody]] |
+
+## Výběr statistického testu
+
+Nejprve rozlišíme, zda máme jeden výběr, dvě nezávislé skupiny, nebo párová měření. Párová jsou například dvě měření provedená na stejných výrobcích. Nezávislé skupiny tvoří různé výrobky nebo různí lidé.
+
+Potom určíme, co chceme porovnat a jaké předpoklady o datech můžeme použít. Nezamítnutí nulové hypotézy neprokazuje, že platí; znamená, že proti ní daná data neposkytla dostatečný důkaz.
 
 ## Související stránky
 

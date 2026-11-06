@@ -3,7 +3,7 @@ title: Přehled — Fakulta podnikatelská VUT v Brně
 type: overview
 tags: [fp-vut, prehled]
 created: 2026-04-10
-updated: '2026-10-02'
+updated: 2026-11-06
 ---
 
 # Přehled — Fakulta podnikatelská VUT v Brně
@@ -18,7 +18,7 @@ Tato wiki slouží jako znalostní báze pro studium na Fakultě podnikatelské 
 - [[irmank|Risk management (IrmanK)]] — kritické faktory úspěchu firmy (7S, EFQM), modely změny ([[lewinuv-model|Lewin]], [[kaizen-vs-inovace|KAIZEN]]), riziko a jeho měření, mapa rizik, taktiky snižování, finanční nástroje (faktoring, forfaiting, akreditiv), AI metody (expertní systémy, GA, ANN), investiční rozhodování (BOT case study), krizové řízení. Garant: prof. Rais. 3 zdroje zpracovány (sylabus + 2 prezentace, celkem 174 slidů).
 - [[mikk|Mikroekonomie 2 (mikK)]] — pokročilá analýza chování spotřebitele a firmy: elasticity, Marshallova/Hicksova poptávka, riziko/nejistota; tržní struktury (monopol, cenová diskriminace, monopson, Cournot/Stackelberg/Bertrand, kartely, monopolistická konkurence); behavioristické modely firmy (Simon, Cyert-March, Doyle). Garant: prof. Škapa, vyučující (KS): Ing. Luňáček. 6 zdrojů zpracováno (sylabus + 3 PDF přednášky + řešené Předtermíny + článek Buchta-Kovárník).
 - [[icink|Competitive Intelligence (IcinK)]] — zpravodajský proces CI (9 kroků), [[zpravodajsky-cyklus-vs-proces|cyklus vs. proces]], [[zdroje-dat-informaci|zdroje (bílá/šedá/černá zóna)]], [[dezinformace|dezinformace]] (7 druhů + detekce/identifikace), [[analyza-konkurencnich-hypotez|ACH]], [[casova-analyza|časová a T-analýza]], [[analyza-konkurenta-porter|Porter 4 rohy]], [[counter-competitive-intelligence|CCI]] (obchodní tajemství, ochrana informace, proces CCI). Garant: doc. Bartes. 3 zdroje zpracovány (sylabus + ~700 řádek poznámek z konzultací + strukturální karta knihy Bartes 2022).
-- [[mask|Metody aplikované statistiky (masK)]] — aplikovaná statistika řešená v R: náhodné veličiny a rozdělení, popisná statistika, testování hypotéz, regrese a korelace, kontingenční tabulky, regulační diagramy a indexy způsobilosti. Garant: Ing. Doubravský, vyučující (KS): Mgr. Michalíková. 4 zdroje zpracovány (3 přehledy přednášek + detail předmětu).
+- [[mask|Metody aplikované statistiky (masK)]] — popis dat, pravděpodobnost, statistické testy, regrese, kontingenční tabulky a kontrola výroby. Vysvětlení metod, řešené příklady a krátké postupy v R. 4 zdroje.
 
 ## Průřezová témata
 
@@ -54,3 +54,9 @@ Některá témata se prolínají více kurzy:
 - **IcinK ↔ ImorK**: Defenzivní [[counter-competitive-intelligence|CCI]] (IcinK) a [[isms|ISMS]] (ImorK) se prolínají v ochraně informací. [[obchodni-tajemstvi-ochrana|Obchodní tajemství (§504 OZ)]] doplňuje [[ochrana-dat|technickou ochranu dat]] a [[gdpr|GDPR]]. [[zdroje-dat-informaci|HUMINT a sociální inženýrství]] v IcinK rezonuje s [[imork-rizeny-hacking|řízeným hackingem]] a [[imork-internetova-bezpecnost|OSINT]] v ImorK. [[dezinformace|Generativní dezinformace]] (IcinK) navazuje na [[imork-ai-utoky|AI útoky]] (ImorK).
 - **IcinK ↔ MikK**: [[analyza-konkurenta-porter|Porterova analýza konkurenta (4 rohy)]] je deskriptivní rámec, který se v MikK formalizuje v modelech [[mikk-oligopol-cournot-stackelberg|Cournot/Stackelberg]], [[mikk-oligopol-bertrand-cenova-konkurence|Bertrand]] a [[mikk-vezno-dilema-teorie-her|teorii her]]. Typy konkurentů (laxní/vybíravý/tygr/scholastický) korespondují s reakčními křivkami v oligopolu.
 - **IcinK ↔ IrmanK**: [[analyza-konkurencnich-hypotez|ACH (analýza konkurenčních hypotéz)]] je strukturovaná hypotézová metoda — analogie [[expertni-systemy|expertních systémů FEL-EXPERT]] v IrmanK. [[counter-competitive-intelligence|CCI proces (9 kroků)]] používá [[analyza-rizik-proces|analýzu rizik]] a postupy [[krizove-rizeni|krizového řízení]] pro situace úniku informace.
+
+## Podnikové informační systémy 2 (Ipis2K)
+
+[[ipis2k|Podnikové informační systémy 2]] propojují integraci aplikací, RPA, audit, ITGC a cloud. 1 zdroj.
+
+Integrace a automatizace zlepšují předávání dat a opakovanou práci; audit a ITGC ověřují, zda lze systémům důvěřovat. Cloud mění způsob provozu a rozdělení odpovědností. Zápisky navazují na [[isms|ISMS]], [[bcm|kontinuitu činnosti]] a [[rizeni-rizik|řízení informačních rizik]] z [[imork|Managementu oborových řešení]].
