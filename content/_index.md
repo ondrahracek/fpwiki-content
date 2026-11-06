@@ -1,7 +1,7 @@
 ---
 title: "Index"
 type: index
-updated: '2026-10-02'
+updated: '2026-11-06'
 ---
 
 # Index — FP VUT Wiki
@@ -16,7 +16,7 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[mikk|Mikroekonomie 2 (mikK)]] — pokročilá teorie spotřebitele (Marshall/Hicks, Slutsky, riziko), tržní struktury (monopol, cenová diskriminace, oligopol — Cournot/Stackelberg/Bertrand, kartel, monopolistická konkurence, monopson), alternativní cíle firmy (Baumol, Williamson, Simon, Cyert-March, Doyle, Ward). Garant: prof. Škapa, vyučující (KS): Ing. Luňáček. 6 zdrojů (sylabus + 3 PDF přednášky + řešené Předtermíny + článek Buchta-Kovárník).
 - [[irmank|Risk management (IrmanK)]] — kritické faktory úspěchu firmy (7S, EFQM), modely změny (Lewin, KAIZEN), riziko a jeho měření (σ, KV, mapa rizik), taktiky snižování (vyvárování / udržení / redukce / přenos), finanční nástroje (faktoring, forfaiting, akreditiv), AI metody (FEL-EXPERT, GA, ANN), investiční rozhodování (BOT case study), krizové řízení. 3 zdroje.
 - [[icink|Competitive Intelligence (IcinK)]] — zpravodajský proces CI (9 kroků), cyklus vs. proces, zdroje (bílá/šedá/černá zóna, HUMINT), dezinformace (7 druhů + detekce/identifikace), metody (ACH, časová a T-analýza, Porter 4 rohy, 7 otázek + QUI BONO), Counter Competitive Intelligence (obchodní tajemství §504 OZ, proces CCI). Garant: doc. Bartes. 3 zdroje.
-- [[mask|Metody aplikované statistiky (masK)]] — náhodné veličiny a rozdělení, popisná statistika, testování hypotéz (t-testy, F-test, testy normality, neparametrické testy), regresní a korelační analýza, kontingenční tabulky, regulační diagramy a indexy způsobilosti; vše s výpočtem v R. Garant: Ing. Doubravský, vyučující (KS): Mgr. Michalíková. 4 zdroje (3 přehledy přednášek + detail předmětu).
+- [[mask|Metody aplikované statistiky (masK)]] — popis dat, pravděpodobnost, statistické testy, regrese, kontingenční tabulky a kontrola výroby. Vysvětlení metod, řešené příklady a krátké postupy v R. 4 zdroje.
 
 ## Témata
 
@@ -242,10 +242,10 @@ Katalog všech stránek wiki. Aktualizováno při každé změně.
 - [[icink-bartes-kniha|Bartes — Konkurenční zpravodajství (2022)]] — strukturální karta knihy (440 s., ISBN 978-80-271-3504-2), 12 kapitol, mapování na cíle kurzu; **plný text v této wiki není** (přístup přes Bookport VUT)
 
 ## Shrnutí zdrojů — MasK
-- [[mask-detail-predmetu|Detail předmětu]] — sylabus, garant Ing. Doubravský, vyučující (KS) Mgr. Michalíková, zkouška v R (2–3 příklady, min. 50 bodů)
-- [[mask-prednasky-veliciny-data-testy|Náhodné veličiny, datové soubory a testy hypotéz]] — přehled první části kurzu s odkazy na kapitoly
-- [[mask-prednasky-regrese-kontingence|Regresní analýza a kontingenční tabulky]] — přehled druhé části kurzu
-- [[mask-prednasky-regulace-zpusobilost|Regulační diagramy a indexy způsobilosti]] — přehled třetí části kurzu
+- [[mask-detail-predmetu|Přehled metod aplikované statistiky]] — volba metody podle otázky a návaznosti mezi tématy
+- [[mask-prednasky-veliciny-data-testy|Náhodné veličiny, datové soubory a testy hypotéz]] — od popisu dat k výběru statistického testu
+- [[mask-prednasky-regrese-kontingence|Regresní analýza a kontingenční tabulky]] — zkoumání vztahů mezi číselnými a kategoriálními údaji
+- [[mask-prednasky-regulace-zpusobilost|Regulační diagramy a způsobilost procesu]] — stabilita výroby, volba diagramu a splnění tolerancí
 
 ## Výstupy
 

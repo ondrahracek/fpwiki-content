@@ -1,23 +1,32 @@
 ---
-title: "MasK — Regulační diagramy a indexy způsobilosti"
+title: "Regulační diagramy a způsobilost procesu"
 course: mask
 type: summary
 tags: [mask, statistika, regulacni-diagramy, indexy-zpusobilosti, qcc, r]
-sources: ["raw/mask/06 regulační diagramy.pdf", "raw/mask/07 indexy způsobilosti.pdf", "raw/mask/návod 06 a 07.pdf", "raw/mask/příklady 06 a 07.pdf"]
+sources: ["raw/mask/06 regulační diagramy.pdf", "raw/mask/06 regulační diagramy přednáška.pdf", "raw/mask/07 indexy způsobilosti.pdf", "raw/mask/07 indexy způsobilosti - Moodle 2026-11-06.pdf", "raw/mask/návod 06 a 07.pdf", "raw/mask/regulace a indexy způsobilosti příklady.pdf", "raw/mask/6_1.txt", "raw/mask/6_2.txt", "raw/mask/6_3.txt", "raw/mask/6_4.txt", "raw/mask/6_5.txt", "raw/mask/6_6.txt"]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-11-06
 ---
 
-# MasK — Regulační diagramy a indexy způsobilosti
+# Regulační diagramy a způsobilost procesu
 
-> [!abstract] TL;DR
-> Závěrečná část kurzu [[mask|Metody aplikované statistiky]]: statistická regulace výrobního procesu pomocí regulačních diagramů pro měřené i počítané znaky kvality a vyhodnocení způsobilosti procesu pomocí indexů $C_p$ a $C_{pk}$ — vždy s výpočtem v R.
+Při kontrole výroby rozlišujeme dvě otázky. **Stabilita** říká, zda se proces v čase chová předvídatelně. **Způsobilost** říká, zda jeho výsledky vyhovují požadovaným tolerancím.
 
-## Co tato část pokrývá
+[[regulacni-diagramy-a-indexy-zpusobilosti|Regulační diagramy a indexy způsobilosti]] na sebe navazují: nejprve posoudíme stabilitu, potom splnění tolerancí. Jde o použití [[mask|aplikované statistiky]] při kontrole jakosti.
 
-| Kapitola | Obsah |
-|---|---|
-| [[regulacni-diagramy-a-indexy-zpusobilosti\|Regulační diagramy a indexy způsobilosti]] | regulační diagramy $\bar x$–$R$ a $\bar x$–$s$ pro logické podskupiny, diagram jednotlivých hodnot $x$–$R_{kl}$, diagramy pro počty neshodných jednotek a vad ($c$, $u$, $np$, $p$), hodnocení stavu regulace, indexy způsobilosti $C_p$ a $C_{pk}$ vůči mezím specifikace |
+## Volba regulačního diagramu
+
+Pro délku nebo hmotnost výrobku používáme diagramy pro měřené hodnoty. Sledujeme u nich jak střed měření, tak jejich rozptýlení.
+
+U počtů potřebujeme rozlišit **vady** a **vadné kusy**. Jedna deska může mít několik suků, ale jeden výrobek počítáme jako vadný kus jen jednou. Typ diagramu dále závisí na tom, zda kontrolujeme stále stejně velké série nebo stejně velkou plochu.
+
+## Signály a tolerance
+
+Bod mimo regulační meze je signál k vyšetření příčiny. Pozorování nelze vyřadit pouze proto, aby diagram vyšel bez signálů. Pokud byla příčina zjištěna a odstraněna, lze odůvodněné vyřazení zahrnout do přepočtu mezí.
+
+Ani stabilní proces nemusí vyhovovat zákazníkovi. Naměřené rozměry mohou stále příliš kolísat nebo ležet mimo požadovaný interval. To posuzujeme pomocí indexů způsobilosti.
+
+Řešené příklady zahrnují délky výrobků, suky na deskách, vady magnetických pásků a vadné tablety. Výpočty v R ukazují volbu diagramu, jeho meze i interpretaci výsledků.
 
 ## Související stránky
 

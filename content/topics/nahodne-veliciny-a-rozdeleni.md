@@ -5,52 +5,53 @@ type: topic
 tags: [mask, statistika, nahodna-velicina, normalni-rozdeleni, distribucni-funkce, r]
 sources: ["raw/mask/01 náhodné veličiny.pdf", "raw/mask/01 náhodné veličiny - návod R.pdf", "raw/mask/příklady 01 a 02.docx"]
 created: 2026-10-02
-updated: 2026-10-02
+updated: 2026-11-06
 ---
 
 # Náhodné veličiny a rozdělení pravděpodobnosti
 
 > [!tldr] V kostce
-> - Náhodná veličina je funkce, která výsledkům pokusu přiřazuje reálná čísla; rozlišujeme **diskrétní** (izolované hodnoty s nenulovou pravděpodobností) a **spojité** (hodnoty z intervalu, každý bod má nulovou pravděpodobnost).
-> - Každou náhodnou veličinu popisuje **distribuční funkce** $F(x) = P(X \le x)$; u spojité veličiny platí $F'(x) = f(x)$, kde $f(x)$ je hustota pravděpodobnosti.
-> - Pravděpodobnost na intervalu se počítá jako $P(x_1 < X < x_2) = F(x_2) - F(x_1)$.
-> - **Normální rozdělení** $N(\mu; \sigma^2)$ je nejdůležitější spojité rozdělení; v R ho počítáme funkcemi `dnorm`, `pnorm`, `qnorm` — R jako parametr očekává směrodatnou odchylku $\sigma$, ne rozptyl $\sigma^2$.
-> - **Studentovo**, **Pearsonovo (χ²)** a **Fisherovo-Snedecorovo** rozdělení slouží jako nástroj pro pozdější konstrukci intervalů spolehlivosti a testování hypotéz.
+> - Životnost výrobku nebo počet bodů při hodu kostkou můžeme popsat jako náhodnou veličinu.
+> - Rozdělení pravděpodobnosti říká, jak pravděpodobné jsou jednotlivé výsledky nebo intervaly hodnot.
+> - U spojité veličiny počítáme pravděpodobnost pomocí plochy pod křivkou hustoty.
+> - Střední hodnota popisuje střed rozdělení, rozptyl jeho rozptýlení a kvantil hranici pro zadanou pravděpodobnost.
 
 ## Náhodná veličina
 
-[[mask|Metody aplikované statistiky]] pracuje s veličinami, jejichž hodnota závisí na náhodě. Formálně: uvažujeme základní prostor $\Omega$ přiřazený výsledkům pokusu. **Náhodná veličina** $X$ je funkce, která prvkům $\omega \in \Omega$ přiřazuje reálná čísla $x$, kde $x = X(\omega)$. Náhodné veličiny značíme velkými písmeny ($X$, $Y$, $T$), jejich konkrétní hodnoty odpovídajícími malými písmeny ($x$, $y$, $t$); pravděpodobnost, že $X$ nabyla hodnoty $x$, zapisujeme $P(X = x)$.
+Při hodu kostkou předem neznáme počet bodů, které padnou. Podobně neznáme přesnou délku náhodně vybraného výrobku. Takové číselné výsledky popisujeme pomocí náhodné veličiny.
 
-Podle typu hodnot, kterých náhodná veličina nabývá, rozlišujeme dva typy:
+Množinu všech možných výsledků pokusu označujeme $\Omega$. **Náhodná veličina** $X$ každému výsledku $\omega \in \Omega$ přiřadí reálné číslo $x$ podle předpisu $x = X(\omega)$. Náhodnou veličinu zapisujeme velkým písmenem ($X$, $Y$, $T$), konkrétní naměřenou hodnotu malým písmenem ($x$, $y$, $t$). Pravděpodobnost, že $X$ nabude hodnoty $x$, zapisujeme $P(X = x)$.
 
-- **Diskrétní náhodná veličina** — prvky $\Omega$ se zobrazí na osu reálných čísel jako izolované body $x_1, x_2, \dots, x_k$, přičemž každý z nich má nenulovou pravděpodobnost. Příklad: počet bodů při hodu kostkou, počet studentů na cvičení.
-- **Spojitá náhodná veličina** — hodnoty tvoří interval na ose reálných čísel, přičemž každý bod intervalu má nulovou pravděpodobnost. Příklad: velikost výrobku, doba psaní testu, výška dětí v populaci.
+Podle možných hodnot rozlišujeme:
+
+- **Diskrétní náhodná veličina** nabývá oddělených hodnot. Výsledky z $\Omega$ tak odpovídají bodům $x_1, x_2, \dots, x_k$ na číselné ose, z nichž každý má nenulovou pravděpodobnost. Příkladem je počet bodů při hodu kostkou nebo počet studentů na cvičení.
+- **Spojitá náhodná veličina** může nabýt libovolné hodnoty z intervalu. Pravděpodobnost jedné přesné hodnoty je nulová; smysl má počítat pravděpodobnost pro celý interval. Příkladem je velikost výrobku, doba psaní testu nebo výška dětí v populaci.
 
 ## Distribuční funkce
 
-Náhodná veličina nabývá při pokusu určité hodnoty, aniž bychom předem věděli, které. Při opakování pokusu se ale projevují zákonitosti, které popisují **zákony rozdělení**. Nejobecnějším z nich je distribuční funkce.
+Jednotlivý výsledek pokusu předem neznáme, ale můžeme popsat pravděpodobnosti možných výsledků. Tento popis se nazývá **rozdělení pravděpodobnosti**. Pro diskrétní i spojité veličiny ho lze vyjádřit distribuční funkcí.
 
 ![[mask-nv-distribucni-funkce.png|Distribuční funkce diskrétní náhodné veličiny (schodovitý průběh, hod kostkou) vedle distribuční funkce spojité náhodné veličiny (hladká S-křivka, N(0;1))]]
 
 > [!info] Definice
-> Distribuční funkcí náhodné veličiny $X$ nazýváme reálnou funkci $F(x)$ definovanou pro každé reálné číslo $x$ jako
+> **Distribuční funkce** náhodné veličiny $X$ je funkce $F(x)$, která pro každé reálné číslo $x$ udává
 > $$F(x) = P(X \le x).$$
-> $F(x)$ tedy vyjadřuje pravděpodobnost, s jakou $X$ nabude hodnoty z intervalu $(-\infty, x\rangle$.
+> Hodnota $F(x)$ tedy zahrnuje všechny výsledky $X$ v intervalu $(-\infty, x\rangle$, včetně jeho pravého krajního bodu.
 
 Značí-li například $X$ výšku mužů v populaci, pak $F(175)$ je pravděpodobnost, že muž měří nejvýše 175 cm.
 
-Pro distribuční funkci vždy platí:
+Distribuční funkce má tyto vlastnosti:
 
 - $0 \le F(x) \le 1$,
 - je neklesající: $x_1 \le x_2 \Rightarrow F(x_1) \le F(x_2)$,
 - je spojitá zprava: $\lim_{h \to 0^+} F(x+h) = F(x)$,
 - $\lim_{x \to -\infty} F(x) = 0$, $\lim_{x \to \infty} F(x) = 1$.
 
-U spojité náhodné veličiny je distribuční funkce svázaná s hustotou pravděpodobnosti vztahem
+U spojité náhodné veličiny získáme distribuční funkci jako plochu pod křivkou hustoty od levého kraje až po zvolený bod. Obráceně je hustota derivací distribuční funkce:
 
 $$F'(x) = f(x), \qquad F(x) = \int_{-\infty}^{x} f(t)\,dt.$$
 
-Pravděpodobnost, že $X$ padne mezi body $x_1$ a $x_2$, se pak počítá jako
+Pravděpodobnost, že $X$ leží mezi $x_1$ a $x_2$, odpovídá ploše pod hustotou mezi těmito body. Stačí proto odečíst hodnoty distribuční funkce:
 
 $$P(x_1 < X < x_2) = \int_{x_1}^{x_2} f(t)\,dt = F(x_2) - F(x_1).$$
 
@@ -59,23 +60,23 @@ $$P(x_1 < X < x_2) = \int_{x_1}^{x_2} f(t)\,dt = F(x_2) - F(x_1).$$
 > [!info] Definice
 > Hustota pravděpodobnosti $f(x)$ určuje, jak jsou hodnoty spojité náhodné veličiny $X$ nahuštěny v okolí bodu $x$. Je vždy nezáporná a platí pro ni $\int_{-\infty}^{\infty} f(x)\,dx = 1$.
 
-Intuitivně: rozdělíme-li hodnoty náhodné veličiny (např. výšku mužů v populaci) do stejně širokých intervalů, bude v intervalech blízko průměru nahuštěno víc pozorování než v krajních intervalech — hustota tam bude vyšší.
+Například výšky mužů v populaci můžeme rozdělit do stejně širokých intervalů. V intervalech blízko průměru bývá více pozorování než na okrajích. Vyšší hustota zde vyjadřuje právě toto větší soustředění hodnot.
 
 ## Charakteristiky spojité náhodné veličiny
 
-**Střední hodnota** je nejdůležitější charakteristika náhodné veličiny:
+**Střední hodnota** popisuje průměrnou úroveň náhodné veličiny:
 
 $$E(X) = \int_{-\infty}^{\infty} x \cdot f(x)\,dx.$$
 
-Je to číslo, kolem něhož kolísají výběrové průměry vypočtené ze sérií pozorovaných hodnot náhodné veličiny.
+Pokud opakovaně provedeme sérii pozorování a pokaždé spočítáme průměr, budou tyto výběrové průměry kolísat kolem střední hodnoty.
 
-**Rozptyl** a **směrodatná odchylka**:
+**Rozptyl** popisuje, jak daleko od střední hodnoty hodnoty leží. Jeho odmocninou je **směrodatná odchylka**:
 
 $$D(X) = \int_{-\infty}^{\infty} [x - E(X)]^2 f(x)\,dx = \int_{-\infty}^{\infty} x^2 f(x)\,dx - [E(X)]^2, \qquad \sigma(X) = \sqrt{D(X)}.$$
 
-Směrodatná odchylka udává, jak moc jsou hodnoty náhodné veličiny rozptýlené kolem střední hodnoty. (Pro odhad těchto charakteristik z naměřených dat viz empirické protějšky v [[popisna-statistika]].)
+Směrodatná odchylka vyjadřuje rozptýlení ve stejných jednotkách jako sledovaná veličina. Odhady střední hodnoty a rozptylu z naměřených dat popisuje [[popisna-statistika|popisná statistika]].
 
-**Kvantily** udávají, jak jsou hodnoty náhodné veličiny $X$ rozděleny na ose reálných čísel v určitém pravděpodobnostním poměru. 100p%-ní kvantil $x_p$ je číslo, pro které při zvolené pravděpodobnosti $p$ platí
+**Kvantil** je hranice, pod kterou leží zvolený podíl hodnot náhodné veličiny $X$. Pro 100p%-ní kvantil $x_p$ a pravděpodobnost $p$ platí
 
 $$F(x_p) = p.$$
 
@@ -83,7 +84,7 @@ V intervalu $(-\infty; x_p)$ leží 100p % hodnot, v intervalu $\langle x_p; \in
 
 ## Normální rozdělení
 
-Spojitá náhodná veličina $X$ má **normální rozdělení** $N(\mu; \sigma^2)$, jestliže její hustota pravděpodobnosti a distribuční funkce jsou dány předpisy
+Normální rozdělení má souměrnou zvonovitou hustotu. Její polohu určuje střední hodnota a šířku směrodatná odchylka. Spojitá náhodná veličina $X$ s **normálním rozdělením** $N(\mu; \sigma^2)$ má hustotu a distribuční funkci
 
 $$f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}, \qquad F(x) = \frac{1}{\sigma\sqrt{2\pi}} \int_{-\infty}^{x} e^{-\frac{(t-\mu)^2}{2\sigma^2}}\,dt,$$
 
@@ -91,9 +92,9 @@ přičemž $E(X) = \mu$, $D(X) = \sigma^2$.
 
 ![[mask-nv-normalni.png|Gaussova křivka hustoty normálního rozdělení s vybarvenými pásmy μ ± σ (68,27 % hodnot), μ ± 2σ (95,45 %) a μ ± 3σ (99,73 %) a odpovídající S-křivka distribuční funkce]]
 
-Křivka hustoty se nazývá **Gaussova křivka**: je symetrická kolem svislé přímky procházející $\mu$, kde má $f(x)$ globální maximum, a ve vzdálenosti $3\sigma$ od $\mu$ se téměř dotýká osy x — zhruba 99,73 % hodnot leží v intervalu $(\mu - 3\sigma; \mu + 3\sigma)$.
+Křivka hustoty se nazývá **Gaussova křivka**. Je souměrná kolem $\mu$ a právě zde má $f(x)$ nejvyšší hodnotu. Ve vzdálenosti $3\sigma$ od $\mu$ je už křivka velmi blízko ose x. V intervalu $(\mu - 3\sigma; \mu + 3\sigma)$ leží zhruba 99,73 % hodnot.
 
-Zvláštní postavení má **normované normální rozdělení** $N(0; 1)$, na které se dá libovolné normální rozdělení převést standardizací $Z = (X-\mu)/\sigma$.
+**Normované normální rozdělení** $N(0; 1)$ získáme z libovolného normálního rozdělení tak, že odečteme střední hodnotu a výsledek vydělíme směrodatnou odchylkou. Tento převod se nazývá standardizace: $Z = (X-\mu)/\sigma$.
 
 ```graph
 title: Hustota normálního rozdělení N(μ; σ²)
@@ -112,7 +113,7 @@ markers:
 > [!warning] R očekává směrodatnou odchylku, ne rozptyl
 > Zápis $N(\mu; \sigma^2)$ v definici používá **rozptyl**. Funkce `dnorm`, `pnorm` a `qnorm` v R ale jako třetí argument berou **směrodatnou odchylku** $\sigma$. Má-li náhodná veličina rozdělení $N(10; 0{,}12)$, je `sd = sqrt(0.12)`, ne `sd = 0.12`.
 
-V R:
+Hustotu v bodě spočítá `dnorm()`, pravděpodobnost do dané hranice `pnorm()` a hranici pro zadanou pravděpodobnost `qnorm()`:
 
 ```r
 dnorm(0)
@@ -126,7 +127,7 @@ qnorm(0.975)
 [1] 1.959964
 ```
 
-`dnorm(0)` je hodnota hustoty $N(0;1)$ v bodě 0, `pnorm(1.96)` je $F(1{,}96)$ a `qnorm(0.975)` je 97,5%-ní kvantil — hodnota, pod kterou leží 97,5 % pravděpodobnosti.
+`dnorm(0)` vrací výšku hustoty $N(0;1)$ v bodě 0. Výsledek `pnorm(1.96)` je pravděpodobnost $F(1{,}96)$. Funkce `qnorm(0.975)` postupuje opačně: vrací 97,5%-ní kvantil, tedy hranici, pod kterou leží 97,5 % pravděpodobnosti.
 
 > [!example] Příklad: Návštěvnost zábavního parku
 > Denní návštěvnost zábavního parku je náhodná veličina s normálním rozdělením, průměrnou hodnotou 230 a směrodatnou odchylkou 27,5 návštěvníků: $X \sim N(230; 27{,}5^2)$. Přijde-li za den méně než 180 návštěvníků, je park ztrátový. Kolik procent dní je ztrátových?
@@ -141,7 +142,7 @@ pnorm(180, mean = 230, sd = 27.5)
 [1] 0.03451817
 ```
 
-Park je ztrátový přibližně v 3,45 % dní.
+Plocha vlevo od hranice odpovídá ztrátovým dnům. Park je tedy ztrátový přibližně ve 3,45 % dní.
 
 > [!example] Příklad: Délka výrobku
 > Automat je seřízen tak, aby střední hodnota délky výrobku byla 42 mm, s přesností charakterizovanou směrodatnou odchylkou 1,2 mm: $X \sim N(42; 1{,}2^2)$. Výrobky s délkou 41 až 43 mm jsou zařazeny do 1. jakostní třídy. Jaké je procento výrobků v 1. jakostní třídě?
@@ -156,7 +157,7 @@ pnorm(43, mean = 42, sd = 1.2) - pnorm(41, mean = 42, sd = 1.2)
 [1] 0.5953432
 ```
 
-Do 1. jakostní třídy spadá přibližně 59,53 % výrobků.
+Odečtením obou pravděpodobností zůstane podíl délek mezi stanovenými mezemi. Do 1. jakostní třídy tak spadá přibližně 59,53 % výrobků.
 
 > [!example] Příklad: Obsah ampulky
 > Obsah ampulky s lékem (v cm³) má rozdělení $N(10; 0{,}12)$, tedy střední hodnota 10 a rozptyl 0,12 ($\sigma = \sqrt{0{,}12} \approx 0{,}346$). Kolik procent ampulek má obsah menší než 9,8 cm³?
@@ -171,11 +172,11 @@ pnorm(9.8, mean = 10, sd = sqrt(0.12))
 [1] 0.2818514
 ```
 
-Obsah menší než 9,8 cm³ má přibližně 28,19 % ampulek.
+Výsledek vyjadřuje pravděpodobnost pod zadanou hranicí: obsah menší než 9,8 cm³ má přibližně 28,19 % ampulek.
 
 ## Další rozdělení dostupná v R
 
-Vedle normálního rozdělení R přímo nabízí hustotu, distribuční funkci a kvantilovou funkci i pro další běžná rozdělení. Pojmenování funkcí je jednotné: `d*` je hustota/pravděpodobnostní funkce, `p*` distribuční funkce (s `lower.tail = FALSE`, případně čtvrtým argumentem `TRUE`/`FALSE`, pro horní chvost) a `q*` kvantilová funkce.
+Stejné názvy funkcí používá R i pro další rozdělení. Předpona `d*` označuje hustotu u spojitých veličin a pravděpodobnost jednotlivé hodnoty u diskrétních veličin. Předpona `p*` vrací pravděpodobnost do zadané hranice, `q*` hledá hranici pro zadanou pravděpodobnost. Pravděpodobnost nad hranicí se označuje jako horní chvost a volí se argumentem `lower.tail = FALSE`. Pořadí argumentů se mezi rozděleními liší; tabulka ukazuje konkrétní zápisy.
 
 | Rozdělení | $P(X=k)$ / $f(x)$ | $P(X \le k)$ | horní chvost $P(X>k)$ |
 |---|---|---|---|
@@ -188,40 +189,51 @@ Vedle normálního rozdělení R přímo nabízí hustotu, distribuční funkci 
 > [!warning] Exponenciální rozdělení: R bere intenzitu, ne střední hodnotu
 > R parametrizuje exponenciální rozdělení intenzitou (`rate`). Je-li $\delta$ střední doba do události, do R se dosazuje `1/delta`, ne `delta`.
 
-V R (pravděpodobnostní a distribuční funkce diskrétní náhodné veličiny $X \sim Bi(5; 0{,}95)$, a pravděpodobnost, že u exponenciálního rozdělení se střední hodnotou $\delta = 5$ nastane událost do 3 jednotek času):
+Pro $X \sim Bi(5; 0{,}95)$ vypočteme pravděpodobnosti jednotlivých hodnot a distribuční funkci:
 
 ```r
 x <- 0:5
-round(dbinom(x, 5, 0.95), 4)
-round(pbinom(x, 5, 0.95), 4)
-
-delta <- 5
-round(pexp(3, rate = 1 / delta), 4)
+dbinom(x, 5, 0.95)
+pbinom(x, 5, 0.95)
 ```
 
 ```text
-[1] 0.0000 0.0000 0.0011 0.0214 0.2036 0.7738
-[1] 0.0000 0.0000 0.0012 0.0226 0.2262 1.0000
-[1] 0.4512
+[1] 0.0000003125 0.0000296875 0.0011281250 0.0214343750 0.2036265625
+[6] 0.7737809375
+[1] 0.0000003125 0.0000300000 0.0011581250 0.0225925000 0.2262190625
+[6] 1.0000000000
+```
+
+Pravděpodobnost, že událost s exponenciální dobou čekání a střední hodnotou $\delta = 5$ nastane do 3 jednotek času, spočítáme zvlášť:
+
+```r
+delta <- 5
+pexp(3, rate = 1 / delta)
+```
+
+```text
+[1] 0.4511884
 ```
 
 ## Studentovo, Pearsonovo a Fisherovo-Snedecorovo rozdělení
 
-Tato tři rozdělení mají statistiky, které se dále používají při konstrukci intervalů spolehlivosti a testování hypotéz (viz [[testovani-hypotez]]) — na rozdíl od normálního rozdělení se v příkladech této kapitoly samostatně nepočítají, jsou to nástroje pro další kapitoly.
+Při výpočtu intervalů spolehlivosti a [[testovani-hypotez|testování hypotéz]] pracujeme s charakteristikami vypočtenými z výběru. Jejich rozdělení umožňuje určit kritické hodnoty testu. Často jde právě o Studentovo, Pearsonovo nebo Fisherovo-Snedecorovo rozdělení. Nejde tedy o další druhy naměřených dat, ale o rozdělení výsledků výpočtu. Pomáhají poznat, zda je výsledek testu ještě obvyklý, nebo už příliš krajní.
 
-**Studentovo rozdělení** s $k$ stupni volnosti má hustotu pravděpodobnosti
+**Stupně volnosti** souvisejí s množstvím nezávislé informace ve výběru. Například po výpočtu průměru z $n$ hodnot zbývá pro odhad rozptylu $n-1$ stupňů volnosti. Jejich počet mění tvar rozdělení, a tím i kritické hodnoty. Pro praktický výpočet použijeme funkce R v tabulce níže; vzorce hustot popisují přesný tvar křivek.
+
+**Studentovo rozdělení** používáme například při t-testu průměru, když rozptyl populace neznáme a odhadujeme jej z výběru. S $k$ stupni volnosti má hustotu pravděpodobnosti
 
 $$f(x) = \frac{1}{B\left(\frac12, \frac{k}{2}\right)\sqrt{k}} \left(1 + \frac{x^2}{k}\right)^{-\frac{k+1}{2}}, \qquad x \in \mathbb{R},$$
 
-kde $B$ je funkce beta. Je symetrické kolem nuly; číslo $k$ určuje tvar křivky — s rostoucím $k$ se rozdělení blíží normálnímu.
+Ve vzorci je $B$ funkce beta. Rozdělení je souměrné kolem nuly. Počet stupňů volnosti $k$ určuje tvar křivky: s rostoucím $k$ se přibližuje normálnímu rozdělení.
 
-**Pearsonovo (chí-kvadrát) rozdělení** s $k$ stupni volnosti:
+**Pearsonovo (chí-kvadrát) rozdělení** využívá například test nezávislosti v kontingenční tabulce. Velká hodnota jeho kritéria znamená velký nesoulad mezi skutečnými a očekávanými počty. S $k$ stupni volnosti má hustotu:
 
 $$f(x) = \frac{1}{2^{k/2}\Gamma(k/2)} x^{k/2-1} e^{-x/2}, \qquad x > 0,$$
 
 kde $\Gamma$ je funkce gama.
 
-**Fisherovo-Snedecorovo rozdělení** se stupni volnosti $k_1$ a $k_2$:
+**Fisherovo-Snedecorovo rozdělení** používáme při F-testu pro porovnání dvou rozptylů. Počítá se jejich poměr, proto má rozdělení dva počty stupňů volnosti: jeden pro výběr v čitateli a druhý pro výběr ve jmenovateli. Se stupni volnosti $k_1$ a $k_2$ má hustotu:
 
 $$f(x) = \frac{1}{B\left(\frac{k_1}{2}, \frac{k_2}{2}\right)} \left(\frac{k_1}{k_2}\right)^{k_1/2} x^{k_1/2 - 1} \left(1 + \frac{k_1}{k_2}x\right)^{-\frac{k_1+k_2}{2}}, \qquad x > 0.$$
 
@@ -239,7 +251,7 @@ curves:
   - { fn: "(3/8)*(1+x^2/4)^(-2.5)", label: "t, k = 4", color: "paper-500" }
 ```
 
-R funkce pro tato tři rozdělení:
+Také pro tato rozdělení lze v R spočítat hustotu, distribuční funkci a kvantily:
 
 | Rozdělení | hustota | distribuční funkce | kvantil |
 |---|---|---|---|
@@ -247,7 +259,7 @@ R funkce pro tato tři rozdělení:
 | Pearsonovo $\chi^2(k)$ | `dchisq(x, df = k)` | `pchisq(x, df = k)` | `qchisq(p, df = k)` |
 | Fisherovo-Snedecorovo $F(k_1, k_2)$ | `df(x, df1 = k1, df2 = k2)` | `pf(x, df1 = k1, df2 = k2)` | `qf(p, df1 = k1, df2 = k2)` |
 
-V R (97,5%-ní kvantil Studentova rozdělení s 9 stupni volnosti, 95%-ní kvantily Pearsonova a Fisherova-Snedecorova rozdělení):
+Následující výpočet vrací 97,5%-ní kvantil Studentova rozdělení s 9 stupni volnosti a poté 95%-ní kvantily Pearsonova a Fisherova-Snedecorova rozdělení:
 
 ```r
 qt(0.975, df = 9)
@@ -263,9 +275,9 @@ qf(0.95, df1 = 3, df2 = 10)
 
 ## Časté chyby
 
-- **Rozptyl vs. směrodatná odchylka v R.** Zápis $N(\mu; \sigma^2)$ používá rozptyl, ale `dnorm`/`pnorm`/`qnorm` očekávají směrodatnou odchylku. Dosazení rozptylu místo $\sqrt{\sigma^2}$ dává jiný — a pro $\sigma^2 \ne 1$ výrazně odlišný — výsledek (viz příklad s ampulkou).
-- **$P(X=x)$ u spojité veličiny je vždy 0.** Hustota $f(x)$ sama o sobě pravděpodobnost neudává — pravděpodobnost dává až plocha pod křivkou na intervalu.
-- **Záměna stupňů volnosti u Fisherova-Snedecorova rozdělení.** $k_1$ (čitatel) a $k_2$ (jmenovatel) nejsou zaměnitelné — `qf(p, df1, df2)` dá jiný výsledek než `qf(p, df2, df1)`.
+- **Záměna rozptylu a směrodatné odchylky v R.** V zápisu $N(\mu; \sigma^2)$ je druhým parametrem rozptyl. Funkce `dnorm`/`pnorm`/`qnorm` však očekávají směrodatnou odchylku $\sqrt{\sigma^2}$. Při $\sigma^2 \ne 1$ může záměna výrazně změnit výsledek, jak ukazuje příklad s ampulkou.
+- **$P(X=x)$ u spojité veličiny je vždy 0.** Hodnota hustoty $f(x)$ je výška křivky, nikoli pravděpodobnost. Pravděpodobnosti odpovídá až plocha pod křivkou na intervalu.
+- **Záměna stupňů volnosti u Fisherova-Snedecorova rozdělení.** $k_1$ patří čitateli a $k_2$ jmenovateli. Na pořadí záleží: `qf(p, df1, df2)` vrací jiný výsledek než `qf(p, df2, df1)`.
 
 ## Související stránky
 
