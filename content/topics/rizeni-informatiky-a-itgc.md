@@ -64,7 +64,7 @@ Tyto přístupy se **doplňují**, nevybírají jako vzájemně zaměnitelné zn
 - **PRINCE2** je pohled na řízení projektu,
 - **ITIL** na IT služby,
 - **COBIT** na řízení a kontrolní cíle IT,
-- **ISO/IEC 27001** je norma požadavků na řízení bezpečnosti; lze ji implementovat i bez certifikace; certifikát vydává externí certifikační orgán ([ISO/IEC 27001](https://www.iso.org/standard/27001)),
+- **ISO/IEC 27001** je norma požadavků na řízení bezpečnosti; lze ji implementovat i bez certifikace; certifikát vydává externí certifikační orgán,
 - **COSO** poskytuje širší jazyk pro interní kontrolu a riziko.
 
 U projektu se šest hledisek — čas, náklady, přínosy, rozsah, kvalita a riziko — vzájemně ovlivňuje. Změna rozsahu například může změnit termín, náklady nebo očekávaný přínos. Řízení projektu tedy není administrativní sled kroků, ale vědomé rozhodování o těchto vazbách.
