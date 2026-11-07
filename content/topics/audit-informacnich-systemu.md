@@ -81,15 +81,15 @@ První postup získává důkaz o fungování kontroly, druhý přímo o správn
 
 IT do compliance vstupuje, když systém zpracovává regulovaná data, vytváří podklady pro účetnictví nebo zajišťuje kontrolní postup.
 
-Certifikace systému řízení organizace není certifikací každého jejího produktu. ISO uvádí, že organizace mohou zavést ISO/IEC 27001 bez certifikace; pokud certifikaci chtějí, vydává ji externí certifikační orgán. ISO/IEC 27001:2022 stanovuje požadavky na systém řízení bezpečnosti informací, ne obecné tvrzení, že každý produkt organizace je bezchybný nebo bezpečný ve všech situacích. ([ISO/IEC 27001](https://www.iso.org/standard/27001))
+Certifikace systému řízení organizace není certifikací každého jejího produktu. ISO uvádí, že organizace mohou zavést ISO/IEC 27001 bez certifikace; pokud certifikaci chtějí, vydává ji externí certifikační orgán. ISO/IEC 27001:2022 stanovuje požadavky na systém řízení bezpečnosti informací, ne obecné tvrzení, že každý produkt organizace je bezchybný nebo bezpečný ve všech situacích.
 
 Účetní selhání, jakým byl případ Enronu, připomíná význam spolehlivého vykazování a kontrol. Audit proto neposuzuje jen aritmetickou správnost částek, ale také procesy a podmínky, za nichž informace vznikají.
 
-Sekce 404 zákona Sarbanes–Oxley (SOX) se věnuje interním kontrolám nad finančním výkaznictvím. U subjektů v jejím rozsahu upravuje odpovědnost vedení za jejich posouzení; samostatné požadavky na auditorské ověření mají výjimky podle postavení emitenta. ([SEC — interní kontroly](https://www.sec.gov/files/rules/final/33-8238.htm)) Z toho neplyne, že každý podnik nebo každý IT systém automaticky podléhá SOX. Dopad na IT vzniká zejména tam, kde IT kontroly podporují spolehlivost finančního výkaznictví.
+Sekce 404 zákona Sarbanes–Oxley (SOX) se věnuje interním kontrolám nad finančním výkaznictvím. U subjektů v jejím rozsahu upravuje odpovědnost vedení za jejich posouzení; samostatné požadavky na auditorské ověření mají výjimky podle postavení emitenta. Z toho neplyne, že každý podnik nebo každý IT systém automaticky podléhá SOX. Dopad na IT vzniká zejména tam, kde IT kontroly podporují spolehlivost finančního výkaznictví.
 
 ## Ujištění o kontrolách poskytovatele služeb
 
-Když organizace využívá outsourcing nebo cloudovou službu, nemůže její auditor běžně vstoupit do každého datového centra poskytovatele. Poskytovatel proto může předložit nezávislou zprávu o svých kontrolách. Pro kontroly poskytovatele relevantní k finančnímu výkaznictví zákazníka existuje také mezinárodní standard **ISAE 3402**. Určuje rámec takového ujišťovacího ověření; nejde o univerzální certifikát bezpečnosti služby. ([IAASB — ISAE 3402](https://www.iaasb.org/publications/staff-overview-international-standard-assurance-engagements-isae-3402-assurance-reports-controls))
+Když organizace využívá outsourcing nebo cloudovou službu, nemůže její auditor běžně vstoupit do každého datového centra poskytovatele. Poskytovatel proto může předložit nezávislou zprávu o svých kontrolách. Pro kontroly poskytovatele relevantní k finančnímu výkaznictví zákazníka existuje také mezinárodní standard **ISAE 3402**. Určuje rámec takového ujišťovacího ověření; nejde o univerzální certifikát bezpečnosti služby.
 
 Zpráva je vstupem do posouzení zákazníka, nikoli univerzálním potvrzením, že zákazník nemá žádná vlastní rizika. Stále musí vyhodnotit rozsah služby, svá nastavení a případné odpovědnosti uživatelské organizace.
 
@@ -103,9 +103,9 @@ Označení **SOC** (*System and Organization Controls*) vyjadřuje zejména úč
 | SOC 2 | Kontroly systému ve vztahu ke kritériím důvěryhodných služeb, například bezpečnosti | určené strany se znalostí potřebných souvislostí |
 | SOC 3 | Stručnější zpráva pro obecné použití o stejném typu systémových kontrol jako SOC 2 | širší veřejnost |
 
-SOC 1 tedy neznamená „lepší SOC 2“. Odpovídá na jinou otázku: zda jsou kontroly poskytovatele relevantní pro finanční výkaznictví zákazníka. SOC 2 se zaměřuje na systém a příslušná kritéria důvěryhodných služeb. SOC 3 je určen ke sdílení s širším publikem, proto nemá nahrazovat detailní podklad, který potřebuje auditor zákazníka. Aktuální sadu služeb SOC a její ilustrativní zprávy spravuje AICPA. ([AICPA — zprávy SOC](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services))
+SOC 1 tedy neznamená „lepší SOC 2“. Odpovídá na jinou otázku: zda jsou kontroly poskytovatele relevantní pro finanční výkaznictví zákazníka. SOC 2 se zaměřuje na systém a příslušná kritéria důvěryhodných služeb. SOC 3 je určen ke sdílení s širším publikem, proto nemá nahrazovat detailní podklad, který potřebuje auditor zákazníka. Aktuální sadu služeb SOC a její ilustrativní zprávy spravuje AICPA.
 
-SOC 2 pracuje s kategoriemi kritérií důvěryhodných služeb: **bezpečnost, dostupnost, integrita zpracování, důvěrnost a soukromí**. Dostupnost se týká použitelnosti služby, integrita zpracování úplnosti, správnosti, platnosti, včasnosti a oprávněnosti zpracování dat; důvěrnost chrání vymezené důvěrné informace a soukromí se vztahuje k osobním údajům. U konkrétní zprávy je nutné zjistit, které kategorie zahrnuje — samotné označení SOC 2 rozsah neříká. ([AICPA — Trust Services Criteria](https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022))
+SOC 2 pracuje s kategoriemi kritérií důvěryhodných služeb: **bezpečnost, dostupnost, integrita zpracování, důvěrnost a soukromí**. Dostupnost se týká použitelnosti služby, integrita zpracování úplnosti, správnosti, platnosti, včasnosti a oprávněnosti zpracování dat; důvěrnost chrání vymezené důvěrné informace a soukromí se vztahuje k osobním údajům. U konkrétní zprávy je nutné zjistit, které kategorie zahrnuje — samotné označení SOC 2 rozsah neříká.
 
 ### Type 1 a Type 2: potom datum nebo období ověření
 
@@ -148,3 +148,5 @@ NOVÁK, Lukáš. *Podnikové informační systémy 2*. Výuková prezentace. Fak
 - AICPA & CIMA, [System and Organization Controls: SOC Suite of Services](https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services).
 
 - IAASB, [ISAE 3402 — Assurance Reports on Controls at a Service Organization](https://www.iaasb.org/publications/staff-overview-international-standard-assurance-engagements-isae-3402-assurance-reports-controls).
+
+- AICPA & CIMA, [Trust Services Criteria](https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022).
